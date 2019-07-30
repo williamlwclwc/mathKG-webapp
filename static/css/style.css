@@ -1,0 +1,38 @@
+table
+{
+	background-color: transparent;
+	border-spacing: 0;
+	border-collapse: collapse;
+	border-top: 1px solid #ddd;
+}
+
+th, td
+{
+	padding: .5em 1em;
+	vertical-align: top;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+	max-width: 120px;
+}
+
+.main, .aside
+{
+	margin-bottom: 1em;
+	padding: 0em;
+	font: 12px sans-serif;
+	position: absolute;
+	top: 0;
+}
+
+.right_bar {
+	position: absolute;
+    right: 0;
+	max-width: 475px;
+	max-height: 100%;
+    background-color: #fff;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+	padding-left: 15px;
+	overflow: auto;
+	padding-top: 61px;
+}
