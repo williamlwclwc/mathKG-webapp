@@ -81,3 +81,19 @@ $.get('static/data/middle_school.gexf', function (xml) {
 
     myChart.setOption(option);
 }, 'xml');
+
+myChart.on("click", function(params) {
+    var data = params.data;
+    console.log(data);
+    var graphElem_table = document.getElementById("node info tbody");
+    graphElem_table.innerHTML = 
+        '<tr>'
+            + '<td>' + 'Name' + '</td>'
+            + '<td>' + data.name + '</td>' +
+        '</tr>';
+    graphElem_table.innerHTML += 
+        '<tr>'
+            + '<td>' + 'ID' + '</td>'
+            + '<td>' + data.id + '</td>' +
+        '</tr>';
+});

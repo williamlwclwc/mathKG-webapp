@@ -14,6 +14,22 @@
     <div id="main" style="width: 1600px;height:800px;"></div>
     <!-- <script src="simple-demo.js"></script> -->
     <script src="{{ url_for('static', filename='js/middle-school.js')}}"></script>
+    <div class="aside right_bar" id="details" style="pointer-events:auto;">
+        <div id="nodeInfo" style="pointer-events:auto;">
+            <h2>Item Info</h2> 
+            <table id="node info">
+                <thead>
+                    <tr>
+                        <th>Key</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody id="node info tbody">
+                    <!-- display node info here -->
+                </tbody>
+            </table>
+        </div>				
+    </div>
 </body>
 </html>
 
