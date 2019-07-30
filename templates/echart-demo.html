@@ -2,7 +2,21 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>ECharts</title>
+    
+    {% if title %}
+    <title>Math KG - {{title}}</title>
+    {% else %}
+    <title>Math KG</title>
+    {% endif %}
+
+    <!-- import css files -->
+    <style type="text/css">
+        html, body {height:100%;margin:0;padding:0;}
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+    <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='favicon.png')}}">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- 引入 echarts.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.2.1/echarts.min.js"></script>
@@ -11,7 +25,7 @@
 </head>
 <body>
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-    <div id="main" style="width: 1600px;height:800px;"></div>
+    <div id="main" style="width: 100%; height: 100%"></div>
     <!-- <script src="simple-demo.js"></script> -->
     <script src="{{ url_for('static', filename='js/middle-school.js')}}"></script>
     <div class="aside right_bar" id="details" style="pointer-events:auto;">
