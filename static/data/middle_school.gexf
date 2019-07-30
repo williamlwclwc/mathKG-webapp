@@ -1,0 +1,3170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.3" version="1.3" xmlns:viz="http://www.gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.3 http://www.gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2019-07-29">
+    <creator>Gephi 0.9</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="modularity_class2" title="modularity_class2" type="liststring"></attribute>
+      <attribute id="modularity" title="modularity" type="integer"></attribute>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="relationship" title="relationship" type="string"></attribute>
+    </attributes>
+    <nodes>
+      <node id="Algebraic fraction" label="Algebraic fraction">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-9.248627" y="-1267.0873"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="addition" label="addition">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-92.03178" y="-1262.0"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="subtraction" label="subtraction">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-63.61357" y="-1296.8617"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="multiplication" label="multiplication">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-89.97689" y="-1205.1632"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="division" label="division">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="86.91345" y="-1194.3683"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="angle" label="angle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="681.9868" y="1037.5902"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="acute angles" label="acute angles">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="640.8291" y="948.9344"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="right angle" label="right angle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="604.7675" y="983.8627"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="obtuse angles" label="obtuse angles">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="729.4952" y="966.2002"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="straight angle" label="straight angle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="566.9593" y="1053.3264"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="full angle" label="full angle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="743.25977" y="1007.4699"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Radian" label="Radian">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="627.05194" y="1074.8087"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Degree (angle)" label="Degree (angle)">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="616.6678" y="1026.8586"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Corresponding angles" label="Corresponding angles">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="689.83276" y="978.44586"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Alternate angles" label="Alternate angles">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="740.45514" y="1057.2288"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Interior angles on the same side" label="Interior angles on the same side">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="645.6927" y="988.4502"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="vertical angles" label="vertical angles">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="685.63947" y="939.8589"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="supplementary angles" label="supplementary angles">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="673.5038" y="1098.6074"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="angle bisector" label="angle bisector">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="418.24548" y="332.81607"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="lengths of a point on the angle bisector to each side are equal" label="lengths of a point on the angle bisector to each side are equal">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="421.64838" y="274.24985"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="center of incircle" label="center of incircle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="460.6965" y="299.45883"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="B�zout's identity" label="B�zout's identity">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-822.5933" y="-804.01556"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="euclid's theorem" label="euclid's theorem">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-777.2051" y="-814.3674"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="binomial" label="binomial">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-292.92014" y="-1325.6543"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="binomial theorem" label="binomial theorem">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-352.61426" y="-1285.9232"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="Difference of two squares" label="Difference of two squares">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-285.32358" y="-1276.8058"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="cartesian coordinate system" label="cartesian coordinate system">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-92.14427" y="905.08746"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="features of coordinates in each quadrant" label="features of coordinates in each quadrant">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-44.544323" y="943.1881"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="features of coordinates on each axes" label="features of coordinates on each axes">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-26.951595" y="904.0307"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="compute line segment that parallel axes: big coordinates - small coordinates" label="compute line segment that parallel axes: big coordinates - small coordinates">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-41.712654" y="864.3655"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="compute the area of a polygon in a plane: cutting method" label="compute the area of a polygon in a plane: cutting method">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-84.494675" y="851.1673"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="compute coordinates of symmetric points" label="compute coordinates of symmetric points">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-89.42991" y="958.4103"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="checking the primality" label="checking the primality">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-825.36816" y="-670.5329"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="trial division" label="trial division">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-867.85956" y="-639.6241"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="Miller�Rabin primality test" label="Miller�Rabin primality test">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-795.93744" y="-621.3671"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="AKS primality test" label="AKS primality test">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-836.53174" y="-605.6656"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="chord tangent angle" label="chord tangent angle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="103.10027" y="-278.67828"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Alternate Segment Theorem" label="Alternate Segment Theorem">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="73.55924" y="-320.01593"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Circle" label="Circle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="164.07805" y="-172.96056"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Reflectional symmetry" label="Reflectional symmetry">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="215.73564" y="-254.05447"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Circular segment" label="Circular segment">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="257.60803" y="-271.4481"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Chords of a Circle Theorems" label="Chords of a Circle Theorems">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="224.26247" y="-199.1467"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Point reflection" label="Point reflection">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="84.78621" y="-200.09111"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Thales' theorem" label="Thales' theorem">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="108.33096" y="79.12755"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="inscribed angle" label="inscribed angle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="120.13866" y="-222.2031"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="central angle" label="central angle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="101.583015" y="-123.76479"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="chord theorem" label="chord theorem">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="92.10124" y="-161.61395"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="secant" label="secant">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="217.69771" y="-124.28875"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="tangent(circle)" label="tangent(circle)">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="240.24147" y="-159.81122"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Power of a point" label="Power of a point">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="138.90796" y="-106.89214"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="area of the sector" label="area of the sector">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="180.92296" y="-103.20246"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="length of the arc" label="length of the arc">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="162.11877" y="-240.79839"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Intersecting Chords Theorem" label="Intersecting Chords Theorem">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="294.4608" y="-308.86246"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="complex number" label="complex number">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-26.894793" y="-1184.7836"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="real number" label="real number">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-164.20195" y="-1045.2786"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="imaginary number" label="imaginary number">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-7.9933553" y="-1110.961"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Gaussian integer" label="Gaussian integer">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="27.490644" y="-1134.969"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="compute gcd" label="compute gcd">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="386.6308" y="-952.1048"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="prime factorization" label="prime factorization">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="337.95392" y="-926.48193"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="euclidean algorithm" label="euclidean algorithm">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="440.21432" y="-949.16235"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="lehmer's gcd algorithm" label="lehmer's gcd algorithm">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="428.70587" y="-905.58026"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="binary gcd algorithm" label="binary gcd algorithm">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="356.8295" y="-888.4259"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="exhaustion" label="exhaustion">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="396.51785" y="-880.6274"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Cone" label="Cone">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-462.69168" y="-205.2695"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="lateral surface area" label="lateral surface area">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-429.09387" y="-228.04404"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="total lateral surface area" label="total lateral surface area">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-453.73294" y="-165.48152"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="cosine" label="cosine">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-214.65994" y="462.9519"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="law of cosines" label="law of cosines">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-262.0788" y="451.7484"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="cotangent" label="cotangent">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-223.81592" y="394.4328"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="law of cotangents" label="law of cotangents">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-263.99362" y="355.69028"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="divisor" label="divisor">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="208.66074" y="-1110.3472"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="greatest common divisor" label="greatest common divisor">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="302.44434" y="-1033.7893"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Equation" label="Equation">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="823.5781" y="-624.3258"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="one variable linear equation" label="one variable linear equation">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="775.43854" y="-620.84607"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Fraction equation" label="Fraction equation">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="754.3666" y="-573.5776"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="System of 2 linear equations with 2 unknowns" label="System of 2 linear equations with 2 unknowns">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="787.52155" y="-700.20386"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="quadratic equation" label="quadratic equation">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="893.35004" y="-549.9609"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="euclid's lemma" label="euclid's lemma">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-669.64557" y="-587.13635"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="fundamental theorem of arithmetic" label="fundamental theorem of arithmetic">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-675.3211" y="-647.95953"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="factorization" label="factorization">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-341.4884" y="-1218.1625"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="FOIL method" label="FOIL method">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-362.88968" y="-1161.1855"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="Function (mathematics)" label="Function (mathematics)">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-254.1942" y="777.8142"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="compute function expression" label="compute function expression">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-221.05905" y="714.79944"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="compute intersection" label="compute intersection">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-328.55273" y="869.6305"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="compute area" label="compute area">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="35.39429" y="617.1399"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="compare value of functions" label="compare value of functions">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-268.15698" y="710.48364"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="linear function (calculus)" label="linear function (calculus)">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-347.68677" y="960.0698"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="inverse proportional function" label="inverse proportional function">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-405.59598" y="827.77295"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="quadratic function" label="quadratic function">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-577.789" y="820.612"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="power function" label="power function">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-193.2599" y="754.7934"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Trigonometric functions" label="Trigonometric functions">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-136.66722" y="454.24307"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="induction" label="induction">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-628.2833" y="-606.54047"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Inequation" label="Inequation">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-257.53824" y="-388.5037"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="linear ineqality with one unknown" label="linear ineqality with one unknown">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-217.42535" y="-393.89236"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="System of Linear Inequalities with one unknown" label="System of Linear Inequalities with one unknown">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-271.12048" y="-350.12384"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="integer" label="integer">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-412.38318" y="-1054.1128"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="natural number" label="natural number">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-561.48914" y="-919.47974"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Intersection (Euclidean geometry)" label="Intersection (Euclidean geometry)">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1103.116" y="380.97226"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="vertical angle theorem" label="vertical angle theorem">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1063.6716" y="408.3767"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="inverse proportional form" label="inverse proportional form">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-407.54126" y="746.6024"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="regional property" label="regional property">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-437.8218" y="776.52594"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="monotonicity" label="monotonicity">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-462.92325" y="901.2038"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="symmetry" label="symmetry">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-498.1924" y="827.6619"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="area only related to k" label="area only related to k">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-375.59943" y="777.144"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="irrational number" label="irrational number">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-155.32324" y="-947.9551"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Pi" label="Pi">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-147.23972" y="-889.84656"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="isosceles triangle" label="isosceles triangle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="457.10986" y="506.25684"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="equilateral triangle" label="equilateral triangle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="554.6357" y="540.009"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Line (geometry)" label="Line (geometry)">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1113.1279" y="311.1651"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="for any two distinct points, there is a unique line containing them" label="for any two distinct points, there is a unique line containing them">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1080.4669" y="268.8613"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Perpendicular" label="Perpendicular">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1063.4008" y="330.0804"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Line segment" label="Line segment">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1141.8718" y="246.86505"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Parallel (geometry)" label="Parallel (geometry)">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1028.8481" y="288.00363"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="line segment theorem" label="line segment theorem">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1123.0171" y="202.86682"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="slope-intercept form" label="slope-intercept form">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-390.13156" y="998.4127"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="translational property" label="translational property">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-289.2295" y="960.58887"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="verticality" label="verticality">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-346.74612" y="1021.8156"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="positive and negative property" label="positive and negative property">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-303.3014" y="1005.68475"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="multiple" label="multiple">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-72.24652" y="-1091.4515"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="least common multiple" label="least common multiple">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-54.83869" y="-1027.4565"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="prime number" label="prime number">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-716.69727" y="-780.6827"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="composite number" label="composite number">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-528.96063" y="-881.241"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Parallel postulate" label="Parallel postulate">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-978.44196" y="274.40024"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="parallelogram" label="parallelogram">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1221.5585" y="110.42641"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="rectangle" label="rectangle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1235.4879" y="20.801918"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="rhombus" label="rhombus">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1231.0183" y="176.15749"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="convex" label="convex">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1176.3368" y="135.8605"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="perpendicular bisector" label="perpendicular bisector">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="296.03802" y="295.78815"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="circumcenter" label="circumcenter">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="261.4309" y="250.61719"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="lengths of a point on the perpendicular bisector to each vertex are equal" label="lengths of a point on the perpendicular bisector to each vertex are equal">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="307.63647" y="238.58192"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Polygon" label="Polygon">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="587.2491" y="334.41013"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="triangle" label="triangle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="316.2874" y="442.72028"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="Quadrilateral" label="Quadrilateral">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="792.02496" y="258.0156"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Regular polygon" label="Regular polygon">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="604.5463" y="289.64417"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="polynomial" label="polynomial">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-198.04692" y="-1287.4741"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="expoentiation" label="expoentiation">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-203.74971" y="-1225.0183"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="prime number theorem" label="prime number theorem">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-730.3851" y="-721.4307"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Goldbach's conjecture" label="Goldbach's conjecture">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-658.96" y="-793.0647"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="twin primes" label="twin primes">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-623.27325" y="-737.2939"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="coprime numbers" label="coprime numbers">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-680.67096" y="-731.27625"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Proportionality (mathematics)" label="Proportionality (mathematics)">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-301.82547" y="-70.41929"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="golden ratio" label="golden ratio">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-281.21588" y="-99.15721"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Quadratic formula" label="Quadratic formula">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="842.6809" y="-531.953"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="Factoring" label="Factoring">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="858.8791" y="-491.7539"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="Completing the square" label="Completing the square">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="902.7249" y="-493.19067"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="discriminant of the quadratic equation" label="discriminant of the quadratic equation">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="938.0685" y="-528.93854"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="diagrammatic sketch" label="diagrammatic sketch">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-647.6249" y="807.60345"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="standard form" label="standard form">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-623.4183" y="732.9577"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="factored form" label="factored form">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-644.5793" y="847.7482"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="vertex form" label="vertex form">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-550.4389" y="760.2123"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="opening direction and scale of a function" label="opening direction and scale of a function">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-579.85974" y="731.53406"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="vertex" label="vertex">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-607.8269" y="876.08057"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="maximum and minimum value" label="maximum and minimum value">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-653.0266" y="768.14417"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="judge positive or negative" label="judge positive or negative">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-608.69025" y="770.6806"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Trapezoid" label="Trapezoid">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="976.2492" y="197.55193"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Parallelogram" label="Parallelogram">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="765.8761" y="219.63164"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="rational number" label="rational number">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-294.30325" y="-1032.144"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="square" label="square">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1309.9441" y="96.18836"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="isogonal" label="isogonal">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1286.4031" y="49.43766"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="cyclic" label="cyclic">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1314.4424" y="16.156382"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="quailateral" label="quailateral">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1179.4602" y="-35.110115"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="isopermetric theorem" label="isopermetric theorem">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1145.5634" y="-12.679414"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Japanese theorem for cyclic quadrilaterals" label="Japanese theorem for cyclic quadrilaterals">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1218.4128" y="-48.90685"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="British flag theorem" label="British flag theorem">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1163.7872" y="24.54336"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="isotoxal" label="isotoxal">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1287.774" y="170.7549"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="right triangle" label="right triangle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="62.805103" y="336.73914"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Pythagorean theorem" label="Pythagorean theorem">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-30.886541" y="391.149"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Set (mathematics)" label="Set (mathematics)">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-739.87225" y="-10.752541"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="subset" label="subset">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-768.88104" y="-53.36986"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="union" label="union">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-683.1994" y="13.272975"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Intersection" label="Intersection">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-719.1684" y="42.549625"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="complement" label="complement">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-715.6255" y="-62.888718"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="cartesian product" label="cartesian product">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-681.8523" y="-31.325678"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Venn diagram" label="Venn diagram">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-772.3806" y="29.048319"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="similar triangle" label="similar triangle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="635.2774" y="557.1282"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Intercept theorem" label="Intercept theorem">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="657.2811" y="515.9454"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Similarity (geometry)" label="Similarity (geometry)">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="677.9633" y="570.3735"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="sine" label="sine">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-177.94725" y="356.22382"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="law of sines" label="law of sines">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-196.72331" y="302.59625"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="equilateral" label="equilateral">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1342.5295" y="135.80144"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="supplementary angle" label="supplementary angle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="513.4744" y="1036.2882"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Elimination of variables" label="Elimination of variables">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="754.3752" y="-734.66876"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="Row reduction" label="Row reduction">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="735.0876" y="-688.9863"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="tangent" label="tangent">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-117.89714" y="376.34735"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="law of tangents" label="law of tangents">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-111.131294" y="323.6829"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Transformation (function)" label="Transformation (function)">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1104.6185" y="-198.88489"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Homothetic transformation" label="Homothetic transformation">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1063.2528" y="-241.93256"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Reflection" label="Reflection">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1082.0973" y="-143.83713"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Rotation (mathematics)" label="Rotation (mathematics)">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1046.5681" y="-167.2614"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Translation (geometry)" label="Translation (geometry)">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1111.6373" y="-249.93842"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Affine transformation" label="Affine transformation">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1038.2537" y="-207.67874"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Linear map" label="Linear map">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1130.342" y="-154.27452"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="isosceles trapezoid" label="isosceles trapezoid">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="929.3699" y="182.89969"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="scalene triangle" label="scalene triangle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="273.37485" y="381.35385"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="acute triangle" label="acute triangle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="320.37985" y="372.34085"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="obtuse triangle" label="obtuse triangle">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="302.73416" y="517.0853"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="conditions on the sides" label="conditions on the sides">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="352.3094" y="498.24246"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="compute circumference" label="compute circumference">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[a, l, g, o, r, i, t, h, m]"></attvalue>
+          <attvalue for="modularity" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="262.64014" y="495.34692"></viz:position>
+        <viz:color r="63" g="177" b="125"></viz:color>
+      </node>
+      <node id="median" label="median">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="244.3907" y="413.3336"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="altitude" label="altitude">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="366.85065" y="395.5453"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="mid-segment line" label="mid-segment line">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="386.19458" y="445.77115"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="congruence" label="congruence">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="241.93549" y="456.4759"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="twin prime conjecture" label="twin prime conjecture">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-576.0963" y="-704.11145"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+      <node id="Extraneous and missing solutions" label="Extraneous and missing solutions">
+        <attvalues>
+          <attvalue for="modularity_class2" value="[o, r, m, a, l]"></attvalue>
+          <attvalue for="modularity" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="710.31067" y="-544.0773"></viz:position>
+        <viz:color r="238" g="121" b="147"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="218" source="Algebraic fraction" target="addition">
+        <viz:color r="255" g="136" b="5"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="arithmetic operation"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="219" source="Algebraic fraction" target="subtraction">
+        <viz:color r="255" g="136" b="5"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="arithmetic operation"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="220" source="Algebraic fraction" target="multiplication">
+        <viz:color r="255" g="136" b="5"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="arithmetic operation"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="221" source="Algebraic fraction" target="division">
+        <viz:color r="255" g="136" b="5"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="arithmetic operation"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="222" source="angle" target="acute angles">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="223" source="angle" target="right angle">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="224" source="angle" target="obtuse angles">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="225" source="angle" target="straight angle">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="226" source="angle" target="full angle">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="227" source="angle" target="Radian">
+        <viz:color r="0" g="189" b="148"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="expression"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="228" source="angle" target="Degree (angle)">
+        <viz:color r="0" g="189" b="148"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="expression"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="229" source="angle" target="Corresponding angles">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="230" source="angle" target="Alternate angles">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="231" source="angle" target="Interior angles on the same side">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="232" source="angle" target="vertical angles">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="233" source="angle" target="supplementary angles">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="234" source="angle bisector" target="lengths of a point on the angle bisector to each side are equal">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="235" source="angle bisector" target="center of incircle">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="236" source="B�zout's identity" target="euclid's theorem">
+        <viz:color r="192" g="192" b="192"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="proof"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="237" source="binomial" target="binomial theorem">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="238" source="binomial" target="Difference of two squares">
+        <viz:color r="211" g="179" b="176"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="formula"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="239" source="cartesian coordinate system" target="features of coordinates in each quadrant">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="240" source="cartesian coordinate system" target="features of coordinates on each axes">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="241" source="cartesian coordinate system" target="compute line segment that parallel axes: big coordinates - small coordinates">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="242" source="cartesian coordinate system" target="compute the area of a polygon in a plane: cutting method">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="243" source="cartesian coordinate system" target="compute coordinates of symmetric points">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="244" source="checking the primality" target="trial division">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="245" source="checking the primality" target="Miller�Rabin primality test">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="246" source="checking the primality" target="AKS primality test">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="247" source="chord tangent angle" target="Alternate Segment Theorem">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="248" source="Circle" target="Reflectional symmetry">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="249" source="Circle" target="Circular segment">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="250" source="Circle" target="Chords of a Circle Theorems">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="251" source="Circle" target="Point reflection">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="252" source="Circle" target="Thales' theorem">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="253" source="Circle" target="inscribed angle">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="254" source="Circle" target="central angle">
+        <viz:color r="255" g="136" b="5"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="arithmetic operation"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="255" source="Circle" target="chord theorem">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="256" source="Circle" target="secant">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="257" source="Circle" target="tangent(circle)">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="258" source="Circle" target="chord tangent angle">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="259" source="Circle" target="Power of a point">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="260" source="Circle" target="area of the sector">
+        <viz:color r="211" g="179" b="176"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="formula"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="261" source="Circle" target="length of the arc">
+        <viz:color r="211" g="179" b="176"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="formula"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="262" source="Circular segment" target="Reflectional symmetry">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="263" source="Circular segment" target="Intersecting Chords Theorem">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="264" source="complex number" target="real number">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="265" source="complex number" target="imaginary number">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="266" source="complex number" target="Gaussian integer">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="267" source="complex number" target="addition">
+        <viz:color r="255" g="136" b="5"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="arithmetic operation"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="268" source="complex number" target="subtraction">
+        <viz:color r="255" g="136" b="5"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="arithmetic operation"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="269" source="complex number" target="multiplication">
+        <viz:color r="255" g="136" b="5"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="arithmetic operation"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="270" source="complex number" target="division">
+        <viz:color r="255" g="136" b="5"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="arithmetic operation"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="271" source="compute gcd" target="prime factorization">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="272" source="compute gcd" target="euclidean algorithm">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="273" source="compute gcd" target="lehmer's gcd algorithm">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="274" source="compute gcd" target="binary gcd algorithm">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="275" source="compute gcd" target="exhaustion">
+        <viz:color r="192" g="192" b="192"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="proof methods"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="276" source="Cone" target="lateral surface area">
+        <viz:color r="211" g="179" b="176"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="formula"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="277" source="Cone" target="total lateral surface area">
+        <viz:color r="211" g="179" b="176"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="formula"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="278" source="cosine" target="law of cosines">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="279" source="cotangent" target="law of cotangents">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="280" source="divisor" target="greatest common divisor">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="281" source="Equation" target="one variable linear equation">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="282" source="Equation" target="Fraction equation">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="283" source="Equation" target="System of 2 linear equations with 2 unknowns">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="284" source="Equation" target="quadratic equation">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="285" source="euclid's lemma" target="fundamental theorem of arithmetic">
+        <viz:color r="192" g="192" b="192"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="proof"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="286" source="factorization" target="FOIL method">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="287" source="factorization" target="binomial theorem">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="288" source="factorization" target="Difference of two squares">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="289" source="Function (mathematics)" target="compute function expression">
+        <viz:color r="255" g="85" b="132"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="application"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="290" source="Function (mathematics)" target="compute intersection">
+        <viz:color r="255" g="85" b="132"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="application"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="291" source="Function (mathematics)" target="compute area">
+        <viz:color r="255" g="85" b="132"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="application"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="292" source="Function (mathematics)" target="compare value of functions">
+        <viz:color r="255" g="85" b="132"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="application"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="293" source="Function (mathematics)" target="cartesian coordinate system">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="294" source="Function (mathematics)" target="linear function (calculus)">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="295" source="Function (mathematics)" target="inverse proportional function">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="296" source="Function (mathematics)" target="quadratic function">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="297" source="Function (mathematics)" target="power function">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="298" source="Function (mathematics)" target="Trigonometric functions">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="299" source="fundamental theorem of arithmetic" target="induction">
+        <viz:color r="192" g="192" b="192"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="proof methods"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="300" source="greatest common divisor" target="compute gcd">
+        <viz:color r="255" g="85" b="132"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="application"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="301" source="Inequation" target="linear ineqality with one unknown">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="302" source="Inequation" target="System of Linear Inequalities with one unknown">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="303" source="integer" target="natural number">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="304" source="integer" target="factorization">
+        <viz:color r="255" g="85" b="132"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="application"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="305" source="Intersection (Euclidean geometry)" target="vertical angle theorem">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="306" source="inverse proportional function" target="inverse proportional form">
+        <viz:color r="0" g="189" b="148"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="expression"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="307" source="inverse proportional function" target="regional property">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="308" source="inverse proportional function" target="monotonicity">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="309" source="inverse proportional function" target="symmetry">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="310" source="inverse proportional function" target="area only related to k">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="311" source="inverse proportional function" target="compute intersection">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="312" source="irrational number" target="Pi">
+        <viz:color r="192" g="192" b="192"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="example"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="313" source="isosceles triangle" target="equilateral triangle">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="314" source="Line (geometry)" target="for any two distinct points, there is a unique line containing them">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="315" source="Line (geometry)" target="Perpendicular">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="316" source="Line (geometry)" target="Intersection (Euclidean geometry)">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="317" source="Line (geometry)" target="Line segment">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="318" source="Line (geometry)" target="Parallel (geometry)">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="319" source="Line segment" target="line segment theorem">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="320" source="linear function (calculus)" target="slope-intercept form">
+        <viz:color r="0" g="189" b="148"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="expression"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="321" source="linear function (calculus)" target="monotonicity">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="322" source="linear function (calculus)" target="translational property">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="323" source="linear function (calculus)" target="verticality">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="324" source="linear function (calculus)" target="compute intersection">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="325" source="linear function (calculus)" target="positive and negative property">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="326" source="multiple" target="least common multiple">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="327" source="natural number" target="prime number">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="328" source="natural number" target="composite number">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="329" source="Parallel (geometry)" target="Parallel postulate">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="330" source="parallelogram" target="rectangle">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="331" source="parallelogram" target="rhombus">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="332" source="parallelogram" target="convex">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="333" source="perpendicular bisector" target="circumcenter">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="334" source="perpendicular bisector" target="lengths of a point on the perpendicular bisector to each vertex are equal">
+        <viz:color r="192" g="192" b="192"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="335" source="Polygon" target="triangle">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="336" source="Polygon" target="Quadrilateral">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="337" source="Polygon" target="Regular polygon">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="338" source="polynomial" target="addition">
+        <viz:color r="255" g="136" b="5"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="arithmetic operation"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="339" source="polynomial" target="subtraction">
+        <viz:color r="255" g="136" b="5"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="arithmetic operation"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="340" source="polynomial" target="multiplication">
+        <viz:color r="255" g="136" b="5"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="arithmetic operation"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="341" source="polynomial" target="expoentiation">
+        <viz:color r="255" g="136" b="5"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="arithmetic operation"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="342" source="polynomial" target="Difference of two squares">
+        <viz:color r="211" g="179" b="176"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="formula"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="343" source="polynomial" target="binomial">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="344" source="polynomial" target="factorization">
+        <viz:color r="255" g="85" b="132"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="application"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="345" source="prime number" target="prime number theorem">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="346" source="prime number" target="checking the primality">
+        <viz:color r="255" g="85" b="132"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="application"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="347" source="prime number" target="Goldbach's conjecture">
+        <viz:color r="192" g="192" b="192"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="conjecture"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="348" source="prime number" target="euclid's theorem">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="349" source="prime number" target="twin primes">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="350" source="prime number" target="euclid's theorem">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="351" source="prime number" target="coprime numbers">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="352" source="Proportionality (mathematics)" target="golden ratio">
+        <viz:color r="192" g="192" b="192"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="example"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="353" source="quadratic equation" target="Quadratic formula">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="354" source="quadratic equation" target="Factoring">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="355" source="quadratic equation" target="Completing the square">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="356" source="quadratic equation" target="discriminant of the quadratic equation">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="357" source="quadratic function" target="diagrammatic sketch">
+        <viz:color r="0" g="189" b="148"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="expression"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="358" source="quadratic function" target="standard form">
+        <viz:color r="0" g="189" b="148"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="expression"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="359" source="quadratic function" target="factored form">
+        <viz:color r="0" g="189" b="148"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="expression"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="360" source="quadratic function" target="vertex form">
+        <viz:color r="0" g="189" b="148"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="expression"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="361" source="quadratic function" target="opening direction and scale of a function">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="362" source="quadratic function" target="symmetry">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="363" source="quadratic function" target="monotonicity">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="364" source="quadratic function" target="vertex">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="365" source="quadratic function" target="maximum and minimum value">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="366" source="quadratic function" target="judge positive or negative">
+        <viz:color r="192" g="192" b="192"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="corollary"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="367" source="Quadrilateral" target="Trapezoid">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="368" source="Quadrilateral" target="Parallelogram">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="369" source="rational number" target="integer">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="370" source="real number" target="rational number">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="371" source="real number" target="irrational number">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="372" source="rectangle" target="square">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="373" source="rectangle" target="convex">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="374" source="rectangle" target="isogonal">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="375" source="rectangle" target="cyclic">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="376" source="rectangle" target="quailateral">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="377" source="rectangle" target="isopermetric theorem">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="378" source="rectangle" target="Japanese theorem for cyclic quadrilaterals">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="379" source="rectangle" target="British flag theorem">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="380" source="rhombus" target="convex">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="381" source="rhombus" target="isotoxal">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="382" source="right triangle" target="Pythagorean theorem">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="383" source="right triangle" target="Thales' theorem">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="384" source="Set (mathematics)" target="subset">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="385" source="Set (mathematics)" target="union">
+        <viz:color r="255" g="136" b="5"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="arithmetic operation"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="386" source="Set (mathematics)" target="Intersection">
+        <viz:color r="255" g="136" b="5"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="arithmetic operation"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="387" source="Set (mathematics)" target="complement">
+        <viz:color r="255" g="136" b="5"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="arithmetic operation"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="388" source="Set (mathematics)" target="cartesian product">
+        <viz:color r="255" g="136" b="5"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="arithmetic operation"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="389" source="Set (mathematics)" target="Venn diagram">
+        <viz:color r="0" g="189" b="148"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="expression"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="390" source="similar triangle" target="equilateral triangle">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="391" source="similar triangle" target="Intercept theorem">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="392" source="Similarity (geometry)" target="similar triangle">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="393" source="sine" target="law of sines">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="394" source="square" target="convex">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="395" source="square" target="cyclic">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="396" source="square" target="equilateral">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="397" source="square" target="isogonal">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="398" source="square" target="isotoxal">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="399" source="straight angle" target="supplementary angle">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="400" source="System of 2 linear equations with 2 unknowns" target="Elimination of variables">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="401" source="System of 2 linear equations with 2 unknowns" target="Row reduction">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="402" source="tangent" target="law of tangents">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="403" source="Transformation (function)" target="Homothetic transformation">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="404" source="Transformation (function)" target="Reflection">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="405" source="Transformation (function)" target="Rotation (mathematics)">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="406" source="Transformation (function)" target="Translation (geometry)">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="407" source="Transformation (function)" target="Affine transformation">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="408" source="Transformation (function)" target="Linear map">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="409" source="Trapezoid" target="convex">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="410" source="Trapezoid" target="isosceles trapezoid">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="411" source="triangle" target="isosceles triangle">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="412" source="triangle" target="scalene triangle">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="413" source="triangle" target="right triangle">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="414" source="triangle" target="acute triangle">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="415" source="triangle" target="obtuse triangle">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="416" source="triangle" target="conditions on the sides">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="417" source="triangle" target="compute area">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="418" source="triangle" target="compute circumference">
+        <viz:color r="76" g="70" b="62"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="algorithm"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="419" source="triangle" target="conditions on the sides">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="420" source="triangle" target="median">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="421" source="triangle" target="angle bisector">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="422" source="triangle" target="altitude">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="423" source="triangle" target="mid-segment line">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="424" source="triangle" target="perpendicular bisector">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="425" source="triangle" target="congruence">
+        <viz:color r="115" g="192" b="0"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="property"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="426" source="Trigonometric functions" target="sine">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="427" source="Trigonometric functions" target="cosine">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="428" source="Trigonometric functions" target="tangent">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="429" source="Trigonometric functions" target="right triangle">
+        <viz:color r="255" g="85" b="132"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="application"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="430" source="Trigonometric functions" target="cotangent">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="431" source="twin primes" target="twin prime conjecture">
+        <viz:color r="192" g="192" b="192"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="conjecture"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="432" source="Fraction equation" target="Extraneous and missing solutions">
+        <viz:color r="255" g="85" b="132"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="application"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="433" source="Trigonometric functions" target="Pythagorean theorem">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="434" source="division" target="divisor">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="435" source="multiplication" target="multiple">
+        <viz:color r="223" g="137" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="contain"></attvalue>
+        </attvalues>
+      </edge>
+      <edge id="436" source="prime number" target="fundamental theorem of arithmetic">
+        <viz:color r="0" g="196" b="255"></viz:color>
+        <attvalues>
+          <attvalue for="relationship" value="theorem"></attvalue>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

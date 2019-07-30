@@ -10,4 +10,4 @@ def home():
     return render_template('echart-demo.html')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True, host='10.110.165.244', port=5000)
