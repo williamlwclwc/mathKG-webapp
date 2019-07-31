@@ -2,7 +2,7 @@
 var myChart = echarts.init(document.getElementById('main'));
 
 myChart.showLoading();
-$.get('static/data/middle_school.gexf', function (xml) {
+$.get('static/data/middle_school_extend.gexf', function (xml) {
     myChart.hideLoading();
 
     var graph = echarts.dataTool.gexf.parse(xml);
@@ -27,7 +27,7 @@ $.get('static/data/middle_school.gexf', function (xml) {
                 show: node.symbolSize > 30
             }
         };
-        node.category = node.attributes.modularity;
+        node.category = node.attributes.modular;
     });
     option = {
         title: {
@@ -40,7 +40,10 @@ $.get('static/data/middle_school.gexf', function (xml) {
         legend: [{
             // selectedMode: 'single',
             data: [
-                '普通知识点','算法相关']
+                '普通知识点',
+                {
+                    name: '算法相关'
+                }]
         }],
         animationDuration: 1500,
         animationEasingUpdate: 'quinticInOut',
