@@ -2,7 +2,7 @@
 var myChart = echarts.init(document.getElementById('main'));
 
 myChart.showLoading();
-$.get('static/data/middle_school.gexf', function (xml) {
+$.get('static/data/middle_school_extend.gexf', function (xml) {
     myChart.hideLoading();
 
     var graph = echarts.dataTool.gexf.parse(xml);
@@ -27,7 +27,7 @@ $.get('static/data/middle_school.gexf', function (xml) {
                 show: node.symbolSize > 30
             }
         };
-        node.category = node.attributes.modularity;
+        node.category = node.attributes.modular;
     });
     option = {
         title: {
@@ -40,7 +40,10 @@ $.get('static/data/middle_school.gexf', function (xml) {
         legend: [{
             // selectedMode: 'single',
             data: [
-                '普通知识点','算法相关']
+                '普通知识点',
+                {
+                    name: '算法相关'
+                }]
         }],
         animationDuration: 1500,
         animationEasingUpdate: 'quinticInOut',
@@ -81,3 +84,19 @@ $.get('static/data/middle_school.gexf', function (xml) {
 
     myChart.setOption(option);
 }, 'xml');
+
+myChart.on("click", function(params) {
+    var data = params.data;
+    console.log(data);
+    var graphElem_table = document.getElementById("node info tbody");
+    graphElem_table.innerHTML = 
+        '<tr>'
+            + '<td>' + 'Name' + '</td>'
+            + '<td>' + data.name + '</td>' +
+        '</tr>';
+    graphElem_table.innerHTML += 
+        '<tr>'
+            + '<td>' + 'ID' + '</td>'
+            + '<td>' + data.id + '</td>' +
+        '</tr>';
+});
