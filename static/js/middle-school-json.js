@@ -2,7 +2,7 @@
 var myChart = echarts.init(document.getElementById('main'));
 
 myChart.showLoading();
-$.getJSON('static/data/middle_school_extend.json', function (json) {
+$.getJSON('static/data/middle_school_extend.json' +'?timestamp='+ new Date().getTime(), function (json) {
     myChart.hideLoading();
 
     var categories = [];
@@ -57,18 +57,18 @@ $.getJSON('static/data/middle_school_extend.json', function (json) {
                     return {
                         item_type: 'node', 
                         itemStyle: null,
-                        value: node.symbolSize,
                         symbolSize: node.viz.size / 1.5,
+                        value: node.viz.size / 1.5,
                         label : {
                             normal: {
-                                show: node.symbolSize > 30
+                                show: node.viz.size > 15
                             }
                         },
                         name: node.id,
                         degree: node.Degree,
                         id: node.id,
                         modular: node.modular,
-                        viz: node.viz,
+                        // viz: node.viz,
                         category: node.modular 
                     };
                 }),
