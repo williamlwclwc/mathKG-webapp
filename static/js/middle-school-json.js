@@ -2,7 +2,7 @@
 var myChart = echarts.init(document.getElementById('main'));
 
 myChart.showLoading();
-$.getJSON('static/data/middle_school_extend.json', function (json) {
+$.getJSON('static/data/middle_school_extend.json' +'?timestamp='+ new Date().getTime(), function (json) {
     myChart.hideLoading();
 
     var categories = [];

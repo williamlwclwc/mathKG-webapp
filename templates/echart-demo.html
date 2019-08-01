@@ -25,7 +25,7 @@
 </head>
 <body>
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-    <div id="main" style="width: 100%; height: 100%"></div>
+    <div id="main" style="width: 80%; height: 70%;"></div>
     <!-- <script src="simple-demo.js"></script> -->
     <script src="{{ url_for('static', filename='js/middle-school-json.js')}}"></script>
     <div class="aside right_bar" id="details" style="pointer-events:auto;">
@@ -44,7 +44,7 @@
             </table>
         </div>				
     </div>
-    <div class="aside left_bar" id="add_node" style="pointer-events: auto;"> 
+    <div class="aside left_bar" id="edit_graph_div" style="pointer-events: auto;"> 
         <h3>Add Node</h3>
         <form action="/editGraph", method="POST">
             Node name: <br>
