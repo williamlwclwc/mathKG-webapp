@@ -55,6 +55,7 @@ $.getJSON('static/data/middle_school_extend.json', function (json) {
                 layout: 'force',
                 data: json.nodes.map(function (node) {
                     return {
+                        item_type: 'node', 
                         itemStyle: null,
                         value: node.symbolSize,
                         symbolSize: node.viz.size / 1.5,
@@ -63,7 +64,7 @@ $.getJSON('static/data/middle_school_extend.json', function (json) {
                                 show: node.symbolSize > 30
                             }
                         },
-                        name: node.name,
+                        name: node.id,
                         degree: node.Degree,
                         id: node.id,
                         modular: node.modular,
@@ -73,6 +74,7 @@ $.getJSON('static/data/middle_school_extend.json', function (json) {
                 }),
                 links: json.links.map(function (link) {
                     return {
+                        item_type: 'edge',
                         id: link.id,
                         lineStyle: {
                             normal: {
@@ -124,14 +126,52 @@ myChart.on("click", function(params) {
     var data = params.data;
     console.log(data);
     var graphElem_table = document.getElementById("node info tbody");
-    graphElem_table.innerHTML = 
+    if (data.item_type == 'node') {
+        graphElem_table.innerHTML = 
         '<tr>'
             + '<td>' + 'Name' + '</td>'
-            + '<td>' + data.name + '</td>' +
+            + '<td>' + data.id + '</td>' +
         '</tr>';
     graphElem_table.innerHTML += 
         '<tr>'
-            + '<td>' + 'ID' + '</td>'
-            + '<td>' + data.id + '</td>' +
+            + '<td>' + 'Category' + '</td>'
+            + '<td>' + data.category + '</td>' +
         '</tr>';
+    graphElem_table.innerHTML += 
+    '<tr>'
+        + '<td>' + 'Degree' + '</td>'
+        + '<td>' + data.degree + '</td>' +
+    '</tr>';
+    graphElem_table.innerHTML += 
+    '<tr>'
+        + '<td>' + 'Notes' + '</td>'
+        + '<td>' + "" + '</td>' +
+    '</tr>';
+    } else {
+    graphElem_table.innerHTML = 
+    '<tr>'
+        + '<td>' + 'Name' + '</td>'
+        + '<td>' + data.name + '</td>' +
+    '</tr>';
+    graphElem_table.innerHTML += 
+        '<tr>'
+            + '<td>' + 'Source' + '</td>'
+            + '<td>' + data.source + '</td>' +
+        '</tr>';
+    graphElem_table.innerHTML += 
+        '<tr>'
+            + '<td>' + 'Target' + '</td>'
+            + '<td>' + data.target + '</td>' +
+        '</tr>';
+    graphElem_table.innerHTML += 
+    '<tr>'
+        + '<td>' + 'Relationship' + '</td>'
+        + '<td>' + data.category + '</td>' +
+    '</tr>';
+    graphElem_table.innerHTML += 
+    '<tr>'
+        + '<td>' + 'Notes' + '</td>'
+        + '<td>' + "" + '</td>' +
+    '</tr>';     
+    }
 });
