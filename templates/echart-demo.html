@@ -44,6 +44,51 @@
             </table>
         </div>				
     </div>
+    <div class="aside left_bar" id="add_node" style="pointer-events: auto;"> 
+        <h3>Add Node</h3>
+        <form action="/editGraph", method="POST">
+            Node name: <br>
+            {{form_add_node.node_name}}
+            <br>
+            Category: <br>
+            {{form_add_node.category}}
+            <br>
+            Label: <br>
+            {{form_add_node.label}}
+            <br><br>
+            {{form_add_node.submit1}}
+        </form>
+        <h3>Delete Node</h3>
+        <form action="/editGraph", method="POST">
+            Node name: <br>
+            {{form_delete_node.node_name}}
+            <br><br>
+            {{form_delete_node.submit2}}
+        </form>
+        <h3>Add Edge</h3>
+        <form action="/editGraph", method="POST">
+            Source name: <br>
+            {{form_add_edge.source_name}}
+            <br>
+            Target name: <br>
+            {{form_add_edge.target_name}}
+            <br>
+            Relationship: <br>
+            {{form_add_edge.relationship}}
+            <br><br>
+            {{form_add_edge.submit3}}
+        </form>
+        <h3>Delete Edge</h3>
+        <form action="/editGraph", method="POST">
+            Source name: <br>
+            {{form_delete_edge.source_name}}
+            <br>
+            Target name: <br>
+            {{form_delete_edge.target_name}}
+            <br><br>
+            {{form_delete_edge.submit4}}
+        </form>
+    </div>
 </body>
 </html>
 
