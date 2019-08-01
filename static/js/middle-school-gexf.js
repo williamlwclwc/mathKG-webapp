@@ -2,7 +2,7 @@
 var myChart = echarts.init(document.getElementById('main'));
 
 myChart.showLoading();
-$.get('static/data/middle_school_extend.gexf', function (xml) {
+$.get('static/data/middle_school_extend_0.gexf', function (xml) {
     myChart.hideLoading();
 
     var graph = echarts.dataTool.gexf.parse(xml);
@@ -49,14 +49,18 @@ $.get('static/data/middle_school_extend.gexf', function (xml) {
         animationEasingUpdate: 'quinticInOut',
         series : [
             {
-                //name: 'Les Miserables11',
+                // name: 'Math Knowledge Graph',
                 type: 'graph',
-                layout: 'none',
+                layout: 'force',
                 data: graph.nodes,
                 links: graph.links,
                 categories: categories,
                 roam: true,
                 focusNodeAdjacency: true,
+                // draggable: true,
+                force: {
+                    repulsion: 1000
+                },
                 itemStyle: {
                     normal: {
                         borderColor: '#fff',
