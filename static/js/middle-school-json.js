@@ -92,7 +92,9 @@ $.getJSON('static/data/middle_school_extend.json', function (json) {
                 focusNodeAdjacency: true,
                 draggable: true,
                 force: {
-                    repulsion: 1000
+                    repulsion: 900,
+                    //gravity: 0.01,
+                    //edgeLength: [10, 50]
                 },
                 itemStyle: {
                     normal: {
