@@ -22,9 +22,10 @@ class node_form(Form):
 
 
 class edge_form(Form):
+    key_num = TextField("key_num", [validators.Optional()])
     source_name = TextField("source_name", [validators.InputRequired()])
     target_name = TextField("target_name", [validators.InputRequired()])
-    relationship = TextField("relation", [validators.Optional()])
+    relationship = TextField("relationship", [validators.Optional()])
     notes = TextField("notes", [validators.Optional()])
     add_edge = SubmitField("Add Edge")
     edit_edge = SubmitField("Edit Edge")
@@ -81,6 +82,22 @@ def edit_graph():
         # else:
         #     print(form1.validate())
         
+        # edit node
+        if form1.edit_node.data and form1.validate():
+            if G.has_node(form1.node_name.data):
+                attrs = {}
+                if form1.category.data != "":
+                    attrs.update({"modular": form1.category.data})
+                if form1.content.data != "":
+                    attrs.update({"content": form1.content.data})
+                if form1.notes.data != "":
+                    attrs.update({"notes": form1.notes.data})
+                attr = {form1.node_name.data: attrs} 
+                nx.set_node_attributes(G, attr)
+                print("updated a node")
+            else:
+                print("edit failed: such node does not exist")
+
         # delete node
         if form1.delete_node.data and form1.validate():
 
@@ -95,18 +112,33 @@ def edit_graph():
         # add edge
         if form2.add_edge.data and form2.validate():
             
-            if G.has_edge(form2.source_name.data, form2.target_name.data, key=form2.relationship.data):
-                print("add failed: such edge already exist")
-            else:
-                G.add_edge(form2.source_name.data, form2.target_name.data, relationship=form2.relationship.data, key=form2.relationship.data)
-                update_attr(G, form2)
-                print("added an edge")
+            G.add_edge(form2.source_name.data, form2.target_name.data, 
+            relationship=form2.relationship.data, key=str(G.number_of_edges()))
+            update_attr(G, form2)
+            print("added an edge")
         
+        # edit edge
+        if form2.edit_edge.data and form2.validate():
+            if form2.key_num.data == "":
+                print("you need to input the key of the edge")
+            elif G.has_edge(form2.source_name.data, form2.target_name.data, key=form2.key_num.data):
+                attrs = {}
+                if form2.relationship.data != "":
+                    attrs.update({"relationship": form2.relationship.data})
+                if form2.notes.data != "":
+                    attrs.update({"notes": form2.notes.data})
+                attr = {(form2.source_name.data, form2.target_name.data, form2.key_num.data): attrs} 
+                nx.set_edge_attributes(G, attr)
+                print("updated an edge")
+            else:
+                print("edit failed: such edge does not exist")
+
         # delete edge
         if form2.delete_edge.data and form2.validate():
-            
-            if G.has_edge(form2.source_name.data, form2.target_name.data):
-                G.remove_edge(form2.source_name.data, form2.target_name.data)
+            if form2.key_num.data == "":
+                print("you need to input the key of the edge")
+            if G.has_edge(form2.source_name.data, form2.target_name.data, key=form2.key_num.data):
+                G.remove_edge(form2.source_name.data, form2.target_name.data, key=form2.key_num.data)
                 update_attr(G, form2)
                 print("deleted an edge")
 
