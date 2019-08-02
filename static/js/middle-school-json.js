@@ -48,11 +48,11 @@ $.getJSON('static/data/middle_school_extend.json' +'?timestamp='+ new Date().get
             return {
                 item_type: 'node', 
                 itemStyle: null,
-                value: node.symbolSize,
+                value: node.viz.size,
                 symbolSize: node.viz.size / 1.5,
                 label : {
                     normal: {
-                        show: node.symbolSize > 30
+                        show: node.viz.size > 20
                     }
                 },
                 name: node.id,
@@ -113,7 +113,8 @@ $.getJSON('static/data/middle_school_extend.json' +'?timestamp='+ new Date().get
                 focusNodeAdjacency: true,
                 draggable: true,
                 force: {
-                    repulsion: 900,
+                    initLayout: 'circular',
+                    repulsion: 1000,
                     //gravity: 0.01,
                     //edgeLength: [10, 50]
                 },
