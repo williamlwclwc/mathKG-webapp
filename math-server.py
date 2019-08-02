@@ -5,7 +5,7 @@ from networkx.readwrite import gexf
 from networkx.readwrite import json_graph
 import json
 import logging
-from wtforms import Form, TextField, IntegerField, SubmitField, validators
+from wtforms import Form, TextField, TextAreaField, IntegerField, SubmitField, validators
 
 
 app = Flask(__name__)
@@ -14,8 +14,8 @@ app = Flask(__name__)
 class node_form(Form):
     node_name = TextField("node_name", [validators.InputRequired()])
     category = IntegerField("category", [validators.Optional()])
-    content = TextField("content", [validators.Optional()])
-    notes = TextField("notes", [validators.Optional()])
+    content = TextAreaField("content", [validators.Optional()])
+    notes = TextAreaField("notes", [validators.Optional()])
     add_node = SubmitField("Add Node")
     edit_node = SubmitField("Edit Node")
     delete_node = SubmitField("Delete Node")
@@ -26,7 +26,7 @@ class edge_form(Form):
     source_name = TextField("source_name", [validators.InputRequired()])
     target_name = TextField("target_name", [validators.InputRequired()])
     relationship = TextField("relationship", [validators.Optional()])
-    notes = TextField("notes", [validators.Optional()])
+    notes = TextAreaField("notes", [validators.Optional()])
     add_edge = SubmitField("Add Edge")
     edit_edge = SubmitField("Edit Edge")
     delete_edge = SubmitField("Delete Edge")
