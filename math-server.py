@@ -4,6 +4,7 @@ import networkx as nx
 from networkx.readwrite import gexf
 from networkx.readwrite import json_graph
 import json
+import logging
 from wtforms import Form, TextField, IntegerField, SubmitField, validators
 
 
@@ -11,8 +12,8 @@ app = Flask(__name__)
 
 
 class add_node_form(Form):
-    node_name = TextField("node_name", [validators.DataRequired()])
-    category = IntegerField("category", [validators.DataRequired()])
+    node_name = TextField("node_name" , [validators.DataRequired()])
+    category = IntegerField("category" , [validators.InputRequired()])
     label = TextField("label")
     submit1 = SubmitField("Add Node")
 
@@ -60,15 +61,19 @@ def edit_graph():
                         modular=form1.category.data, 
                         Degree=0, viz={'size': 50}, 
                         label=label_name)
+            logging.info("added a node")
         
         if form2.submit2.data and form2.validate():
             G.remove_node(form2.node_name.data)
+            logging.info("deleted a node")
 
         if form3.submit3.data and form3.validate():
             G.add_edge(form3.source_name.data, form3.target_name.data, relationship=form3.relationship.data)
+            logging.info("added an edge")
 
         if form4.submit4.data and form4.validate():
             G.remove_edge(form4.source_name.data, form4.target_name.data)
+            logging.info("deleted an edge")
 
         data = json_graph.node_link_data(G)
         with open("static/data/middle_school_extend.json", "w") as write_file:
