@@ -14,6 +14,8 @@
         html, body {height:100%;margin:0;padding:0;}
     </style>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/gexfjs.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui-1.10.3.custom.min.css')}}">
     <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
     <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='favicon.png')}}">
 
@@ -22,10 +24,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.2.1/echarts.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.2.1/extension/dataTool.min.js"></script>
 
+    <script type="text/javascript">
+        // Fallback in case JQuery CDN isn't available
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript type='text/javascript' src='js/jquery-3.4.1.min.js'%3E%3C/script%3E"));
+            }
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-ui-1.10.3.custom.min.js')}}"></script>
+
 </head>
 <body>
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-    <div id="main" style="width: 80%; height: 70%;"></div>
+    <div id="main" style="width: 90%; height: 90%; top: 60px; left: 100px"></div>
     <!-- <script src="simple-demo.js"></script> -->
     <script src="{{ url_for('static', filename='js/middle-school-json.js')}}"></script>
     <div class="aside right_bar" id="details" style="pointer-events:auto;">
@@ -89,6 +99,17 @@
             {{form_delete_edge.submit4}}
         </form>
     </div>
+    <div id="titlebar">
+        <div id="maintitle">
+            <h1><a href={{url_for('static', filename='img/favicon.png')}} target="_blank" title="Math knowledge">new graph for math</a>search node</h1>
+        </div>
+        <form id="recherche">
+            <input id="searchinput" class="grey" autocomplete="off" />
+            <input id="searchsubmit" type="submit" />
+        </form>
+    </div>
+    <ul id="autocomplete">
+    </ul>
 </body>
 </html>
 
