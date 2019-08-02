@@ -55,48 +55,41 @@
         </div>				
     </div>
     <div class="aside left_bar" id="edit_graph_div" style="pointer-events: auto;"> 
-        <h3>Add Node</h3>
+        <h3>Add/Edit/Delete Node</h3>
         <form action="/editGraph", method="POST">
             Node name: <br>
-            {{form_add_node.node_name}}
+            {{form_node.node_name}}
             <br>
             Category: <br>
-            {{form_add_node.category}}
+            {{form_node.category}}
             <br>
-            Label: <br>
-            {{form_add_node.label}}
+            Content: <br>
+            {{form_node.content}}
+            <br>
+            Notes: <br>
+            {{form_node.notes}}
             <br><br>
-            {{form_add_node.submit1}}
+            {{form_node.add_node}}
+            {{form_node.edit_node}}
+            {{form_node.delete_node}}
         </form>
-        <h3>Delete Node</h3>
-        <form action="/editGraph", method="POST">
-            Node name: <br>
-            {{form_delete_node.node_name}}
-            <br><br>
-            {{form_delete_node.submit2}}
-        </form>
-        <h3>Add Edge</h3>
+        <h3>Add/Edit/Delete Edge</h3>
         <form action="/editGraph", method="POST">
             Source name: <br>
-            {{form_add_edge.source_name}}
+            {{form_edge.source_name}}
             <br>
             Target name: <br>
-            {{form_add_edge.target_name}}
+            {{form_edge.target_name}}
             <br>
             Relationship: <br>
-            {{form_add_edge.relationship}}
-            <br><br>
-            {{form_add_edge.submit3}}
-        </form>
-        <h3>Delete Edge</h3>
-        <form action="/editGraph", method="POST">
-            Source name: <br>
-            {{form_delete_edge.source_name}}
+            {{form_edge.relationship}}
             <br>
-            Target name: <br>
-            {{form_delete_edge.target_name}}
+            Notes: <br>
+            {{form_edge.notes}}
             <br><br>
-            {{form_delete_edge.submit4}}
+            {{form_edge.add_edge}}
+            {{form_edge.edit_edge}}
+            {{form_edge.delete_edge}}
         </form>
     </div>
     <div id="titlebar">

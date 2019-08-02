@@ -24,6 +24,21 @@ th, td
 	top: 0;
 }
 
+.left_bar {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    max-width: 275px;
+    background-color: #fff;
+    margin-top: 70px;
+    border-bottom-right-radius: 15px;
+    overflow: auto;
+    max-height: 100%;
+    top: 0px;
+    display: block;
+    z-index: 1;
+}
+
 .right_bar {
 	position: absolute;
     right: 0;
