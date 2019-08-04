@@ -54,7 +54,13 @@
             </table>
         </div>				
     </div>
-    <div class="aside left_bar" id="edit_graph_div" style="pointer-events: auto;"> 
+    <div class="aside left_bar" id="edit_graph_div" style="pointer-events: auto;">
+        <h2>Graph Summary</h2>
+        <div>
+            <p>{{graph_info[0]}}</p>
+            <p>{{graph_info[1]}}</p>
+            <p>{{graph_info[2]}}</p>
+        </div>
         <h3>Add/Edit/Delete Node</h3>
         <form action="/editGraph", method="POST">
             Node name: <br>

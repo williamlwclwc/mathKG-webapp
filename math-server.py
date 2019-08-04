@@ -60,11 +60,20 @@ def edit_graph():
     form1 = node_form(request.form)
     form2 = edge_form(request.form)
 
+    # open graph json file: load into graph G
+    with open("static/data/middle_school_extend.json", "r") as read_file:
+            data = json.load(read_file)
+    G = json_graph.node_link_graph(data)
+
+    graph_info = []
+    num_nodes = "Number of Nodes: " + str(G.number_of_nodes())
+    num_edges = "Number of Edges: " + str(G.number_of_edges())
+    density = "Density of Graph: " + str(round(nx.density(G), 5))
+    graph_info.append(num_nodes)
+    graph_info.append(num_edges)
+    graph_info.append(density)
+
     if request.method == 'POST':
-        # open graph json file: load into graph G
-        with open("static/data/middle_school_extend.json", "r") as read_file:
-                data = json.load(read_file)
-        G = json_graph.node_link_graph(data)
 
         # add node
         if form1.add_node.data and form1.validate():
@@ -150,7 +159,7 @@ def edit_graph():
         with open("static/data/middle_school_extend.json", "w") as write_file:
             json.dump(data, write_file)
         return redirect(url_for('edit_graph'))
-    return render_template('echart-demo.html', form_node=form1, form_edge=form2)
+    return render_template('echart-demo.html', form_node=form1, form_edge=form2, graph_info=graph_info)
 
 if __name__ == '__main__':
     app.run(debug=True, host='10.110.165.244', port=5000)
