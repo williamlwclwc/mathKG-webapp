@@ -52,15 +52,16 @@ $.getJSON('static/data/middle_school_3.json' +'?timestamp='+ new Date().getTime(
                 symbolSize: node.viz.size / 1.5,
                 label : {
                     normal: {
-                        show: node.viz.size > 15
+                        // show: node.viz.size > 15
+                        show: node.degree > 4
                     }
                 },
                 name: node.id,
-                degree: node.Degree,
                 id: node.id,
-                modular: node.modular,
+                url: node.url,
+                category: node.category,
+                degree: node.degree,
                 viz: node.viz,
-                category: node.modular,
                 content: node.content,
                 notes: node.notes 
             };
@@ -74,12 +75,13 @@ $.getJSON('static/data/middle_school_3.json' +'?timestamp='+ new Date().getTime(
                         color: link_color[link.relationship]
                     }
                 },
-                name: link.source + '->' + link.target,
+                // name: link.source + '->' + link.target,
+                key: link.key,
                 source: link.source,
                 target: link.target,
-                category: link.relationship,
+                relationship: link.relationship,
+                content: link.content,
                 notes: link.notes,
-                key: link.key
             }
         }),
     };
@@ -160,10 +162,15 @@ myChart.on("click", function(params) {
             + '<td>' + data.id + '</td>' +
         '</tr>';
         graphElem_table.innerHTML += 
-            '<tr>'
-                + '<td>' + 'Category' + '</td>'
-                + '<td>' + data.category + '</td>' +
-            '</tr>';
+        '<tr>'
+            + '<td>' + 'Category' + '</td>'
+            + '<td>' + data.category + '</td>' +
+        '</tr>';
+        graphElem_table.innerHTML += 
+        '<tr>'
+            + '<td>' + 'Url' + '</td>'
+            + '<td>' + data.url + '</td>' +
+        '</tr>';
         graphElem_table.innerHTML += 
         '<tr>'
             + '<td>' + 'Degree' + '</td>'
@@ -186,11 +193,6 @@ myChart.on("click", function(params) {
             + '<td>' + data.key + '</td>' +
         '</tr>';
         graphElem_table.innerHTML += 
-        '<tr>'
-            + '<td>' + 'Name' + '</td>'
-            + '<td>' + data.name + '</td>' +
-        '</tr>';
-        graphElem_table.innerHTML += 
             '<tr>'
                 + '<td>' + 'Source' + '</td>'
                 + '<td>' + data.source + '</td>' +
@@ -203,7 +205,12 @@ myChart.on("click", function(params) {
         graphElem_table.innerHTML += 
         '<tr>'
             + '<td>' + 'Relationship' + '</td>'
-            + '<td>' + data.category + '</td>' +
+            + '<td>' + data.relationship + '</td>' +
+        '</tr>';
+        graphElem_table.innerHTML += 
+        '<tr>'
+            + '<td>' + 'Content' + '</td>'
+            + '<td>' + data.content + '</td>' +
         '</tr>';
         graphElem_table.innerHTML += 
         '<tr>'

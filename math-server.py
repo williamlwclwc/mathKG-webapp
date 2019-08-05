@@ -5,7 +5,7 @@ from networkx.readwrite import gexf
 from networkx.readwrite import json_graph
 import json
 import logging
-from wtforms import Form, TextField, TextAreaField, IntegerField, SubmitField, validators
+from wtforms import Form, TextField, TextAreaField, IntegerField, SubmitField, SelectField, validators
 
 
 app = Flask(__name__)
@@ -14,6 +14,7 @@ app = Flask(__name__)
 class node_form(Form):
     node_name = TextField("node_name", [validators.InputRequired()])
     category = IntegerField("category", [validators.Optional()])
+    url = TextField("url", [validators.Optional()])
     content = TextAreaField("content", [validators.Optional()])
     notes = TextAreaField("notes", [validators.Optional()])
     add_node = SubmitField("Add Node")
@@ -25,7 +26,14 @@ class edge_form(Form):
     key_num = TextField("key_num", [validators.Optional()])
     source_name = TextField("source_name", [validators.InputRequired()])
     target_name = TextField("target_name", [validators.InputRequired()])
-    relationship = TextField("relationship", [validators.Optional()])
+    relationship = SelectField(
+        "relationship", validators=[validators.Optional()],
+        choices=[("", ""), ("contain", "contain"), ("arithmetic operation", "arithmetic operation"),
+        ("property", "property"), ("algorithm", "algorithm"), ("application", "application"), 
+        ("example", "example"), ("expression", "expression"), ("theorem", "theorem"), 
+        ("conjecture", "conjecture"), ("proof", "proof"), ("proof methods", "proof methods"),
+        ("corollary", "corollary"), ("formula", "formula")])
+    content = TextAreaField("content", [validators.Optional()])
     notes = TextAreaField("notes", [validators.Optional()])
     add_edge = SubmitField("Add Edge")
     edit_edge = SubmitField("Edit Edge")
@@ -61,7 +69,7 @@ def edit_graph():
     form2 = edge_form(request.form)
 
     # open graph json file: load into graph G
-    with open("static/data/middle_school_extend.json", "r") as read_file:
+    with open("static/data/middle_school_3.json", "r") as read_file:
             data = json.load(read_file)
     G = json_graph.node_link_graph(data)
 
@@ -82,9 +90,10 @@ def edit_graph():
                 print("add failed: such node already exist")
             else:
                 G.add_node(form1.node_name.data, 
-                            modular=form1.category.data, 
-                            Degree=0, viz={'size': 10}, 
-                            label=form1.node_name.data,
+                            category=form1.category.data, 
+                            degree=0, viz={'size': 10}, 
+                            # label=form1.node_name.data,
+                            url=form1.url.data,
                             content=form1.content.data,
                             notes=form1.notes.data)
                 print("added a node")
@@ -96,7 +105,9 @@ def edit_graph():
             if G.has_node(form1.node_name.data):
                 attrs = {}
                 if form1.category.data != "":
-                    attrs.update({"modular": form1.category.data})
+                    attrs.update({"category": form1.category.data})
+                if form1.url.data != "":
+                    attrs.update({"url": form1.url.data})
                 if form1.content.data != "":
                     attrs.update({"content": form1.content.data})
                 if form1.notes.data != "":
@@ -122,7 +133,8 @@ def edit_graph():
         if form2.add_edge.data and form2.validate():
             
             G.add_edge(form2.source_name.data, form2.target_name.data, 
-            relationship=form2.relationship.data, key=str(G.number_of_edges()))
+            relationship=form2.relationship.data, key=str(G.number_of_edges()),
+            content=form2.content.data, notes=form2.notes.data)
             update_attr(G, form2)
             print("added an edge")
         
@@ -134,6 +146,8 @@ def edit_graph():
                 attrs = {}
                 if form2.relationship.data != "":
                     attrs.update({"relationship": form2.relationship.data})
+                if form2.content.data != "":
+                    attrs.update({"content": form2.content.data})
                 if form2.notes.data != "":
                     attrs.update({"notes": form2.notes.data})
                 attr = {(form2.source_name.data, form2.target_name.data, form2.key_num.data): attrs} 
@@ -156,7 +170,7 @@ def edit_graph():
 
         # save edited graph G into json file
         data = json_graph.node_link_data(G)
-        with open("static/data/middle_school_extend.json", "w") as write_file:
+        with open("static/data/middle_school_3.json", "w") as write_file:
             json.dump(data, write_file)
         return redirect(url_for('edit_graph'))
     return render_template('echart-demo.html', form_node=form1, form_edge=form2, graph_info=graph_info)
