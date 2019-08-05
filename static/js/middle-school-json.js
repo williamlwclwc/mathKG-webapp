@@ -14,7 +14,7 @@ GexfJS.graph = {
 };
 
 myChart.showLoading();
-$.getJSON('static/data/middle_school_extend.json' +'?timestamp='+ new Date().getTime(), function (json) {
+$.getJSON('static/data/middle_school_3.json' +'?timestamp='+ new Date().getTime(), function (json) {
     myChart.hideLoading();
 
     var categories = [];
@@ -52,7 +52,7 @@ $.getJSON('static/data/middle_school_extend.json' +'?timestamp='+ new Date().get
                 symbolSize: node.viz.size / 1.5,
                 label : {
                     normal: {
-                        show: node.viz.size > 20
+                        show: node.viz.size > 15
                     }
                 },
                 name: node.id,
@@ -113,10 +113,9 @@ $.getJSON('static/data/middle_school_extend.json' +'?timestamp='+ new Date().get
                 focusNodeAdjacency: true,
                 draggable: true,
                 force: {
-                    initLayout: 'circular',
-                    repulsion: 1000,
-                    //gravity: 0.01,
-                    //edgeLength: [10, 50]
+                    repulsion: 3000,
+                    //gravity: 2,
+                    edgeLength: [0.1,100]
                 },
                 itemStyle: {
                     normal: {
