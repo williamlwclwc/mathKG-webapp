@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     {% if title %}
     <title>Math KG - {{title}}</title>
     {% else %}
@@ -10,6 +12,8 @@
     {% endif %}
 
     <!-- import css files -->
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style type="text/css">
         html, body {height:100%;margin:0;padding:0;}
     </style>
@@ -41,7 +45,7 @@
     <div class="aside right_bar" id="details" style="pointer-events:auto;">
         <div id="nodeInfo" style="pointer-events:auto;">
             <h2>Item Info</h2> 
-            <table id="node info">
+            <table class="table" id="node info">
                 <thead>
                     <tr>
                         <th>Key</th>
@@ -55,61 +59,81 @@
         </div>				
     </div>
     <div class="aside left_bar" id="edit_graph_div" style="pointer-events: auto;">
-        <h2>Graph Summary</h2>
         <div>
+            <h3>Graph Summary</h3>
             <p>{{graph_info[0]}}</p>
             <p>{{graph_info[1]}}</p>
             <p>{{graph_info[2]}}</p>
         </div>
-        <h3>Add/Edit/Delete Node</h3>
-        <form action="/editGraph", method="POST">
-            Node name: <br>
-            {{form_node.node_name}}
-            <br>
-            Category: <br>
-            {{form_node.category}}
-            <br>
-            Content: <br>
-            {{form_node.content(cols="20", rows="5")}}
-            <br>
-            Notes: <br>
-            {{form_node.notes(cols="20", rows="5")}}
-            <br><br>
-            {{form_node.add_node}}
-            {{form_node.edit_node}}
-            {{form_node.delete_node}}
-        </form>
-        <h3>Add/Edit/Delete Edge</h3>
-        <form action="/editGraph", method="POST">
-            ID(key): <br>
-            {{form_edge.key_num}}
-            <br>
-            Source name: <br>
-            {{form_edge.source_name}}
-            <br>
-            Target name: <br>
-            {{form_edge.target_name}}
-            <br>
-            Relationship: <br>
-            {{form_edge.relationship}}
-            <br>
-            Notes: <br>
-            {{form_edge.notes(cols="20", rows="5")}}
-            <br><br>
-            {{form_edge.add_edge}}
-            {{form_edge.edit_edge}}
-            {{form_edge.delete_edge}}
-        </form>
-    </div>
-    <div id="titlebar">
-        <div id="maintitle">
-            <h1><a href={{url_for('static', filename='img/favicon.png')}} target="_blank" title="Math knowledge">new graph for math</a>search node</h1>
+        <div>
+            <h4>Add/Edit/Delete Node</h4>
+            <form action="/editGraph", method="POST">
+                <div class="form-group">
+                    <label> Node name: </label> 
+                    {{form_node.node_name(class="form-control")}}
+                </div>
+                <div class="form-group">
+                    <label> Category: </label>
+                    {{form_node.category(class="form-control")}}
+                </div>
+                <div class="form-group">
+                    <label> Content: </label> 
+                    {{form_node.content(class="form-control", cols="20", rows="5")}}
+                </div>
+                <div class="form-group">
+                    <label> Notes: </label>
+                    {{form_node.notes(class="form-control", cols="20", rows="5")}}
+                </div>
+                <div class="btn-group" role="group">
+                    {{form_node.add_node(type="button", class="btn btn-success btn-sm")}}
+                    {{form_node.edit_node(type="button", class="btn btn-primary btn-sm")}}
+                    {{form_node.delete_node(type="button", class="btn btn-danger btn-sm")}}
+                </div> 
+            </form>
         </div>
+        <div>
+            <h4>Add/Edit/Delete Edge</h4>
+            <form action="/editGraph", method="POST">
+                <div class="form-group">
+                    <label> ID(key): </label>
+                    {{form_edge.key_num(class="form-control")}}
+                </div>
+                <div class="form-group">
+                    <label> Source name: </label>
+                    {{form_edge.source_name(class="form-control")}}
+                </div>
+                <div class="form-group">
+                    <label> Target name: </label>
+                    {{form_edge.target_name(class="form-control")}}
+                </div>
+                <div class="form-group">
+                    <label> Relationship: </label>
+                    {{form_edge.relationship(class="form-control")}}
+                </div>
+                <div class="form-group">
+                    <label> Notes: </label>
+                    {{form_edge.notes(class="form-control", cols="20", rows="5")}}
+                </div>
+                <div class="btn-group" role="group">
+                    {{form_edge.add_edge(type="button", class="btn btn-success btn-sm")}}
+                    {{form_edge.edit_edge(type="button", class="btn btn-primary btn-sm")}}
+                    {{form_edge.delete_edge(type="button", class="btn btn-danger btn-sm")}}
+                </div>
+            </form>
+        </div>
+    </div>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;" id="titlebar">
+        <a class="navbar-brand" href="/">
+            <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+            <img src="{{url_for('static', filename='favicon.png')}}" width="30" height="30" class="d-inline-block align-top" alt="">
+            <span> Math KG </span>
+        </a>
+        
         <form id="recherche">
-            <input id="searchinput" class="grey" autocomplete="off" />
+            <input id="searchinput" class="form-control mr-sm-2 grey" type="search" placeholder="Search Node" aria-label="Search" autocomplete="off" />
             <input id="searchsubmit" type="submit" />
         </form>
-    </div>
+    </nav>
     <ul id="autocomplete">
     </ul>
 </body>

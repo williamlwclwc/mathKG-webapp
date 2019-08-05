@@ -30,24 +30,23 @@ th, td
     left: 0;
     max-width: 275px;
     background-color: #fff;
-    margin-top: 70px;
+    padding-top: 60px;
     border-bottom-right-radius: 15px;
     overflow: auto;
     max-height: 100%;
     top: 0px;
     display: block;
-    z-index: 1;
 }
 
 .right_bar {
 	position: absolute;
     right: 0;
-	max-width: 475px;
+	max-width: 275px;
 	max-height: 100%;
     background-color: #fff;
     padding: 10px;
     border-bottom-left-radius: 15px;
 	padding-left: 15px;
 	overflow: auto;
-	padding-top: 61px;
+	padding-top: 60px;
 }
