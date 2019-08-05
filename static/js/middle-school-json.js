@@ -60,7 +60,9 @@ $.getJSON('static/data/middle_school_3.json' +'?timestamp='+ new Date().getTime(
                 id: node.id,
                 modular: node.modular,
                 viz: node.viz,
-                category: node.modular 
+                category: node.modular,
+                content: node.content,
+                notes: node.notes 
             };
         }),
         edges:json.links.map(function (link) {
@@ -76,6 +78,8 @@ $.getJSON('static/data/middle_school_3.json' +'?timestamp='+ new Date().getTime(
                 source: link.source,
                 target: link.target,
                 category: link.relationship,
+                notes: link.notes,
+                key: link.key
             }
         }),
     };
@@ -155,47 +159,57 @@ myChart.on("click", function(params) {
             + '<td>' + 'Name' + '</td>'
             + '<td>' + data.id + '</td>' +
         '</tr>';
-    graphElem_table.innerHTML += 
+        graphElem_table.innerHTML += 
+            '<tr>'
+                + '<td>' + 'Category' + '</td>'
+                + '<td>' + data.category + '</td>' +
+            '</tr>';
+        graphElem_table.innerHTML += 
         '<tr>'
-            + '<td>' + 'Category' + '</td>'
+            + '<td>' + 'Degree' + '</td>'
+            + '<td>' + data.degree + '</td>' +
+        '</tr>';
+        graphElem_table.innerHTML += 
+        '<tr>'
+            + '<td>' + 'Content' + '</td>'
+            + '<td>' + data.content + '</td>' +
+        '</tr>';
+        graphElem_table.innerHTML += 
+        '<tr>'
+            + '<td>' + 'Notes' + '</td>'
+            + '<td>' + data.notes + '</td>' +
+        '</tr>';
+    } else {
+        graphElem_table.innerHTML = 
+        '<tr>'
+            + '<td>' + 'ID(key)' + '</td>'
+            + '<td>' + data.key + '</td>' +
+        '</tr>';
+        graphElem_table.innerHTML += 
+        '<tr>'
+            + '<td>' + 'Name' + '</td>'
+            + '<td>' + data.name + '</td>' +
+        '</tr>';
+        graphElem_table.innerHTML += 
+            '<tr>'
+                + '<td>' + 'Source' + '</td>'
+                + '<td>' + data.source + '</td>' +
+            '</tr>';
+        graphElem_table.innerHTML += 
+            '<tr>'
+                + '<td>' + 'Target' + '</td>'
+                + '<td>' + data.target + '</td>' +
+            '</tr>';
+        graphElem_table.innerHTML += 
+        '<tr>'
+            + '<td>' + 'Relationship' + '</td>'
             + '<td>' + data.category + '</td>' +
         '</tr>';
-    graphElem_table.innerHTML += 
-    '<tr>'
-        + '<td>' + 'Degree' + '</td>'
-        + '<td>' + data.degree + '</td>' +
-    '</tr>';
-    graphElem_table.innerHTML += 
-    '<tr>'
-        + '<td>' + 'Notes' + '</td>'
-        + '<td>' + "" + '</td>' +
-    '</tr>';
-    } else {
-    graphElem_table.innerHTML = 
-    '<tr>'
-        + '<td>' + 'Name' + '</td>'
-        + '<td>' + data.name + '</td>' +
-    '</tr>';
-    graphElem_table.innerHTML += 
+        graphElem_table.innerHTML += 
         '<tr>'
-            + '<td>' + 'Source' + '</td>'
-            + '<td>' + data.source + '</td>' +
-        '</tr>';
-    graphElem_table.innerHTML += 
-        '<tr>'
-            + '<td>' + 'Target' + '</td>'
-            + '<td>' + data.target + '</td>' +
-        '</tr>';
-    graphElem_table.innerHTML += 
-    '<tr>'
-        + '<td>' + 'Relationship' + '</td>'
-        + '<td>' + data.category + '</td>' +
-    '</tr>';
-    graphElem_table.innerHTML += 
-    '<tr>'
-        + '<td>' + 'Notes' + '</td>'
-        + '<td>' + "" + '</td>' +
-    '</tr>';     
+            + '<td>' + 'Notes' + '</td>'
+            + '<td>' + data.notes + '</td>' +
+        '</tr>';     
     }
 });
 
