@@ -4,13 +4,12 @@ var myChart = echarts.init(document.getElementById('main'));
 var GexfJS = {
     params: {
         activeNode: -1
+    },
+    graph: {
+        nodeList: [],
+        indexOfLabels: [],
+        edgeList: [],
     }
-};
-
-GexfJS.graph = {
-    nodeList: [],
-    indexOfLabels: [],
-    edgeList: [],
 };
 
 myChart.showLoading();
@@ -154,6 +153,14 @@ $.getJSON('static/data/middle_school_3.json' +'?timestamp='+ new Date().getTime(
 myChart.on("click", function(params) {
     var data = params.data;
     console.log(data);
+    // GexfJS.graph.edgeList.forEach(function (_e){
+    //     if(_e.target == data.id){
+    //         showuplabel(_e.source);
+    //     }
+    //     if(_e.source == data.id){
+    //         showuplabel(_e.target);
+    //     }
+    // }
     var graphElem_table = document.getElementById("node info tbody");
     if (data.item_type == 'node') {
         graphElem_table.innerHTML = 
@@ -224,6 +231,15 @@ myChart.on("click", function(params) {
 function highlight(_nodeIndex){
     myChart.dispatchAction({
         type: "focusNodeAdjacency",
+        seriesIndex: 0,
+        dataIndex: _nodeIndex
+    });
+}
+
+//show labels
+function showuplabel(_nodeIndex){
+    myChart.dispatchAction({
+        type: "showTip",
         seriesIndex: 0,
         dataIndex: _nodeIndex
     });
