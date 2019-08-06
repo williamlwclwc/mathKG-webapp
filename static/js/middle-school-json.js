@@ -13,7 +13,7 @@ var GexfJS = {
 };
 
 myChart.showLoading();
-$.getJSON('static/data/middle_school_3.json' +'?timestamp='+ new Date().getTime(), function (json) {
+$.getJSON('static/data/graph_from_mongodb.json' +'?timestamp='+ new Date().getTime(), function (json) {
     myChart.hideLoading();
 
     var categories = [];
@@ -44,6 +44,11 @@ $.getJSON('static/data/middle_school_3.json' +'?timestamp='+ new Date().getTime(
     var graph = {
         nodes: json.nodes.map(function (node) {
             GexfJS.graph.indexOfLabels.push(node.id.toLowerCase());
+            if (node.category == "0"){
+                node.category = 0;
+            }else{
+                node.category = 1;
+            }
             return {
                 item_type: 'node', 
                 itemStyle: null,
@@ -52,12 +57,12 @@ $.getJSON('static/data/middle_school_3.json' +'?timestamp='+ new Date().getTime(
                 label : {
                     normal: {
                         // show: node.viz.size > 15
-                        show: node.degree > 4
+                        show: node.degree > 5
                     }
                 },
                 name: node.id,
                 id: node.id,
-                url: node.url,
+                url: node.wiki_url,
                 category: node.category,
                 degree: node.degree,
                 viz: node.viz,
@@ -160,7 +165,7 @@ myChart.on("click", function(params) {
     //     if(_e.source == data.id){
     //         showuplabel(_e.target);
     //     }
-    // }
+    // });
     var graphElem_table = document.getElementById("node info tbody");
     if (data.item_type == 'node') {
         graphElem_table.innerHTML = 
