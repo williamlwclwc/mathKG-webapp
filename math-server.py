@@ -13,7 +13,9 @@ app = Flask(__name__)
 
 class node_form(Form):
     node_name = TextField("node_name", [validators.InputRequired()])
-    category = IntegerField("category", [validators.Optional()])
+    category = SelectField(
+        "category", validators=[validators.Optional()],
+        choices=[("", ""), ("0", "0"), ("1", "1")])
     url = TextField("url", [validators.Optional()])
     content = TextAreaField("content", [validators.Optional()])
     notes = TextAreaField("notes", [validators.Optional()])
@@ -55,8 +57,8 @@ def update_attr(G, form2):
         size_target = 30
     else:
         size_target = (degree_target - degree_min) * (30-10) / (degree_max-degree_min) + 10
-    attrs = {form2.source_name.data: {'Degree': degree_source, 'viz': {'size': size_source}}, 
-            form2.target_name.data: {'Degree': degree_target, 'viz': {'size': size_target}}}
+    attrs = {form2.source_name.data: {'degree': degree_source, 'viz': {'size': size_source}}, 
+            form2.target_name.data: {'degree': degree_target, 'viz': {'size': size_target}}}
     nx.set_node_attributes(G, attrs)
 
 
@@ -69,7 +71,7 @@ def edit_graph():
     form2 = edge_form(request.form)
 
     # open graph json file: load into graph G
-    with open("static/data/middle_school_3.json", "r") as read_file:
+    with open("static/data/graph_from_mongodb.json", "r") as read_file:
             data = json.load(read_file)
     G = json_graph.node_link_graph(data)
 
@@ -170,10 +172,15 @@ def edit_graph():
 
         # save edited graph G into json file
         data = json_graph.node_link_data(G)
-        with open("static/data/middle_school_3.json", "w") as write_file:
+        with open("static/data/graph_from_mongodb.json", "w") as write_file:
             json.dump(data, write_file)
         return redirect(url_for('edit_graph'))
     return render_template('echart-demo.html', form_node=form1, form_edge=form2, graph_info=graph_info)
+
+@app.route('/templates')
+
+def people():
+    return render_template('people.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host='10.110.165.244', port=5000)
