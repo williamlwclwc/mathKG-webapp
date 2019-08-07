@@ -63,9 +63,24 @@ def update_attr(G, form2):
 
 
 @app.route('/')
+@app.route('/home')
+def home():
+    # open graph json file: load into graph G
+    with open("static/data/graph_from_mongodb.json", "r") as read_file:
+            data = json.load(read_file)
+    G = json_graph.node_link_graph(data)
+
+    graph_info = []
+    num_nodes = "Number of Nodes: " + str(G.number_of_nodes())
+    num_edges = "Number of Edges: " + str(G.number_of_edges())
+    density = "Density of Graph: " + str(round(nx.density(G), 5))
+    graph_info.append(num_nodes)
+    graph_info.append(num_edges)
+    graph_info.append(density)
+
+    return render_template('home.html', graph_info=graph_info, title="Home")
+
 @app.route('/editGraph', methods=['get', 'post'])
-
-
 def edit_graph():
     form1 = node_form(request.form)
     form2 = edge_form(request.form)
@@ -175,12 +190,12 @@ def edit_graph():
         with open("static/data/graph_from_mongodb.json", "w") as write_file:
             json.dump(data, write_file)
         return redirect(url_for('edit_graph'))
-    return render_template('echart-demo.html', form_node=form1, form_edge=form2, graph_info=graph_info)
+    return render_template('edit-graph.html', form_node=form1, form_edge=form2, 
+                            graph_info=graph_info, title="Edit Graph")
 
-@app.route('/templates')
-
-def people():
-    return render_template('people.html')
+@app.route('/about')
+def authors():
+    return render_template('about.html', title="About")
 
 if __name__ == '__main__':
     app.run(debug=True, host='10.110.165.244', port=5000)
