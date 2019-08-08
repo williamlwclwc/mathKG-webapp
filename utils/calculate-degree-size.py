@@ -27,6 +27,22 @@ for node_name, degree in G.degree():
 
 nx.set_node_attributes(G, attrs)
 
+attrs = {}
+for source, target, key in G.edges(keys=True):
+    attr = {}
+    source_size = nx.get_node_attributes(G, 'viz')
+    source_size = source_size[source]
+    source_size = source_size['size']
+    target_size = nx.get_node_attributes(G, 'viz')
+    target_size = target_size[target]
+    target_size = target_size['size']
+    weight = int(source_size + target_size)
+    weight *= 10
+    attr = {(source, target, key): {'value': weight}}
+    attrs.update(attr)
+
+nx.set_edge_attributes(G, attrs)
+
 data = json_graph.node_link_data(G)
 with open(output_file, "w") as write_file:
     json.dump(data, write_file)
