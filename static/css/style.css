@@ -21,18 +21,50 @@ th, td
 	padding: 0em;
 	font: 12px sans-serif;
 	position: absolute;
-	top: 0;
+	top: 60px;
+}
+
+.left_bar {
+    margin: 0;
+    position: absolute;
+    /* left: 0; */
+    max-width: 285px;
+    background-color: #fff;
+    padding-top: 50px;
+    padding-left:5px;
+    padding-right:5px;
+    border-bottom-right-radius: 15px;
+    overflow: auto;
+    max-height: 100%;
+    top: 0px;
+    display: block;
 }
 
 .right_bar {
 	position: absolute;
     right: 0;
-	max-width: 475px;
+	max-width: 275px;
 	max-height: 100%;
     background-color: #fff;
     padding: 10px;
     border-bottom-left-radius: 15px;
 	padding-left: 15px;
 	overflow: auto;
-	padding-top: 61px;
+	padding-top: 60px;
+}
+
+.starter-template {
+    padding-top: 6rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    text-align: center;
+}
+
+.bg-purple {
+    background-color: #6f42c1;
+}
+
+.bg-left-block {
+    background-color: #fbfbfb;
 }

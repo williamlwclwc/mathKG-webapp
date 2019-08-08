@@ -1,0 +1,3040 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="2" title="relationship" type="string" />
+      <attribute id="3" title="networkx_key" type="string" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="modular" type="long" />
+      <attribute id="1" title="Degree" type="long">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.3</creator>
+      <lastmodified>31/07/2019</lastmodified>
+    </meta>
+    <nodes>
+      <node id="Algebraic fraction" label="Algebraic fraction">
+        <viz:size value="14.0" />
+        <viz:position x="944.8562" y="787.25146" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="4" />
+        </attvalues>
+      </node>
+      <node id="addition" label="addition">
+        <viz:size value="12.666667" />
+        <viz:position x="837.0682" y="752.1762" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="subtraction" label="subtraction">
+        <viz:size value="12.666667" />
+        <viz:position x="883.10535" y="770.85547" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="multiplication" label="multiplication">
+        <viz:size value="14.0" />
+        <viz:position x="866.0029" y="837.78937" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="4" />
+        </attvalues>
+      </node>
+      <node id="division" label="division">
+        <viz:size value="14.0" />
+        <viz:position x="1030.255" y="683.7627" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="4" />
+        </attvalues>
+      </node>
+      <node id="angle" label="angle">
+        <viz:size value="24.666668" />
+        <viz:position x="-874.7825" y="-400.76385" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="12" />
+        </attvalues>
+      </node>
+      <node id="acute angles" label="acute angles">
+        <viz:size value="10.0" />
+        <viz:position x="-939.89166" y="-440.8362" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="right angle" label="right angle">
+        <viz:size value="11.333333" />
+        <viz:position x="-572.1027" y="-358.676" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="obtuse angles" label="obtuse angles">
+        <viz:size value="10.0" />
+        <viz:position x="-793.08453" y="-395.90524" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="straight angle" label="straight angle">
+        <viz:size value="11.333333" />
+        <viz:position x="-928.6521" y="-510.19778" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="full angle" label="full angle">
+        <viz:size value="10.0" />
+        <viz:position x="-950.5217" y="-384.95532" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Radian" label="Radian">
+        <viz:size value="10.0" />
+        <viz:position x="-828.82587" y="-471.07697" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Degree (angle)" label="Degree (angle)">
+        <viz:size value="10.0" />
+        <viz:position x="-810.511" y="-353.06107" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Corresponding angles" label="Corresponding angles">
+        <viz:size value="10.0" />
+        <viz:position x="-914.1" y="-335.35104" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Alternate angles" label="Alternate angles">
+        <viz:size value="10.0" />
+        <viz:position x="-853.9095" y="-325.88757" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Interior angles on the same side" label="Interior angles on the same side">
+        <viz:size value="10.0" />
+        <viz:position x="-800.5838" y="-438.8685" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="vertical angles" label="vertical angles">
+        <viz:size value="12.666667" />
+        <viz:position x="-941.0324" y="-168.0592" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="supplementary angles" label="supplementary angles">
+        <viz:size value="10.0" />
+        <viz:position x="-872.8594" y="-478.4738" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="angle bisector" label="angle bisector">
+        <viz:size value="12.666667" />
+        <viz:position x="-126.22188" y="-631.9122" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="lengths of a point on the angle bisector to each side are equal" label="lengths of a point on the angle bisector to each side are equal">
+        <viz:size value="10.0" />
+        <viz:position x="-75.1142" y="-655.21765" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="center of incircle" label="center of incircle">
+        <viz:size value="10.0" />
+        <viz:position x="-72.56789" y="-607.13715" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="binomial" label="binomial">
+        <viz:size value="12.666667" />
+        <viz:position x="634.4163" y="805.3196" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="binomial theorem" label="binomial theorem">
+        <viz:size value="11.333333" />
+        <viz:position x="574.1481" y="755.11633" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="Difference of two squares" label="Difference of two squares">
+        <viz:size value="12.666667" />
+        <viz:position x="649.36554" y="750.2353" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="B�zout's identity" label="B�zout's identity">
+        <viz:size value="10.0" />
+        <viz:position x="1145.0765" y="-95.613754" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="euclid's theorem" label="euclid's theorem">
+        <viz:size value="12.666667" />
+        <viz:position x="1098.5183" y="-90.412796" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="cartesian coordinate system" label="cartesian coordinate system">
+        <viz:size value="16.666668" />
+        <viz:position x="-268.49472" y="382.79462" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="6" />
+        </attvalues>
+      </node>
+      <node id="features of coordinates in each quadrant" label="features of coordinates in each quadrant">
+        <viz:size value="10.0" />
+        <viz:position x="-236.60605" y="435.44742" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="features of coordinates on each axes" label="features of coordinates on each axes">
+        <viz:size value="10.0" />
+        <viz:position x="-190.48207" y="369.73697" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="compute line segment that parallel axes: big coordinates - small coordinates" label="compute line segment that parallel axes: big coordinates - small coordinates">
+        <viz:size value="10.0" />
+        <viz:position x="-253.69846" y="322.4619" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="compute the area of a polygon in a plane: cutting method" label="compute the area of a polygon in a plane: cutting method">
+        <viz:size value="10.0" />
+        <viz:position x="-214.00749" y="337.5959" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="compute coordinates of symmetric points" label="compute coordinates of symmetric points">
+        <viz:size value="10.0" />
+        <viz:position x="-203.7962" y="407.43445" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="cartesian product" label="cartesian product">
+        <viz:size value="11.333333" />
+        <viz:position x="-582.30316" y="225.2019" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="Function (mathematics)" label="Function (mathematics)">
+        <viz:size value="26.0" />
+        <viz:position x="-486.28372" y="367.25958" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="13" />
+        </attvalues>
+      </node>
+      <node id="checking the primality" label="checking the primality">
+        <viz:size value="14.0" />
+        <viz:position x="1085.8516" y="-239.14938" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="4" />
+        </attvalues>
+      </node>
+      <node id="trial division" label="trial division">
+        <viz:size value="10.0" />
+        <viz:position x="1068.8281" y="-299.9766" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Miller�Rabin primality test" label="Miller�Rabin primality test">
+        <viz:size value="10.0" />
+        <viz:position x="1114.3607" y="-284.34546" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="AKS primality test" label="AKS primality test">
+        <viz:size value="10.0" />
+        <viz:position x="1037.0372" y="-268.83102" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="chord tangent angle" label="chord tangent angle">
+        <viz:size value="11.333333" />
+        <viz:position x="510.45532" y="-320.93924" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="Alternate Segment Theorem" label="Alternate Segment Theorem">
+        <viz:size value="10.0" />
+        <viz:position x="559.37897" y="-326.18307" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Circle" label="Circle">
+        <viz:size value="27.333334" />
+        <viz:position x="389.45587" y="-307.7517" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="14" />
+        </attvalues>
+      </node>
+      <node id="Reflectional symmetry" label="Reflectional symmetry">
+        <viz:size value="11.333333" />
+        <viz:position x="421.9319" y="-406.36493" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="Circular segment" label="Circular segment">
+        <viz:size value="12.666667" />
+        <viz:position x="460.08133" y="-437.65518" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="Chords of a Circle Theorems" label="Chords of a Circle Theorems">
+        <viz:size value="10.0" />
+        <viz:position x="311.41226" y="-269.43906" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Point reflection" label="Point reflection">
+        <viz:size value="10.0" />
+        <viz:position x="379.61136" y="-220.56973" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Thales' theorem" label="Thales' theorem">
+        <viz:size value="11.333333" />
+        <viz:position x="72.66721" y="-304.91037" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="inscribed angle" label="inscribed angle">
+        <viz:size value="10.0" />
+        <viz:position x="357.0645" y="-385.97357" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="central angle" label="central angle">
+        <viz:size value="10.0" />
+        <viz:position x="423.91852" y="-229.14546" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="chord theorem" label="chord theorem">
+        <viz:size value="10.0" />
+        <viz:position x="459.61487" y="-263.15985" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="secant" label="secant">
+        <viz:size value="10.0" />
+        <viz:position x="319.10434" y="-357.5299" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="tangent(circle)" label="tangent(circle)">
+        <viz:size value="10.0" />
+        <viz:position x="457.4986" y="-347.52954" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Power of a point" label="Power of a point">
+        <viz:size value="10.0" />
+        <viz:position x="303.61755" y="-313.8632" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="area of the sector" label="area of the sector">
+        <viz:size value="10.0" />
+        <viz:position x="338.9509" y="-235.56232" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="length of the arc" label="length of the arc">
+        <viz:size value="11.333333" />
+        <viz:position x="497.82782" y="-103.819016" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="Intersecting Chords Theorem" label="Intersecting Chords Theorem">
+        <viz:size value="10.0" />
+        <viz:position x="481.3885" y="-487.27966" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="complex number" label="complex number">
+        <viz:size value="18.0" />
+        <viz:position x="897.10516" y="678.3383" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="7" />
+        </attvalues>
+      </node>
+      <node id="real number" label="real number">
+        <viz:size value="12.666667" />
+        <viz:position x="797.80493" y="454.2586" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="imaginary number" label="imaginary number">
+        <viz:size value="10.0" />
+        <viz:position x="882.64856" y="609.2693" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Gaussian integer" label="Gaussian integer">
+        <viz:size value="10.0" />
+        <viz:position x="839.95996" y="633.55927" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="compute area" label="compute area">
+        <viz:size value="14.0" />
+        <viz:position x="-421.4847" y="-137.2543" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="4" />
+        </attvalues>
+      </node>
+      <node id="lateral surface area" label="lateral surface area">
+        <viz:size value="11.333333" />
+        <viz:position x="-445.7406" y="-200.3502" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="total surface area" label="total surface area">
+        <viz:size value="11.333333" />
+        <viz:position x="-485.25107" y="-159.31908" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="compute gcd" label="compute gcd">
+        <viz:size value="16.666668" />
+        <viz:position x="1247.4552" y="389.15823" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="6" />
+        </attvalues>
+      </node>
+      <node id="prime factorization" label="prime factorization">
+        <viz:size value="10.0" />
+        <viz:position x="1239.0681" y="322.08676" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="euclidean algorithm" label="euclidean algorithm">
+        <viz:size value="10.0" />
+        <viz:position x="1179.862" y="365.50757" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="lehmer's gcd algorithm" label="lehmer's gcd algorithm">
+        <viz:size value="10.0" />
+        <viz:position x="1280.3701" y="339.72604" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="binary gcd algorithm" label="binary gcd algorithm">
+        <viz:size value="10.0" />
+        <viz:position x="1189.9133" y="406.96686" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="exhaustion" label="exhaustion">
+        <viz:size value="10.0" />
+        <viz:position x="1199.5065" y="330.57465" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Cone" label="Cone">
+        <viz:size value="11.333333" />
+        <viz:position x="-496.06265" y="-209.19405" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="cosine" label="cosine">
+        <viz:size value="11.333333" />
+        <viz:position x="-225.38022" y="50.61851" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="law of cosines" label="law of cosines">
+        <viz:size value="10.0" />
+        <viz:position x="-193.16986" y="88.28563" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="cotangent" label="cotangent">
+        <viz:size value="11.333333" />
+        <viz:position x="-198.48962" y="-89.12304" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="law of cotangents" label="law of cotangents">
+        <viz:size value="10.0" />
+        <viz:position x="-155.36797" y="-118.67928" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="divisor" label="divisor">
+        <viz:size value="11.333333" />
+        <viz:position x="1128.9701" y="588.3897" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="Proportionality (mathematics)" label="Proportionality (mathematics)">
+        <viz:size value="11.333333" />
+        <viz:position x="1043.8688" y="617.2685" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="greatest common divisor" label="greatest common divisor">
+        <viz:size value="11.333333" />
+        <viz:position x="1194.8842" y="495.2411" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="Equation" label="Equation">
+        <viz:size value="16.666668" />
+        <viz:position x="-48.681435" y="660.7956" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="6" />
+        </attvalues>
+      </node>
+      <node id="one variable linear equation" label="one variable linear equation">
+        <viz:size value="10.0" />
+        <viz:position x="-30.76469" y="603.65686" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Fraction equation" label="Fraction equation">
+        <viz:size value="11.333333" />
+        <viz:position x="29.939482" y="649.6743" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="System of 2 linear equations with 2 unknowns" label="System of 2 linear equations with 2 unknowns">
+        <viz:size value="12.666667" />
+        <viz:position x="-73.67977" y="763.3262" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="quadratic equation" label="quadratic equation">
+        <viz:size value="15.333334" />
+        <viz:position x="276.2343" y="683.5003" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="5" />
+        </attvalues>
+      </node>
+      <node id="euclid's lemma" label="euclid's lemma">
+        <viz:size value="10.0" />
+        <viz:position x="895.82416" y="-217.52383" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="fundamental theorem of arithmetic" label="fundamental theorem of arithmetic">
+        <viz:size value="12.666667" />
+        <viz:position x="953.658" y="-202.96448" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="factorization" label="factorization">
+        <viz:size value="16.666668" />
+        <viz:position x="579.72754" y="670.81995" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="6" />
+        </attvalues>
+      </node>
+      <node id="FOIL method" label="FOIL method">
+        <viz:size value="10.0" />
+        <viz:position x="527.9334" y="629.4007" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Extraneous and missing solutions" label="Extraneous and missing solutions">
+        <viz:size value="10.0" />
+        <viz:position x="68.89231" y="622.04474" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="compute function expression" label="compute function expression">
+        <viz:size value="10.0" />
+        <viz:position x="-451.46478" y="292.29385" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="compute intersection" label="compute intersection">
+        <viz:size value="14.0" />
+        <viz:position x="-753.19147" y="316.9022" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="4" />
+        </attvalues>
+      </node>
+      <node id="compare value of functions" label="compare value of functions">
+        <viz:size value="10.0" />
+        <viz:position x="-411.29648" y="395.22418" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="linear function (calculus)" label="linear function (calculus)">
+        <viz:size value="18.0" />
+        <viz:position x="-670.4964" y="419.84662" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="7" />
+        </attvalues>
+      </node>
+      <node id="inverse proportional function" label="inverse proportional function">
+        <viz:size value="18.0" />
+        <viz:position x="-781.9644" y="461.61206" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="7" />
+        </attvalues>
+      </node>
+      <node id="quadratic function" label="quadratic function">
+        <viz:size value="23.333334" />
+        <viz:position x="-724.799" y="681.61694" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="11" />
+        </attvalues>
+      </node>
+      <node id="power function" label="power function">
+        <viz:size value="10.0" />
+        <viz:position x="-411.99396" y="330.69983" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Trigonometric functions" label="Trigonometric functions">
+        <viz:size value="18.0" />
+        <viz:position x="-257.85553" y="-24.862734" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="7" />
+        </attvalues>
+      </node>
+      <node id="Transformation (function)" label="Transformation (function)">
+        <viz:size value="18.0" />
+        <viz:position x="-393.45956" y="636.58624" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="7" />
+        </attvalues>
+      </node>
+      <node id="induction" label="induction">
+        <viz:size value="10.0" />
+        <viz:position x="924.7681" y="-254.40948" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Inequation" label="Inequation">
+        <viz:size value="12.666667" />
+        <viz:position x="35.325512" y="900.48474" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="linear ineqality with one unknown" label="linear ineqality with one unknown">
+        <viz:size value="10.0" />
+        <viz:position x="79.80684" y="918.94867" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="System of Linear Inequalities with one unknown" label="System of Linear Inequalities with one unknown">
+        <viz:size value="10.0" />
+        <viz:position x="24.237915" y="947.50244" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="integer" label="integer">
+        <viz:size value="12.666667" />
+        <viz:position x="718.5189" y="403.6979" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="natural number" label="natural number">
+        <viz:size value="12.666667" />
+        <viz:position x="867.71954" y="155.55293" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="Intersection (Euclidean geometry)" label="Intersection (Euclidean geometry)">
+        <viz:size value="12.666667" />
+        <viz:position x="-954.90466" y="69.397316" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="inverse proportional form" label="inverse proportional form">
+        <viz:size value="10.0" />
+        <viz:position x="-852.0843" y="446.36728" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="regional property" label="regional property">
+        <viz:size value="10.0" />
+        <viz:position x="-842.06256" y="491.8987" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="monotonicity" label="monotonicity">
+        <viz:size value="12.666667" />
+        <viz:position x="-733.89276" y="540.48364" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="symmetry" label="symmetry">
+        <viz:size value="11.333333" />
+        <viz:position x="-790.4945" y="586.0077" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="area only related to k" label="area only related to k">
+        <viz:size value="10.0" />
+        <viz:position x="-823.99805" y="409.25204" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="irrational number" label="irrational number">
+        <viz:size value="11.333333" />
+        <viz:position x="687.6278" y="258.89426" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="Pi" label="Pi">
+        <viz:size value="11.333333" />
+        <viz:position x="590.69165" y="77.82679" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="isosceles triangle" label="isosceles triangle">
+        <viz:size value="11.333333" />
+        <viz:position x="-330.34906" y="-758.791" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="equilateral triangle" label="equilateral triangle">
+        <viz:size value="11.333333" />
+        <viz:position x="-372.3688" y="-872.8306" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="Line (geometry)" label="Line (geometry)">
+        <viz:size value="15.333334" />
+        <viz:position x="-1128.273" y="61.907505" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="5" />
+        </attvalues>
+      </node>
+      <node id="for any two distinct points, there is a unique line containing them" label="for any two distinct points, there is a unique line containing them">
+        <viz:size value="10.0" />
+        <viz:position x="-1083.6519" y="94.09856" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Perpendicular" label="Perpendicular">
+        <viz:size value="10.0" />
+        <viz:position x="-1088.618" y="22.311876" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Line segment" label="Line segment">
+        <viz:size value="11.333333" />
+        <viz:position x="-1188.4899" y="108.89775" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="Parallel (geometry)" label="Parallel (geometry)">
+        <viz:size value="11.333333" />
+        <viz:position x="-1185.4816" y="8.141554" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="line segment theorem" label="line segment theorem">
+        <viz:size value="10.0" />
+        <viz:position x="-1193.7118" y="152.31696" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="slope-intercept form" label="slope-intercept form">
+        <viz:size value="10.0" />
+        <viz:position x="-686.0665" y="359.46942" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="translational property" label="translational property">
+        <viz:size value="10.0" />
+        <viz:position x="-609.6738" y="430.3473" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="verticality" label="verticality">
+        <viz:size value="10.0" />
+        <viz:position x="-635.73376" y="366.8936" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="positive and negative property" label="positive and negative property">
+        <viz:size value="10.0" />
+        <viz:position x="-637.95984" y="474.38104" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="multiple" label="multiple">
+        <viz:size value="11.333333" />
+        <viz:position x="838.7638" y="925.00757" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="least common multiple" label="least common multiple">
+        <viz:size value="10.0" />
+        <viz:position x="799.70087" y="956.1114" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="prime number" label="prime number">
+        <viz:size value="20.666668" />
+        <viz:position x="1019.5881" y="-86.326485" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="9" />
+        </attvalues>
+      </node>
+      <node id="composite number" label="composite number">
+        <viz:size value="10.0" />
+        <viz:position x="819.7126" y="140.61742" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Parallel postulate" label="Parallel postulate">
+        <viz:size value="10.0" />
+        <viz:position x="-1188.9868" y="-36.68394" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="parallelogram" label="parallelogram">
+        <viz:size value="12.666667" />
+        <viz:position x="352.25443" y="-1274.313" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="rectangle" label="rectangle">
+        <viz:size value="20.666668" />
+        <viz:position x="300.44412" y="-1359.7704" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="9" />
+        </attvalues>
+      </node>
+      <node id="rhombus" label="rhombus">
+        <viz:size value="12.666667" />
+        <viz:position x="392.32977" y="-1218.7457" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="convex" label="convex">
+        <viz:size value="15.333334" />
+        <viz:position x="313.72394" y="-1230.5417" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="5" />
+        </attvalues>
+      </node>
+      <node id="perpendicular bisector" label="perpendicular bisector">
+        <viz:size value="12.666667" />
+        <viz:position x="-408.10632" y="-673.912" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="circumcenter" label="circumcenter">
+        <viz:size value="10.0" />
+        <viz:position x="-438.62112" y="-717.0098" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="lengths of a point on the perpendicular bisector to each vertex are equal" label="lengths of a point on the perpendicular bisector to each vertex are equal">
+        <viz:size value="10.0" />
+        <viz:position x="-461.13403" y="-670.54395" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Polygon" label="Polygon">
+        <viz:size value="12.666667" />
+        <viz:position x="-99.63902" y="-799.0194" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="triangle" label="triangle">
+        <viz:size value="30.0" />
+        <viz:position x="-279.77893" y="-580.4586" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="16" />
+        </attvalues>
+      </node>
+      <node id="Quadrilateral" label="Quadrilateral">
+        <viz:size value="12.666667" />
+        <viz:position x="45.288853" y="-949.6844" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="Regular polygon" label="Regular polygon">
+        <viz:size value="10.0" />
+        <viz:position x="-52.057396" y="-805.5128" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="polynomial" label="polynomial">
+        <viz:size value="18.0" />
+        <viz:position x="741.383" y="795.1791" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="7" />
+        </attvalues>
+      </node>
+      <node id="expoentiation" label="expoentiation">
+        <viz:size value="10.0" />
+        <viz:position x="694.4856" y="842.43463" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="prime number theorem" label="prime number theorem">
+        <viz:size value="10.0" />
+        <viz:position x="959.5041" y="-47.748234" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Goldbach's conjecture" label="Goldbach's conjecture">
+        <viz:size value="10.0" />
+        <viz:position x="964.73425" y="-125.668076" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="twin primes" label="twin primes">
+        <viz:size value="11.333333" />
+        <viz:position x="916.88556" y="-89.12751" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="coprime numbers" label="coprime numbers">
+        <viz:size value="10.0" />
+        <viz:position x="1002.2056" y="-18.942207" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="golden ratio" label="golden ratio">
+        <viz:size value="10.0" />
+        <viz:position x="1024.5295" y="569.722" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Quadratic formula" label="Quadratic formula">
+        <viz:size value="10.0" />
+        <viz:position x="299.00656" y="631.83765" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Completing the square" label="Completing the square">
+        <viz:size value="10.0" />
+        <viz:position x="249.83066" y="728.8111" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="discriminant of the quadratic equation" label="discriminant of the quadratic equation">
+        <viz:size value="10.0" />
+        <viz:position x="243.96169" y="637.189" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="diagrammatic sketch" label="diagrammatic sketch">
+        <viz:size value="10.0" />
+        <viz:position x="-726.9924" y="773.3566" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="standard form" label="standard form">
+        <viz:size value="10.0" />
+        <viz:position x="-761.0863" y="752.40735" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="factored form" label="factored form">
+        <viz:size value="10.0" />
+        <viz:position x="-652.6569" y="661.27496" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="vertex form" label="vertex form">
+        <viz:size value="10.0" />
+        <viz:position x="-695.5321" y="752.2569" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="opening direction and scale of a function" label="opening direction and scale of a function">
+        <viz:size value="10.0" />
+        <viz:position x="-658.07336" y="746.08984" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="vertex" label="vertex">
+        <viz:size value="10.0" />
+        <viz:position x="-800.45074" y="680.04895" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="maximum and minimum value" label="maximum and minimum value">
+        <viz:size value="10.0" />
+        <viz:position x="-649.40967" y="706.1722" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="judge positive or negative" label="judge positive or negative">
+        <viz:size value="10.0" />
+        <viz:position x="-792.3705" y="725.2543" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Trapezoid" label="Trapezoid">
+        <viz:size value="12.666667" />
+        <viz:position x="177.86769" y="-1079.5297" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="Parallelogram" label="Parallelogram">
+        <viz:size value="10.0" />
+        <viz:position x="67.7706" y="-907.0215" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="rational number" label="rational number">
+        <viz:size value="11.333333" />
+        <viz:position x="769.70624" y="405.50552" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="square" label="square">
+        <viz:size value="16.666668" />
+        <viz:position x="423.0447" y="-1333.1238" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="6" />
+        </attvalues>
+      </node>
+      <node id="isogonal" label="isogonal">
+        <viz:size value="11.333333" />
+        <viz:position x="382.96014" y="-1400.3422" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="cyclic" label="cyclic">
+        <viz:size value="11.333333" />
+        <viz:position x="369.62564" y="-1354.8242" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="quailateral" label="quailateral">
+        <viz:size value="10.0" />
+        <viz:position x="228.93628" y="-1376.7426" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="isopermetric theorem" label="isopermetric theorem">
+        <viz:size value="10.0" />
+        <viz:position x="267.10315" y="-1293.8375" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Japanese theorem for cyclic quadrilaterals" label="Japanese theorem for cyclic quadrilaterals">
+        <viz:size value="10.0" />
+        <viz:position x="226.90598" y="-1293.6793" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="British flag theorem" label="British flag theorem">
+        <viz:size value="10.0" />
+        <viz:position x="225.122" y="-1334.3977" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="isotoxal" label="isotoxal">
+        <viz:size value="11.333333" />
+        <viz:position x="446.32224" y="-1247.5686" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="right triangle" label="right triangle">
+        <viz:size value="15.333334" />
+        <viz:position x="-255.6223" y="-296.46335" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="5" />
+        </attvalues>
+      </node>
+      <node id="Pythagorean theorem" label="Pythagorean theorem">
+        <viz:size value="11.333333" />
+        <viz:position x="-252.04474" y="-171.6711" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="Set (mathematics)" label="Set (mathematics)">
+        <viz:size value="16.666668" />
+        <viz:position x="-674.9062" y="106.91152" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="6" />
+        </attvalues>
+      </node>
+      <node id="subset" label="subset">
+        <viz:size value="10.0" />
+        <viz:position x="-672.63403" y="41.381264" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="union" label="union">
+        <viz:size value="10.0" />
+        <viz:position x="-630.7165" y="59.096382" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Intersection" label="Intersection">
+        <viz:size value="10.0" />
+        <viz:position x="-733.52124" y="107.781044" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="complement" label="complement">
+        <viz:size value="10.0" />
+        <viz:position x="-615.09845" y="104.73591" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Venn diagram" label="Venn diagram">
+        <viz:size value="10.0" />
+        <viz:position x="-715.7222" y="58.66641" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="similar triangle" label="similar triangle">
+        <viz:size value="12.666667" />
+        <viz:position x="-406.214" y="-956.9129" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </node>
+      <node id="Intercept theorem" label="Intercept theorem">
+        <viz:size value="10.0" />
+        <viz:position x="-451.68848" y="-966.9064" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Similarity (geometry)" label="Similarity (geometry)">
+        <viz:size value="10.0" />
+        <viz:position x="-375.06494" y="-991.3939" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="sine" label="sine">
+        <viz:size value="11.333333" />
+        <viz:position x="-150.78847" y="-42.399456" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="law of sines" label="law of sines">
+        <viz:size value="10.0" />
+        <viz:position x="-94.899345" y="-48.59135" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="equilateral" label="equilateral">
+        <viz:size value="10.0" />
+        <viz:position x="481.3893" y="-1292.7938" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="supplementary angle" label="supplementary angle">
+        <viz:size value="10.0" />
+        <viz:position x="-931.91943" y="-559.2412" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Elimination of variables" label="Elimination of variables">
+        <viz:size value="10.0" />
+        <viz:position x="-114.004005" y="790.4454" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Row reduction" label="Row reduction">
+        <viz:size value="10.0" />
+        <viz:position x="-66.18839" y="811.97614" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="tangent" label="tangent">
+        <viz:size value="11.333333" />
+        <viz:position x="-161.16132" y="18.738707" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="law of tangents" label="law of tangents">
+        <viz:size value="10.0" />
+        <viz:position x="-108.3743" y="37.743702" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Homothetic transformation" label="Homothetic transformation">
+        <viz:size value="10.0" />
+        <viz:position x="-328.2015" y="668.4741" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Reflection" label="Reflection">
+        <viz:size value="10.0" />
+        <viz:position x="-324.36008" y="627.63434" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Rotation (mathematics)" label="Rotation (mathematics)">
+        <viz:size value="10.0" />
+        <viz:position x="-351.4587" y="590.6137" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Translation (geometry)" label="Translation (geometry)">
+        <viz:size value="10.0" />
+        <viz:position x="-352.77277" y="699.81104" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Affine transformation" label="Affine transformation">
+        <viz:size value="10.0" />
+        <viz:position x="-431.76523" y="685.8367" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Linear map" label="Linear map">
+        <viz:size value="10.0" />
+        <viz:position x="-392.51453" y="707.4357" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="isosceles trapezoid" label="isosceles trapezoid">
+        <viz:size value="10.0" />
+        <viz:position x="178.12643" y="-1026.9188" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="scalene triangle" label="scalene triangle">
+        <viz:size value="10.0" />
+        <viz:position x="-345.94592" y="-521.5809" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="acute triangle" label="acute triangle">
+        <viz:size value="10.0" />
+        <viz:position x="-248.03033" y="-495.18054" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="obtuse triangle" label="obtuse triangle">
+        <viz:size value="10.0" />
+        <viz:position x="-298.26605" y="-493.4223" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="conditions on the sides" label="conditions on the sides">
+        <viz:size value="11.333333" />
+        <viz:position x="-300.37747" y="-661.53186" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+      <node id="compute circumference" label="compute circumference">
+        <viz:size value="10.0" />
+        <viz:position x="-209.30092" y="-518.61945" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="median" label="median">
+        <viz:size value="10.0" />
+        <viz:position x="-231.52298" y="-655.4104" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="altitude" label="altitude">
+        <viz:size value="10.0" />
+        <viz:position x="-366.86703" y="-576.0399" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="mid-segment line" label="mid-segment line">
+        <viz:size value="10.0" />
+        <viz:position x="-197.7536" y="-609.19556" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="congruence" label="congruence">
+        <viz:size value="10.0" />
+        <viz:position x="-190.44907" y="-558.61145" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="twin prime conjecture" label="twin prime conjecture">
+        <viz:size value="10.0" />
+        <viz:position x="861.8829" y="-90.27692" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="vertical angle theorem" label="vertical angle theorem">
+        <viz:size value="10.0" />
+        <viz:position x="-985.083" y="-170.98633" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="Simplex algorithm" label="Simplex algorithm">
+        <viz:size value="11.333333" />
+        <viz:position x="8.685051" y="797.6289" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Algebraic fraction" target="addition">
+        <attvalues>
+          <attvalue for="2" value="arithmetic operation" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="1" source="Algebraic fraction" target="subtraction">
+        <attvalues>
+          <attvalue for="2" value="arithmetic operation" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="2" source="Algebraic fraction" target="multiplication">
+        <attvalues>
+          <attvalue for="2" value="arithmetic operation" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </edge>
+      <edge id="3" source="Algebraic fraction" target="division">
+        <attvalues>
+          <attvalue for="2" value="arithmetic operation" />
+          <attvalue for="3" value="3" />
+        </attvalues>
+      </edge>
+      <edge id="118" source="multiplication" target="multiple">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="118" />
+        </attvalues>
+      </edge>
+      <edge id="65" source="division" target="divisor">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="65" />
+        </attvalues>
+      </edge>
+      <edge id="66" source="division" target="Proportionality (mathematics)">
+        <attvalues>
+          <attvalue for="2" value="expression" />
+          <attvalue for="3" value="66" />
+        </attvalues>
+      </edge>
+      <edge id="4" source="angle" target="acute angles">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="4" />
+        </attvalues>
+      </edge>
+      <edge id="5" source="angle" target="right angle">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </edge>
+      <edge id="6" source="angle" target="obtuse angles">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="6" />
+        </attvalues>
+      </edge>
+      <edge id="7" source="angle" target="straight angle">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="7" />
+        </attvalues>
+      </edge>
+      <edge id="8" source="angle" target="full angle">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="8" />
+        </attvalues>
+      </edge>
+      <edge id="9" source="angle" target="Radian">
+        <attvalues>
+          <attvalue for="2" value="expression" />
+          <attvalue for="3" value="9" />
+        </attvalues>
+      </edge>
+      <edge id="10" source="angle" target="Degree (angle)">
+        <attvalues>
+          <attvalue for="2" value="expression" />
+          <attvalue for="3" value="10" />
+        </attvalues>
+      </edge>
+      <edge id="11" source="angle" target="Corresponding angles">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="11" />
+        </attvalues>
+      </edge>
+      <edge id="12" source="angle" target="Alternate angles">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="12" />
+        </attvalues>
+      </edge>
+      <edge id="13" source="angle" target="Interior angles on the same side">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="13" />
+        </attvalues>
+      </edge>
+      <edge id="14" source="angle" target="vertical angles">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="14" />
+        </attvalues>
+      </edge>
+      <edge id="15" source="angle" target="supplementary angles">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="15" />
+        </attvalues>
+      </edge>
+      <edge id="193" source="straight angle" target="supplementary angle">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="193" />
+        </attvalues>
+      </edge>
+      <edge id="227" source="vertical angles" target="vertical angle theorem">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="227" />
+        </attvalues>
+      </edge>
+      <edge id="16" source="angle bisector" target="lengths of a point on the angle bisector to each side are equal">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="16" />
+        </attvalues>
+      </edge>
+      <edge id="17" source="angle bisector" target="center of incircle">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="17" />
+        </attvalues>
+      </edge>
+      <edge id="18" source="binomial" target="binomial theorem">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="18" />
+        </attvalues>
+      </edge>
+      <edge id="19" source="binomial" target="Difference of two squares">
+        <attvalues>
+          <attvalue for="2" value="formula" />
+          <attvalue for="3" value="19" />
+        </attvalues>
+      </edge>
+      <edge id="20" source="B�zout's identity" target="euclid's theorem">
+        <attvalues>
+          <attvalue for="2" value="proof" />
+          <attvalue for="3" value="20" />
+        </attvalues>
+      </edge>
+      <edge id="21" source="cartesian coordinate system" target="features of coordinates in each quadrant">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="21" />
+        </attvalues>
+      </edge>
+      <edge id="22" source="cartesian coordinate system" target="features of coordinates on each axes">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="22" />
+        </attvalues>
+      </edge>
+      <edge id="23" source="cartesian coordinate system" target="compute line segment that parallel axes: big coordinates - small coordinates">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="23" />
+        </attvalues>
+      </edge>
+      <edge id="24" source="cartesian coordinate system" target="compute the area of a polygon in a plane: cutting method">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="24" />
+        </attvalues>
+      </edge>
+      <edge id="25" source="cartesian coordinate system" target="compute coordinates of symmetric points">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="25" />
+        </attvalues>
+      </edge>
+      <edge id="26" source="cartesian product" target="Function (mathematics)">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="26" />
+        </attvalues>
+      </edge>
+      <edge id="77" source="Function (mathematics)" target="compute function expression">
+        <attvalues>
+          <attvalue for="2" value="application" />
+          <attvalue for="3" value="77" />
+        </attvalues>
+      </edge>
+      <edge id="78" source="Function (mathematics)" target="compute intersection">
+        <attvalues>
+          <attvalue for="2" value="application" />
+          <attvalue for="3" value="78" />
+        </attvalues>
+      </edge>
+      <edge id="79" source="Function (mathematics)" target="compute area">
+        <attvalues>
+          <attvalue for="2" value="application" />
+          <attvalue for="3" value="79" />
+        </attvalues>
+      </edge>
+      <edge id="80" source="Function (mathematics)" target="compare value of functions">
+        <attvalues>
+          <attvalue for="2" value="application" />
+          <attvalue for="3" value="80" />
+        </attvalues>
+      </edge>
+      <edge id="81" source="Function (mathematics)" target="cartesian coordinate system">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="81" />
+        </attvalues>
+      </edge>
+      <edge id="82" source="Function (mathematics)" target="linear function (calculus)">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="82" />
+        </attvalues>
+      </edge>
+      <edge id="83" source="Function (mathematics)" target="inverse proportional function">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="83" />
+        </attvalues>
+      </edge>
+      <edge id="84" source="Function (mathematics)" target="quadratic function">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="84" />
+        </attvalues>
+      </edge>
+      <edge id="85" source="Function (mathematics)" target="power function">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="85" />
+        </attvalues>
+      </edge>
+      <edge id="86" source="Function (mathematics)" target="Trigonometric functions">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="86" />
+        </attvalues>
+      </edge>
+      <edge id="87" source="Function (mathematics)" target="Transformation (function)">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="87" />
+        </attvalues>
+      </edge>
+      <edge id="228" source="Function (mathematics)" target="Equation">
+        <attvalues>
+          <attvalue for="2" value="expression" />
+          <attvalue for="3" value="228" />
+        </attvalues>
+      </edge>
+      <edge id="27" source="checking the primality" target="trial division">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="27" />
+        </attvalues>
+      </edge>
+      <edge id="28" source="checking the primality" target="Miller�Rabin primality test">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="28" />
+        </attvalues>
+      </edge>
+      <edge id="29" source="checking the primality" target="AKS primality test">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="29" />
+        </attvalues>
+      </edge>
+      <edge id="30" source="chord tangent angle" target="Alternate Segment Theorem">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="30" />
+        </attvalues>
+      </edge>
+      <edge id="31" source="Circle" target="Reflectional symmetry">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="31" />
+        </attvalues>
+      </edge>
+      <edge id="32" source="Circle" target="Circular segment">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="32" />
+        </attvalues>
+      </edge>
+      <edge id="33" source="Circle" target="Chords of a Circle Theorems">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="33" />
+        </attvalues>
+      </edge>
+      <edge id="34" source="Circle" target="Point reflection">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="34" />
+        </attvalues>
+      </edge>
+      <edge id="35" source="Circle" target="Thales' theorem">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="35" />
+        </attvalues>
+      </edge>
+      <edge id="36" source="Circle" target="inscribed angle">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="36" />
+        </attvalues>
+      </edge>
+      <edge id="37" source="Circle" target="central angle">
+        <attvalues>
+          <attvalue for="2" value="arithmetic operation" />
+          <attvalue for="3" value="37" />
+        </attvalues>
+      </edge>
+      <edge id="38" source="Circle" target="chord theorem">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="38" />
+        </attvalues>
+      </edge>
+      <edge id="39" source="Circle" target="secant">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="39" />
+        </attvalues>
+      </edge>
+      <edge id="40" source="Circle" target="tangent(circle)">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="40" />
+        </attvalues>
+      </edge>
+      <edge id="41" source="Circle" target="chord tangent angle">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="41" />
+        </attvalues>
+      </edge>
+      <edge id="42" source="Circle" target="Power of a point">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="42" />
+        </attvalues>
+      </edge>
+      <edge id="43" source="Circle" target="area of the sector">
+        <attvalues>
+          <attvalue for="2" value="formula" />
+          <attvalue for="3" value="43" />
+        </attvalues>
+      </edge>
+      <edge id="44" source="Circle" target="length of the arc">
+        <attvalues>
+          <attvalue for="2" value="formula" />
+          <attvalue for="3" value="44" />
+        </attvalues>
+      </edge>
+      <edge id="45" source="Circular segment" target="Reflectional symmetry">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="45" />
+        </attvalues>
+      </edge>
+      <edge id="46" source="Circular segment" target="Intersecting Chords Theorem">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="46" />
+        </attvalues>
+      </edge>
+      <edge id="104" source="length of the arc" target="Pi">
+        <attvalues>
+          <attvalue for="2" value="formula" />
+          <attvalue for="3" value="104" />
+        </attvalues>
+      </edge>
+      <edge id="47" source="complex number" target="real number">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="47" />
+        </attvalues>
+      </edge>
+      <edge id="48" source="complex number" target="imaginary number">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="48" />
+        </attvalues>
+      </edge>
+      <edge id="49" source="complex number" target="Gaussian integer">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="49" />
+        </attvalues>
+      </edge>
+      <edge id="50" source="complex number" target="addition">
+        <attvalues>
+          <attvalue for="2" value="arithmetic operation" />
+          <attvalue for="3" value="50" />
+        </attvalues>
+      </edge>
+      <edge id="51" source="complex number" target="subtraction">
+        <attvalues>
+          <attvalue for="2" value="arithmetic operation" />
+          <attvalue for="3" value="51" />
+        </attvalues>
+      </edge>
+      <edge id="52" source="complex number" target="multiplication">
+        <attvalues>
+          <attvalue for="2" value="arithmetic operation" />
+          <attvalue for="3" value="52" />
+        </attvalues>
+      </edge>
+      <edge id="53" source="complex number" target="division">
+        <attvalues>
+          <attvalue for="2" value="arithmetic operation" />
+          <attvalue for="3" value="53" />
+        </attvalues>
+      </edge>
+      <edge id="163" source="real number" target="rational number">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="163" />
+        </attvalues>
+      </edge>
+      <edge id="164" source="real number" target="irrational number">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="164" />
+        </attvalues>
+      </edge>
+      <edge id="54" source="compute area" target="lateral surface area">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="54" />
+        </attvalues>
+      </edge>
+      <edge id="55" source="compute area" target="total surface area">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="55" />
+        </attvalues>
+      </edge>
+      <edge id="56" source="compute gcd" target="prime factorization">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="56" />
+        </attvalues>
+      </edge>
+      <edge id="57" source="compute gcd" target="euclidean algorithm">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="57" />
+        </attvalues>
+      </edge>
+      <edge id="58" source="compute gcd" target="lehmer's gcd algorithm">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="58" />
+        </attvalues>
+      </edge>
+      <edge id="59" source="compute gcd" target="binary gcd algorithm">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="59" />
+        </attvalues>
+      </edge>
+      <edge id="60" source="compute gcd" target="exhaustion">
+        <attvalues>
+          <attvalue for="2" value="proof methods" />
+          <attvalue for="3" value="60" />
+        </attvalues>
+      </edge>
+      <edge id="61" source="Cone" target="lateral surface area">
+        <attvalues>
+          <attvalue for="2" value="formula" />
+          <attvalue for="3" value="61" />
+        </attvalues>
+      </edge>
+      <edge id="62" source="Cone" target="total surface area">
+        <attvalues>
+          <attvalue for="2" value="formula" />
+          <attvalue for="3" value="62" />
+        </attvalues>
+      </edge>
+      <edge id="63" source="cosine" target="law of cosines">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="63" />
+        </attvalues>
+      </edge>
+      <edge id="64" source="cotangent" target="law of cotangents">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="64" />
+        </attvalues>
+      </edge>
+      <edge id="67" source="divisor" target="greatest common divisor">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="67" />
+        </attvalues>
+      </edge>
+      <edge id="145" source="Proportionality (mathematics)" target="golden ratio">
+        <attvalues>
+          <attvalue for="2" value="example" />
+          <attvalue for="3" value="145" />
+        </attvalues>
+      </edge>
+      <edge id="89" source="greatest common divisor" target="compute gcd">
+        <attvalues>
+          <attvalue for="2" value="application" />
+          <attvalue for="3" value="89" />
+        </attvalues>
+      </edge>
+      <edge id="68" source="Equation" target="one variable linear equation">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="68" />
+        </attvalues>
+      </edge>
+      <edge id="69" source="Equation" target="Fraction equation">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="69" />
+        </attvalues>
+      </edge>
+      <edge id="70" source="Equation" target="System of 2 linear equations with 2 unknowns">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="70" />
+        </attvalues>
+      </edge>
+      <edge id="71" source="Equation" target="quadratic equation">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="71" />
+        </attvalues>
+      </edge>
+      <edge id="229" source="Equation" target="Simplex algorithm">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="229" />
+        </attvalues>
+      </edge>
+      <edge id="76" source="Fraction equation" target="Extraneous and missing solutions">
+        <attvalues>
+          <attvalue for="2" value="application" />
+          <attvalue for="3" value="76" />
+        </attvalues>
+      </edge>
+      <edge id="194" source="System of 2 linear equations with 2 unknowns" target="Elimination of variables">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="194" />
+        </attvalues>
+      </edge>
+      <edge id="195" source="System of 2 linear equations with 2 unknowns" target="Row reduction">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="195" />
+        </attvalues>
+      </edge>
+      <edge id="146" source="quadratic equation" target="Quadratic formula">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="146" />
+        </attvalues>
+      </edge>
+      <edge id="147" source="quadratic equation" target="factorization">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="147" />
+        </attvalues>
+      </edge>
+      <edge id="148" source="quadratic equation" target="Completing the square">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="148" />
+        </attvalues>
+      </edge>
+      <edge id="149" source="quadratic equation" target="discriminant of the quadratic equation">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="149" />
+        </attvalues>
+      </edge>
+      <edge id="72" source="euclid's lemma" target="fundamental theorem of arithmetic">
+        <attvalues>
+          <attvalue for="2" value="proof" />
+          <attvalue for="3" value="72" />
+        </attvalues>
+      </edge>
+      <edge id="88" source="fundamental theorem of arithmetic" target="induction">
+        <attvalues>
+          <attvalue for="2" value="proof methods" />
+          <attvalue for="3" value="88" />
+        </attvalues>
+      </edge>
+      <edge id="73" source="factorization" target="FOIL method">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="73" />
+        </attvalues>
+      </edge>
+      <edge id="74" source="factorization" target="binomial theorem">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="74" />
+        </attvalues>
+      </edge>
+      <edge id="75" source="factorization" target="Difference of two squares">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="75" />
+        </attvalues>
+      </edge>
+      <edge id="111" source="linear function (calculus)" target="slope-intercept form">
+        <attvalues>
+          <attvalue for="2" value="expression" />
+          <attvalue for="3" value="111" />
+        </attvalues>
+      </edge>
+      <edge id="112" source="linear function (calculus)" target="monotonicity">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="112" />
+        </attvalues>
+      </edge>
+      <edge id="113" source="linear function (calculus)" target="translational property">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="113" />
+        </attvalues>
+      </edge>
+      <edge id="114" source="linear function (calculus)" target="verticality">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="114" />
+        </attvalues>
+      </edge>
+      <edge id="115" source="linear function (calculus)" target="compute intersection">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="115" />
+        </attvalues>
+      </edge>
+      <edge id="116" source="linear function (calculus)" target="positive and negative property">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="116" />
+        </attvalues>
+      </edge>
+      <edge id="96" source="inverse proportional function" target="inverse proportional form">
+        <attvalues>
+          <attvalue for="2" value="expression" />
+          <attvalue for="3" value="96" />
+        </attvalues>
+      </edge>
+      <edge id="97" source="inverse proportional function" target="regional property">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="97" />
+        </attvalues>
+      </edge>
+      <edge id="98" source="inverse proportional function" target="monotonicity">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="98" />
+        </attvalues>
+      </edge>
+      <edge id="99" source="inverse proportional function" target="symmetry">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="99" />
+        </attvalues>
+      </edge>
+      <edge id="100" source="inverse proportional function" target="area only related to k">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="100" />
+        </attvalues>
+      </edge>
+      <edge id="101" source="inverse proportional function" target="compute intersection">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="101" />
+        </attvalues>
+      </edge>
+      <edge id="150" source="quadratic function" target="diagrammatic sketch">
+        <attvalues>
+          <attvalue for="2" value="expression" />
+          <attvalue for="3" value="150" />
+        </attvalues>
+      </edge>
+      <edge id="151" source="quadratic function" target="standard form">
+        <attvalues>
+          <attvalue for="2" value="expression" />
+          <attvalue for="3" value="151" />
+        </attvalues>
+      </edge>
+      <edge id="152" source="quadratic function" target="factored form">
+        <attvalues>
+          <attvalue for="2" value="expression" />
+          <attvalue for="3" value="152" />
+        </attvalues>
+      </edge>
+      <edge id="153" source="quadratic function" target="vertex form">
+        <attvalues>
+          <attvalue for="2" value="expression" />
+          <attvalue for="3" value="153" />
+        </attvalues>
+      </edge>
+      <edge id="154" source="quadratic function" target="opening direction and scale of a function">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="154" />
+        </attvalues>
+      </edge>
+      <edge id="155" source="quadratic function" target="symmetry">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="155" />
+        </attvalues>
+      </edge>
+      <edge id="156" source="quadratic function" target="monotonicity">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="156" />
+        </attvalues>
+      </edge>
+      <edge id="157" source="quadratic function" target="vertex">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="157" />
+        </attvalues>
+      </edge>
+      <edge id="158" source="quadratic function" target="maximum and minimum value">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="158" />
+        </attvalues>
+      </edge>
+      <edge id="159" source="quadratic function" target="judge positive or negative">
+        <attvalues>
+          <attvalue for="2" value="corollary" />
+          <attvalue for="3" value="159" />
+        </attvalues>
+      </edge>
+      <edge id="220" source="Trigonometric functions" target="sine">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="220" />
+        </attvalues>
+      </edge>
+      <edge id="221" source="Trigonometric functions" target="cosine">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="221" />
+        </attvalues>
+      </edge>
+      <edge id="222" source="Trigonometric functions" target="tangent">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="222" />
+        </attvalues>
+      </edge>
+      <edge id="223" source="Trigonometric functions" target="right triangle">
+        <attvalues>
+          <attvalue for="2" value="application" />
+          <attvalue for="3" value="223" />
+        </attvalues>
+      </edge>
+      <edge id="224" source="Trigonometric functions" target="cotangent">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="224" />
+        </attvalues>
+      </edge>
+      <edge id="225" source="Trigonometric functions" target="Pythagorean theorem">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="225" />
+        </attvalues>
+      </edge>
+      <edge id="197" source="Transformation (function)" target="Homothetic transformation">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="197" />
+        </attvalues>
+      </edge>
+      <edge id="198" source="Transformation (function)" target="Reflection">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="198" />
+        </attvalues>
+      </edge>
+      <edge id="199" source="Transformation (function)" target="Rotation (mathematics)">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="199" />
+        </attvalues>
+      </edge>
+      <edge id="200" source="Transformation (function)" target="Translation (geometry)">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="200" />
+        </attvalues>
+      </edge>
+      <edge id="201" source="Transformation (function)" target="Affine transformation">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="201" />
+        </attvalues>
+      </edge>
+      <edge id="202" source="Transformation (function)" target="Linear map">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="202" />
+        </attvalues>
+      </edge>
+      <edge id="90" source="Inequation" target="linear ineqality with one unknown">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="90" />
+        </attvalues>
+      </edge>
+      <edge id="91" source="Inequation" target="System of Linear Inequalities with one unknown">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="91" />
+        </attvalues>
+      </edge>
+      <edge id="230" source="Inequation" target="Simplex algorithm">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="230" />
+        </attvalues>
+      </edge>
+      <edge id="92" source="integer" target="natural number">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="92" />
+        </attvalues>
+      </edge>
+      <edge id="93" source="integer" target="factorization">
+        <attvalues>
+          <attvalue for="2" value="application" />
+          <attvalue for="3" value="93" />
+        </attvalues>
+      </edge>
+      <edge id="119" source="natural number" target="prime number">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="119" />
+        </attvalues>
+      </edge>
+      <edge id="120" source="natural number" target="composite number">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="120" />
+        </attvalues>
+      </edge>
+      <edge id="94" source="Intersection (Euclidean geometry)" target="compute intersection">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="94" />
+        </attvalues>
+      </edge>
+      <edge id="95" source="Intersection (Euclidean geometry)" target="vertical angles">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="95" />
+        </attvalues>
+      </edge>
+      <edge id="102" source="irrational number" target="Pi">
+        <attvalues>
+          <attvalue for="2" value="example" />
+          <attvalue for="3" value="102" />
+        </attvalues>
+      </edge>
+      <edge id="103" source="isosceles triangle" target="equilateral triangle">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="103" />
+        </attvalues>
+      </edge>
+      <edge id="105" source="Line (geometry)" target="for any two distinct points, there is a unique line containing them">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="105" />
+        </attvalues>
+      </edge>
+      <edge id="106" source="Line (geometry)" target="Perpendicular">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="106" />
+        </attvalues>
+      </edge>
+      <edge id="107" source="Line (geometry)" target="Intersection (Euclidean geometry)">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="107" />
+        </attvalues>
+      </edge>
+      <edge id="108" source="Line (geometry)" target="Line segment">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="108" />
+        </attvalues>
+      </edge>
+      <edge id="109" source="Line (geometry)" target="Parallel (geometry)">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="109" />
+        </attvalues>
+      </edge>
+      <edge id="110" source="Line segment" target="line segment theorem">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="110" />
+        </attvalues>
+      </edge>
+      <edge id="121" source="Parallel (geometry)" target="Parallel postulate">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="121" />
+        </attvalues>
+      </edge>
+      <edge id="117" source="multiple" target="least common multiple">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="117" />
+        </attvalues>
+      </edge>
+      <edge id="137" source="prime number" target="prime number theorem">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="137" />
+        </attvalues>
+      </edge>
+      <edge id="138" source="prime number" target="checking the primality">
+        <attvalues>
+          <attvalue for="2" value="application" />
+          <attvalue for="3" value="138" />
+        </attvalues>
+      </edge>
+      <edge id="139" source="prime number" target="Goldbach's conjecture">
+        <attvalues>
+          <attvalue for="2" value="conjecture" />
+          <attvalue for="3" value="139" />
+        </attvalues>
+      </edge>
+      <edge id="140" source="prime number" target="euclid's theorem">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="140" />
+        </attvalues>
+      </edge>
+      <edge id="142" source="prime number" target="euclid's theorem">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="142" />
+        </attvalues>
+      </edge>
+      <edge id="141" source="prime number" target="twin primes">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="141" />
+        </attvalues>
+      </edge>
+      <edge id="143" source="prime number" target="coprime numbers">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="143" />
+        </attvalues>
+      </edge>
+      <edge id="144" source="prime number" target="fundamental theorem of arithmetic">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="144" />
+        </attvalues>
+      </edge>
+      <edge id="122" source="parallelogram" target="rectangle">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="122" />
+        </attvalues>
+      </edge>
+      <edge id="123" source="parallelogram" target="rhombus">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="123" />
+        </attvalues>
+      </edge>
+      <edge id="124" source="parallelogram" target="convex">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="124" />
+        </attvalues>
+      </edge>
+      <edge id="165" source="rectangle" target="square">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="165" />
+        </attvalues>
+      </edge>
+      <edge id="166" source="rectangle" target="convex">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="166" />
+        </attvalues>
+      </edge>
+      <edge id="167" source="rectangle" target="isogonal">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="167" />
+        </attvalues>
+      </edge>
+      <edge id="168" source="rectangle" target="cyclic">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="168" />
+        </attvalues>
+      </edge>
+      <edge id="169" source="rectangle" target="quailateral">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="169" />
+        </attvalues>
+      </edge>
+      <edge id="170" source="rectangle" target="isopermetric theorem">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="170" />
+        </attvalues>
+      </edge>
+      <edge id="171" source="rectangle" target="Japanese theorem for cyclic quadrilaterals">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="171" />
+        </attvalues>
+      </edge>
+      <edge id="172" source="rectangle" target="British flag theorem">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="172" />
+        </attvalues>
+      </edge>
+      <edge id="173" source="rhombus" target="convex">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="173" />
+        </attvalues>
+      </edge>
+      <edge id="174" source="rhombus" target="isotoxal">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="174" />
+        </attvalues>
+      </edge>
+      <edge id="125" source="perpendicular bisector" target="circumcenter">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="125" />
+        </attvalues>
+      </edge>
+      <edge id="126" source="perpendicular bisector" target="lengths of a point on the perpendicular bisector to each vertex are equal">
+        <attvalues>
+          <attvalue for="3" value="126" />
+        </attvalues>
+      </edge>
+      <edge id="127" source="Polygon" target="triangle">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="127" />
+        </attvalues>
+      </edge>
+      <edge id="128" source="Polygon" target="Quadrilateral">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="128" />
+        </attvalues>
+      </edge>
+      <edge id="129" source="Polygon" target="Regular polygon">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="129" />
+        </attvalues>
+      </edge>
+      <edge id="205" source="triangle" target="isosceles triangle">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="205" />
+        </attvalues>
+      </edge>
+      <edge id="206" source="triangle" target="scalene triangle">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="206" />
+        </attvalues>
+      </edge>
+      <edge id="207" source="triangle" target="right triangle">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="207" />
+        </attvalues>
+      </edge>
+      <edge id="208" source="triangle" target="acute triangle">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="208" />
+        </attvalues>
+      </edge>
+      <edge id="209" source="triangle" target="obtuse triangle">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="209" />
+        </attvalues>
+      </edge>
+      <edge id="210" source="triangle" target="conditions on the sides">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="210" />
+        </attvalues>
+      </edge>
+      <edge id="213" source="triangle" target="conditions on the sides">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="213" />
+        </attvalues>
+      </edge>
+      <edge id="211" source="triangle" target="compute area">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="211" />
+        </attvalues>
+      </edge>
+      <edge id="212" source="triangle" target="compute circumference">
+        <attvalues>
+          <attvalue for="2" value="algorithm" />
+          <attvalue for="3" value="212" />
+        </attvalues>
+      </edge>
+      <edge id="214" source="triangle" target="median">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="214" />
+        </attvalues>
+      </edge>
+      <edge id="215" source="triangle" target="angle bisector">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="215" />
+        </attvalues>
+      </edge>
+      <edge id="216" source="triangle" target="altitude">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="216" />
+        </attvalues>
+      </edge>
+      <edge id="217" source="triangle" target="mid-segment line">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="217" />
+        </attvalues>
+      </edge>
+      <edge id="218" source="triangle" target="perpendicular bisector">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="218" />
+        </attvalues>
+      </edge>
+      <edge id="219" source="triangle" target="congruence">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="219" />
+        </attvalues>
+      </edge>
+      <edge id="160" source="Quadrilateral" target="Trapezoid">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="160" />
+        </attvalues>
+      </edge>
+      <edge id="161" source="Quadrilateral" target="Parallelogram">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="161" />
+        </attvalues>
+      </edge>
+      <edge id="130" source="polynomial" target="addition">
+        <attvalues>
+          <attvalue for="2" value="arithmetic operation" />
+          <attvalue for="3" value="130" />
+        </attvalues>
+      </edge>
+      <edge id="131" source="polynomial" target="subtraction">
+        <attvalues>
+          <attvalue for="2" value="arithmetic operation" />
+          <attvalue for="3" value="131" />
+        </attvalues>
+      </edge>
+      <edge id="132" source="polynomial" target="multiplication">
+        <attvalues>
+          <attvalue for="2" value="arithmetic operation" />
+          <attvalue for="3" value="132" />
+        </attvalues>
+      </edge>
+      <edge id="133" source="polynomial" target="expoentiation">
+        <attvalues>
+          <attvalue for="2" value="arithmetic operation" />
+          <attvalue for="3" value="133" />
+        </attvalues>
+      </edge>
+      <edge id="134" source="polynomial" target="Difference of two squares">
+        <attvalues>
+          <attvalue for="2" value="formula" />
+          <attvalue for="3" value="134" />
+        </attvalues>
+      </edge>
+      <edge id="135" source="polynomial" target="binomial">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="135" />
+        </attvalues>
+      </edge>
+      <edge id="136" source="polynomial" target="factorization">
+        <attvalues>
+          <attvalue for="2" value="application" />
+          <attvalue for="3" value="136" />
+        </attvalues>
+      </edge>
+      <edge id="226" source="twin primes" target="twin prime conjecture">
+        <attvalues>
+          <attvalue for="2" value="conjecture" />
+          <attvalue for="3" value="226" />
+        </attvalues>
+      </edge>
+      <edge id="203" source="Trapezoid" target="convex">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="203" />
+        </attvalues>
+      </edge>
+      <edge id="204" source="Trapezoid" target="isosceles trapezoid">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="204" />
+        </attvalues>
+      </edge>
+      <edge id="162" source="rational number" target="integer">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="162" />
+        </attvalues>
+      </edge>
+      <edge id="188" source="square" target="convex">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="188" />
+        </attvalues>
+      </edge>
+      <edge id="189" source="square" target="cyclic">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="189" />
+        </attvalues>
+      </edge>
+      <edge id="190" source="square" target="equilateral">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="190" />
+        </attvalues>
+      </edge>
+      <edge id="191" source="square" target="isogonal">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="191" />
+        </attvalues>
+      </edge>
+      <edge id="192" source="square" target="isotoxal">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="192" />
+        </attvalues>
+      </edge>
+      <edge id="175" source="right triangle" target="Pythagorean theorem">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="175" />
+        </attvalues>
+      </edge>
+      <edge id="176" source="right triangle" target="Thales' theorem">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="176" />
+        </attvalues>
+      </edge>
+      <edge id="177" source="right triangle" target="right angle">
+        <attvalues>
+          <attvalue for="2" value="property" />
+          <attvalue for="3" value="177" />
+        </attvalues>
+      </edge>
+      <edge id="178" source="Set (mathematics)" target="subset">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="178" />
+        </attvalues>
+      </edge>
+      <edge id="179" source="Set (mathematics)" target="union">
+        <attvalues>
+          <attvalue for="2" value="arithmetic operation" />
+          <attvalue for="3" value="179" />
+        </attvalues>
+      </edge>
+      <edge id="180" source="Set (mathematics)" target="Intersection">
+        <attvalues>
+          <attvalue for="2" value="arithmetic operation" />
+          <attvalue for="3" value="180" />
+        </attvalues>
+      </edge>
+      <edge id="181" source="Set (mathematics)" target="complement">
+        <attvalues>
+          <attvalue for="2" value="arithmetic operation" />
+          <attvalue for="3" value="181" />
+        </attvalues>
+      </edge>
+      <edge id="182" source="Set (mathematics)" target="cartesian product">
+        <attvalues>
+          <attvalue for="2" value="arithmetic operation" />
+          <attvalue for="3" value="182" />
+        </attvalues>
+      </edge>
+      <edge id="183" source="Set (mathematics)" target="Venn diagram">
+        <attvalues>
+          <attvalue for="2" value="expression" />
+          <attvalue for="3" value="183" />
+        </attvalues>
+      </edge>
+      <edge id="184" source="similar triangle" target="equilateral triangle">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="184" />
+        </attvalues>
+      </edge>
+      <edge id="185" source="similar triangle" target="Intercept theorem">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="185" />
+        </attvalues>
+      </edge>
+      <edge id="186" source="Similarity (geometry)" target="similar triangle">
+        <attvalues>
+          <attvalue for="2" value="contain" />
+          <attvalue for="3" value="186" />
+        </attvalues>
+      </edge>
+      <edge id="187" source="sine" target="law of sines">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="187" />
+        </attvalues>
+      </edge>
+      <edge id="196" source="tangent" target="law of tangents">
+        <attvalues>
+          <attvalue for="2" value="theorem" />
+          <attvalue for="3" value="196" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
