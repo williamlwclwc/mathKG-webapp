@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, flash
 from flask import render_template, redirect, url_for, request
 import networkx as nx
 from networkx.readwrite import gexf
@@ -9,6 +9,7 @@ from wtforms import Form, TextField, TextAreaField, IntegerField, SubmitField, S
 
 
 app = Flask(__name__)
+app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 
 class node_form(Form):
@@ -105,6 +106,7 @@ def edit_graph():
 
             if G.has_node(form1.node_name.data):
                 print("add failed: such node already exist")
+                flash(u"Add Failed: such node already exist", "danger")
             else:
                 G.add_node(form1.node_name.data, 
                             category=form1.category.data, 
@@ -114,6 +116,7 @@ def edit_graph():
                             content=form1.content.data,
                             notes=form1.notes.data)
                 print("added a node")
+                flash(u"Added Node: " + "'" + form1.node_name.data + "'", 'success')
         # else:
         #     print(form1.validate())
         
@@ -132,8 +135,10 @@ def edit_graph():
                 attr = {form1.node_name.data: attrs} 
                 nx.set_node_attributes(G, attr)
                 print("updated a node")
+                flash(u"Updated Node: " + "'" + form1.node_name.data + "'", 'success')
             else:
                 print("edit failed: such node does not exist")
+                flash(u"Edit Failed: such node does not exist", "danger")
 
         # delete node
         if form1.delete_node.data and form1.validate():
@@ -141,24 +146,33 @@ def edit_graph():
             if G.has_node(form1.node_name.data):
                 G.remove_node(form1.node_name.data)
                 print("removed a node")
+                flash(u"Removed Node: " + "'" + form1.node_name.data + "'", 'success')
             else:
                 print("remove failed: such node does not exist")
+                flash(u"Remove Failed: such node does not exist", "danger")
         # else:
         #     print(form1.validate())
 
         # add edge
         if form2.add_edge.data and form2.validate():
             
-            G.add_edge(form2.source_name.data, form2.target_name.data, 
-            relationship=form2.relationship.data, key=str(G.number_of_edges()),
-            content=form2.content.data, notes=form2.notes.data)
-            update_attr(G, form2)
-            print("added an edge")
+            if G.has_node(form2.source_name.data) and G.has_node(form2.target_name.data):
+                G.add_edge(form2.source_name.data, form2.target_name.data, 
+                relationship=form2.relationship.data, key=str(G.number_of_edges()),
+                content=form2.content.data, notes=form2.notes.data)
+                update_attr(G, form2)
+                print("added an edge")
+                flash(u"Added Edge (key: " + str(G.number_of_edges()) + "): " + "'" + form2.source_name.data + "' -> " 
+                        + "'" + form2.target_name.data + "'" + 'success')
+            else:
+                print("add failed: source/target node does not exist")
+                flash(u"Add Failed: source/target node does not exist", "danger")
         
         # edit edge
         if form2.edit_edge.data and form2.validate():
             if form2.key_num.data == "":
                 print("you need to input the key of the edge")
+                flash(u"Edit Failed: you need to input the key of the edge", "danger")
             elif G.has_edge(form2.source_name.data, form2.target_name.data, key=form2.key_num.data):
                 attrs = {}
                 if form2.relationship.data != "":
@@ -170,20 +184,26 @@ def edit_graph():
                 attr = {(form2.source_name.data, form2.target_name.data, form2.key_num.data): attrs} 
                 nx.set_edge_attributes(G, attr)
                 print("updated an edge")
+                flash(u"Updated Edge (key: " + str(G.number_of_edges()) + "): " + "'" + form2.source_name.data + "' -> " 
+                      + "'" + form2.target_name.data + "'" + 'success')
             else:
                 print("edit failed: such edge does not exist")
+                flash(u"Edit Failed: such edge does not exist", "danger")
 
         # delete edge
         if form2.delete_edge.data and form2.validate():
             if form2.key_num.data == "":
                 print("you need to input the key of the edge")
+                flash(u"Edit Failed: you need to input the key of the edge", "danger")
             if G.has_edge(form2.source_name.data, form2.target_name.data, key=form2.key_num.data):
                 G.remove_edge(form2.source_name.data, form2.target_name.data, key=form2.key_num.data)
                 update_attr(G, form2)
-                print("deleted an edge")
-
+                print("removed an edge")
+                flash(u"Eemoved Edge (key: " + str(G.number_of_edges()) + "): " + "'" + form2.source_name.data + "' -> " 
+                      + "'" + form2.target_name.data + "'" + 'success')
             else:
                 print("remove failed: such edge does not exist")
+                flash(u"Edit Failed: such edge does not exist", "danger")
 
         # save edited graph G into json file
         data = json_graph.node_link_data(G)
