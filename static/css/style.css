@@ -27,10 +27,12 @@ th, td
 .left_bar {
     margin: 0;
     position: absolute;
-    left: 0;
-    max-width: 275px;
+    /* left: 0; */
+    max-width: 285px;
     background-color: #fff;
-    padding-top: 60px;
+    padding-top: 50px;
+    padding-left:5px;
+    padding-right:5px;
     border-bottom-right-radius: 15px;
     overflow: auto;
     max-height: 100%;
@@ -61,4 +63,8 @@ th, td
 
 .bg-purple {
     background-color: #6f42c1;
+}
+
+.bg-left-block {
+    background-color: #fbfbfb;
 }

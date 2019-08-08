@@ -27,13 +27,13 @@
         </div>				
     </div>
     <div class="aside left_bar" id="edit_graph_div" style="pointer-events: auto;">
-        <div>
+        <div class="bg-left-block rounded shadow-sm">
             <h3>Graph Summary</h3>
             <p>{{graph_info[0]}}</p>
             <p>{{graph_info[1]}}</p>
             <p>{{graph_info[2]}}</p>
         </div>
-        <div>
+        <div class="bg-left-block rounded shadow-sm">
             <h4>Add/Edit/Delete Node</h4>
             <form action="/editGraph", method="POST">
                 <div class="form-group">
@@ -63,7 +63,8 @@
                 </div> 
             </form>
         </div>
-        <div>
+        <br>
+        <div class="bg-left-block rounded shadow-sm">
             <h4>Add/Edit/Delete Edge</h4>
             <form action="/editGraph", method="POST">
                 <div class="form-group">
@@ -97,5 +98,6 @@
                 </div>
             </form>
         </div>
+        <br>
     </div>
 {% endblock %}

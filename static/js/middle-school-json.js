@@ -53,11 +53,14 @@ $.getJSON('static/data/graph_from_mongodb.json' +'?timestamp='+ new Date().getTi
                 item_type: 'node', 
                 itemStyle: null,
                 value: node.viz.size,
-                symbolSize: node.viz.size / 1.5,
+                symbolSize: node.viz.size * 1.0,
                 label : {
                     normal: {
                         // show: node.viz.size > 15
-                        show: node.degree > 5
+                        show: node.degree > 6
+                    },
+                    emphasis: {
+                        show: true
                     }
                 },
                 name: node.id,
@@ -70,16 +73,15 @@ $.getJSON('static/data/graph_from_mongodb.json' +'?timestamp='+ new Date().getTi
                 notes: node.notes 
             };
         }),
-        edges:json.links.map(function (link) {
+        edges: json.links.map(function (link) {
             return {
                 item_type: 'edge',
                 id: link.id,
                 lineStyle: {
-                    normal: {
-                        color: link_color[link.relationship]
-                    }
+                    color: link_color[link.relationship]
                 },
                 // name: link.source + '->' + link.target,
+                value: link.value,
                 key: link.key,
                 source: link.source,
                 target: link.target,
@@ -123,10 +125,19 @@ $.getJSON('static/data/graph_from_mongodb.json' +'?timestamp='+ new Date().getTi
                 focusNodeAdjacency: true,
                 draggable: true,
                 force: {
-                    repulsion: 3000,
-                    //gravity: 2,
-                    edgeLength: [0.1,100]
+                    initLayout: 'circular',
+                    repulsion: [1000, 5000],
+                    gravity: 0.01,
+                    edgeLength: [0.01, 100]
                 },
+                // forceAtlas2: {
+                //     steps: 1,
+                //     stopThreshold: 20,
+                //     jitterTolerence: 10,
+                //     gravity: 10,
+                //     scaling: 50,
+                //     preventOverlap: true
+                // },
                 itemStyle: {
                     normal: {
                         borderColor: '#fff',
@@ -140,8 +151,8 @@ $.getJSON('static/data/graph_from_mongodb.json' +'?timestamp='+ new Date().getTi
                     formatter: '{b}'
                 },
                 lineStyle:  {
-                    color: 'category',
-                    curveness: 0.3
+                    // color: link_color[links.relationship],
+                    curveness: 0.25
                 },
                 emphasis: {
                     lineStyle: {
@@ -158,17 +169,14 @@ $.getJSON('static/data/graph_from_mongodb.json' +'?timestamp='+ new Date().getTi
 myChart.on("click", function(params) {
     var data = params.data;
     console.log(data);
-    // GexfJS.graph.edgeList.forEach(function (_e){
-    //     if(_e.target == data.id){
-    //         showuplabel(_e.source);
-    //     }
-    //     if(_e.source == data.id){
-    //         showuplabel(_e.target);
-    //     }
-    // });
     var graphElem_table = document.getElementById("node info tbody");
     if (data.item_type == 'node') {
         graphElem_table.innerHTML = 
+        '<tr>'
+            + '<td>' + 'Type' + '</td>'
+            + '<td>' + data.item_type + '</td>' +
+        '</tr>';
+        graphElem_table.innerHTML += 
         '<tr>'
             + '<td>' + 'Name' + '</td>'
             + '<td>' + data.id + '</td>' +
@@ -178,11 +186,13 @@ myChart.on("click", function(params) {
             + '<td>' + 'Category' + '</td>'
             + '<td>' + data.category + '</td>' +
         '</tr>';
-        graphElem_table.innerHTML += 
-        '<tr>'
-            + '<td>' + 'Url' + '</td>'
-            + '<td>' + data.url + '</td>' +
-        '</tr>';
+        if (data.url != 'Not included in Wikipedia'){
+            graphElem_table.innerHTML += 
+            '<tr>'
+                + '<td>' + 'Url' + '</td>'
+                + '<td>' + '<a href='+ data.url +' target="_blank">'+ data.id +'</a>' + '</td>' +
+            '</tr>';
+        }
         graphElem_table.innerHTML += 
         '<tr>'
             + '<td>' + 'Degree' + '</td>'
@@ -200,6 +210,11 @@ myChart.on("click", function(params) {
         '</tr>';
     } else {
         graphElem_table.innerHTML = 
+        '<tr>'
+            + '<td>' + 'Type' + '</td>'
+            + '<td>' + data.item_type + '</td>' +
+        '</tr>';
+        graphElem_table.innerHTML += 
         '<tr>'
             + '<td>' + 'ID(key)' + '</td>'
             + '<td>' + data.key + '</td>' +
@@ -230,21 +245,15 @@ myChart.on("click", function(params) {
             + '<td>' + data.notes + '</td>' +
         '</tr>';     
     }
+    var mathj = document.getElementById("node info body");
+    // MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	MathJax.Hub.Queue(["Typeset", MathJax.Hub, mathj]);
 });
 
 //search nodes
 function highlight(_nodeIndex){
     myChart.dispatchAction({
         type: "focusNodeAdjacency",
-        seriesIndex: 0,
-        dataIndex: _nodeIndex
-    });
-}
-
-//show labels
-function showuplabel(_nodeIndex){
-    myChart.dispatchAction({
-        type: "showTip",
         seriesIndex: 0,
         dataIndex: _nodeIndex
     });
@@ -352,7 +361,7 @@ function updateAutoComplete(_sender) {
         GexfJS.lastAC = _val;
         var _n = 0;
         GexfJS.graph.indexOfLabels.forEach(function (_l, i) {
-            if (_n < 30 && _l.search(_val) != -1) {
+            if (_n < 20 && _l.search(_val) != -1) {
                 var closure_n = _n;
                 $('<li>')
                     .attr("id", "liac_" + _n)
@@ -375,7 +384,7 @@ function updateAutoComplete(_sender) {
         _ac.html(
             $('<div>').append(
                 $('<h4>').text("nodes")
-            ).append(_acContent)
+                ).append(_acContent)
         );
     }
     hoverAC();
