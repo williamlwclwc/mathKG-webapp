@@ -1,0 +1,37 @@
+{% extends "template.html" %}
+
+{% block search %}
+    <ul id="autocomplete">
+    </ul>
+{% endblock %}
+
+{% block content %}
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width: 89%; height: 90%; top: 60px; left: 200px"></div>
+    <!-- <script src="simple-demo.js"></script> -->
+    <script src="{{ url_for('static', filename='js/middle-school-json.js')}}"></script>
+    <div class="aside right_bar" id="details" style="pointer-events:auto;">
+        <div id="nodeInfo" style="pointer-events:auto;">
+            <h2>Item Info</h2> 
+            <table class="table" id="node info">
+                <thead>
+                    <tr>
+                        <th>Key</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody id="node info tbody">
+                    <!-- display node info here -->
+                </tbody>
+            </table>
+        </div>				
+    </div>
+    <div class="aside left_bar" id="edit_graph_div" style="pointer-events: auto;">
+        <div class="bg-left-block rounded shadow-sm">
+            <h3>Graph Summary</h3>
+            <p>{{graph_info[0]}}</p>
+            <p>{{graph_info[1]}}</p>
+            <p>{{graph_info[2]}}</p>
+        </div>
+    </div>
+{% endblock %}
