@@ -96,12 +96,12 @@ $.getJSON('static/data/graph_from_mongodb.json' +'?timestamp='+ new Date().getTi
     GexfJS.graph.edgeList = graph.links;
 
     option = {
-        title: {
-            text: 'Math KG',
-            subtext: 'Default layout',
-            top: 'bottom',
-            left: 'right'
-        },
+        // title: {
+        //     text: 'Math KG',
+        //     subtext: 'Default layout',
+        //     top: 'bottom',
+        //     left: 'right'
+        // },
         tooltip: {},
         legend: [{
             // selectedMode: 'single',
