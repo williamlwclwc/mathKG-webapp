@@ -48,6 +48,44 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
     </script>
 
+    <!-- import bootstrap js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        function editNodes() {
+            var x = document.getElementById("edit-nodes")
+            var y = document.getElementById("edit-edges")
+            var btn_nodes = document.getElementById("btn-edit-node")
+            var btn_edges = document.getElementById("btn-edit-edge")
+            if(x.style.display == "none"){
+                x.style.display = "block";
+                y.style.display = "none";
+                btn_nodes.className = "btn btn-primary"
+                btn_edges.className = "btn btn-outline-primary"
+            } else {
+                x.style.display ="none" ;
+                btn_nodes.className = "btn btn-outline-primary"
+            }
+        }
+        
+        function editEdges() {
+            var x = document.getElementById("edit-edges")
+            var y = document.getElementById("edit-nodes")
+            var btn_nodes = document.getElementById("btn-edit-node")
+            var btn_edges = document.getElementById("btn-edit-edge")
+            if (x.style.display == "none") {
+                x.style.display = "block";
+                y.style.display = "none";
+                btn_nodes.className = "btn btn-outline-primary"
+                btn_edges.className = "btn btn-primary"
+            } else {
+                x.style.display = "none";
+                btn_edges.className = "btn btn-outline-primary"
+            }
+        }
+
+    </script>
+
 </head>
 <body>
     <!-- bloc-content-->

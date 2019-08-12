@@ -11,6 +11,14 @@
     <!-- <script src="simple-demo.js"></script> -->
     <script src="{{ url_for('static', filename='js/middle-school-json.js')}}"></script>
     <div class="aside right_bar" id="details" style="pointer-events:auto;">
+
+        <div class="bg-left-block rounded shadow-sm">
+            <h3>Graph Summary</h3>
+            <p>{{graph_info[0]}}</p>
+            <p>{{graph_info[1]}}</p>
+            <p>{{graph_info[2]}}</p>
+        </div>
+        <br>
         <div id="nodeInfo" style="pointer-events:auto;">
             <h2>Item Info</h2> 
             <table class="table" id="node info">
@@ -27,13 +35,25 @@
         </div>				
     </div>
     <div class="aside left_bar" id="edit_graph_div" style="pointer-events: auto;">
-        <div class="bg-left-block rounded shadow-sm">
-            <h3>Graph Summary</h3>
-            <p>{{graph_info[0]}}</p>
-            <p>{{graph_info[1]}}</p>
-            <p>{{graph_info[2]}}</p>
+        <!-- get flask flash messages-->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <div class="btn-group" role="group">
+            <button id="btn-edit-node" class="btn btn-outline-primary" onclick="editNodes()"> Edit Nodes </button>
+            <button id="btn-edit-edge" class="btn btn-outline-primary" onclick="editEdges()"> Edit Edges </button>
         </div>
-        <div class="bg-left-block rounded shadow-sm">
+        <br><br>
+        <div id="edit-nodes" class="bg-left-block rounded shadow-sm" style="display: none">
             <h4>Add/Edit/Delete Node</h4>
             <form action="/editGraph", method="POST">
                 <div class="form-group">
@@ -63,8 +83,7 @@
                 </div> 
             </form>
         </div>
-        <br>
-        <div class="bg-left-block rounded shadow-sm">
+        <div id="edit-edges" class="bg-left-block rounded shadow-sm" style="display: none">
             <h4>Add/Edit/Delete Edge</h4>
             <form action="/editGraph", method="POST">
                 <div class="form-group">
