@@ -15,7 +15,7 @@ th, td
 	max-width: 120px;
 }
 
-.main, .aside
+.aside
 {
 	margin-bottom: 1em;
 	padding: 0em;
@@ -24,33 +24,11 @@ th, td
 	top: 60px;
 }
 
-.left_bar {
-    margin: 0;
-    position: absolute;
-    /* left: 0; */
-    max-width: 285px;
-    background-color: #fff;
-    padding-top: 50px;
-    padding-left:5px;
-    padding-right:5px;
-    border-bottom-right-radius: 15px;
-    overflow: auto;
-    max-height: 100%;
-    top: 0px;
-    display: block;
-}
-
-.right_bar {
-	position: absolute;
-    right: 0;
-	max-width: 275px;
-	max-height: 100%;
-    background-color: #fff;
-    padding: 10px;
-    border-bottom-left-radius: 15px;
-	padding-left: 15px;
-	overflow: auto;
-	padding-top: 20px;
+.main
+{
+    background-color: #fafafa;
+    width: 100%; 
+    height: 100%;
 }
 
 .starter-template {
@@ -67,4 +45,32 @@ th, td
 
 .bg-left-block {
     background-color: #fbfbfb;
+}
+
+.content-section {
+    padding: 10px;
+    border: 2px solid #dddddd;
+    border-radius: 3px;  
+    overflow: auto;
+    background: #ffffff;
+}
+
+.bar {
+    position: absolute;
+    top: 60px;
+    display: block;
+    max-height: 100%;
+    max-width: 275px;
+}
+.left {
+    margin-left: 5px;
+}
+
+.right {
+    right: 5px;
+}
+
+.btn-group{
+    border-bottom-right-radius: 15px;
+    background-color: #fafafa;
 }

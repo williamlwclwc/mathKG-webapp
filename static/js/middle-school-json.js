@@ -169,14 +169,16 @@ $.getJSON('static/data/graph_from_mongodb.json' +'?timestamp='+ new Date().getTi
 myChart.on("click", function(params) {
     var data = params.data;
     console.log(data);
+    // 区分 node info 和 edge info
+    document.getElementById("ItemInfo").setAttribute(
+                    "class",'content-section' );
+    Info_Title = document.getElementById("Info Title")
+    Info_Title.innerHTML = data.item_type + ' Info';
+    Info_Head = document.getElementById("Info Head")
+    Info_Head.innerHTML ='<th>Key</th><th>Value</th>'
     var graphElem_table = document.getElementById("node info tbody");
     if (data.item_type == 'node') {
         graphElem_table.innerHTML = 
-        '<tr>'
-            + '<td>' + 'Type' + '</td>'
-            + '<td>' + data.item_type + '</td>' +
-        '</tr>';
-        graphElem_table.innerHTML += 
         '<tr>'
             + '<td>' + 'Name' + '</td>'
             + '<td>' + data.id + '</td>' +
@@ -199,10 +201,10 @@ myChart.on("click", function(params) {
             + '<td>' + data.degree + '</td>' +
         '</tr>';
         graphElem_table.innerHTML += 
-        '<tr>'
-            + '<td>' + 'Content' + '</td>'
-            + '<td>' + data.content + '</td>' +
-        '</tr>';
+        '<tr>' 
+            + '<td>'+ 'Content' +'</td>'
+            + '<td>'+ '<div>' + data.content + '</div>' +'<td>'+
+        '</tr>'
         graphElem_table.innerHTML += 
         '<tr>'
             + '<td>' + 'Notes' + '</td>'
@@ -210,11 +212,6 @@ myChart.on("click", function(params) {
         '</tr>';
     } else {
         graphElem_table.innerHTML = 
-        '<tr>'
-            + '<td>' + 'Type' + '</td>'
-            + '<td>' + data.item_type + '</td>' +
-        '</tr>';
-        graphElem_table.innerHTML += 
         '<tr>'
             + '<td>' + 'ID(key)' + '</td>'
             + '<td>' + data.key + '</td>' +
