@@ -1,38 +1,48 @@
 {% extends "template.html" %}
 
-{% block search %}
-    <ul id="autocomplete">
-    </ul>
-{% endblock %}
-
 {% block content %}
-<div class='main' >
-    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-    <div id="main" style="width: 89%; height: 90%; top: 60px; left: 200px; position:absolute"></div>
-    <!-- <script src="simple-demo.js"></script> -->
-    <script src="{{ url_for('static', filename='js/middle-school-json.js')}}"></script>
-    <div class="right bar" id="details" style="pointer-events:auto;">
-        <!-- <div id="nodeInfo" class="content-section"> -->
-        <div id="ItemInfo">
-            <h2 id = "Info Title"></h2>
-            <table class="table" id="node info">
-                <thead>
-                    <tr id = 'Info Head'></tr>
-                </thead>
-                <tbody id="node info tbody">
-                    <!-- display node info here -->
-                </tbody>
-            </table>
-        </div>				
-    </div>
-    <div class="left bar" id="edit_graph_div" style="pointer-events: auto;">
-        <div class="content-section">
-            <h4>Graph Summary</h4>
-            <p>{{graph_info[0]}}</p>
-            <p>{{graph_info[1]}}</p>
-            <p>{{graph_info[2]}}</p>
-        </div>
-    </div>
-    
-</div>
+    <section class="container" style="margin-bottom: 200px">
+        <section>
+            <div style="background: white; padding-top: 30px">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div style="text-align: center; margin-top: 30px">
+                            <img class="img-responsive" id="main-logo" src="{{url_for('static', filename='img/open-book-256.png')}}" alt="mathKG logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div style="text-align: center; padding-bottom: 32px">
+                    <h4>
+                        Math Knowledge Graph is a middle school math knowledge visualization project
+                    </h4>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div style="background-color: #f5f5f5">
+                <div class="container">
+                    <div class="row">
+                        <div style="float: left; width: 55%;">
+                            <img class="img-responsive" src="{{url_for('static', filename='img/how-it-looks.png')}}" alt="mathKG overview">
+                        </div>
+                        <div style="width: 45%">
+                            <h3>MathKG: Redefine Text Knowledge</h3>
+                            <h5>
+                                MathKG is a web-based interactive knowledge graph application. 
+                                <br>
+                                MathKG is light-weight, scalable, responsive: able to represent more than a thousand nodes and their edges, and allow each user to edit their own graph.
+                            </h5>
+                            <div class="button-container; text-align:center">
+                                <a class="btn btn-success" href="/editGraph">Try it now</a>
+                                <a class="btn btn-success" href="/register">Register</a>
+                                <a class="btn btn-success" href="/login">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
 {% endblock %}
