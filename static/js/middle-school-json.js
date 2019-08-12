@@ -1,6 +1,6 @@
 // 基于准备好的dom，初始化echarts实例
 var myChart = echarts.init(document.getElementById('main'));
-
+var recent_url =  window.location.href
 var filename = 'static/data/';
 var username = document.getElementById("user profile");
 if(username!=null) {
@@ -9,6 +9,7 @@ if(username!=null) {
     filename += 'graph_login_test.json';
 }
 console.log(filename);
+console.log(recent_url);
 
 
 var GexfJS = {
