@@ -30,7 +30,7 @@ th, td
     /* left: 0; */
     max-width: 285px;
     background-color: #fff;
-    padding-top: 50px;
+    padding-top: 60px;
     padding-left:5px;
     padding-right:5px;
     border-bottom-right-radius: 15px;
@@ -67,4 +67,9 @@ th, td
 
 .bg-left-block {
     background-color: #fbfbfb;
+}
+
+.profile {
+    position: absolute;
+    right: 10px;
 }

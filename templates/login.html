@@ -1,0 +1,12 @@
+<!doctype html>
+<title>Login Sample</title>
+<h1>Login</h1>
+{% with messages = get_flashed_messages() %}
+    <div>{{ messages[0] }}</div>
+{% endwith %}
+<form action="/login" method="POST">
+    <input type="text" name="username" id="username" placeholder="Username"></input>
+    <input type="password" name="password" id="password" placeholder="Password"></input>
+    <input type="submit" name="submit"></input>
+</form>
+<p>New User? <a href="/register">Click to Register!</a> (pls do not use register feature, it is not implemented) you can use user Tom and 111111 to login</p>

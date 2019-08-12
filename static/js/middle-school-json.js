@@ -1,6 +1,16 @@
 // 基于准备好的dom，初始化echarts实例
 var myChart = echarts.init(document.getElementById('main'));
 
+var filename = 'static/data/';
+var username = document.getElementById("user profile");
+if(username!=null) {
+    filename += 'graph_login_test' + '_' + username.innerHTML + '.json';
+} else {
+    filename += 'graph_login_test.json';
+}
+console.log(filename);
+
+
 var GexfJS = {
     params: {
         activeNode: -1
@@ -12,8 +22,9 @@ var GexfJS = {
     }
 };
 
+
 myChart.showLoading();
-$.getJSON('static/data/graph_from_mongodb.json' +'?timestamp='+ new Date().getTime(), function (json) {
+$.getJSON(filename +'?timestamp='+ new Date().getTime(), function (json) {
     myChart.hideLoading();
 
     var categories = [];

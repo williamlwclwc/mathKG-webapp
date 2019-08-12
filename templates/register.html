@@ -1,0 +1,19 @@
+<!doctype html>
+<title>Register Sample</title>
+<h1>Register</h1>
+<form action="/register" method="POST">
+    <p>
+        {{ form_newuser.username.label }}<br>
+        {{ form_newuser.username(size=32) }}<br>
+    </p>
+    <p>
+        {{ form_newuser.password.label }}<br>
+        {{ form_newuser.password(size=32) }}<br>
+        
+    </p>
+    <p>
+        {{ form_newuser.password2.label }}<br>
+        {{ form_newuser.password2(size=32) }}<br>
+    </p>
+    <p>{{ form_newuser.submit() }}</p>
+</form>
