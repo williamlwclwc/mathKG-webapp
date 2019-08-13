@@ -1,6 +1,11 @@
 {% extends "template.html" %}
 
 {% block content %}
+    <!-- don't show search bar in about page -->
+    <script type="text/javascript"> 
+    search_bar = document.getElementById("recherche").setAttribute(
+                        "style",'display : none' );
+    </script>
     <section class="container" style="margin-bottom: 200px">
         <section>
             <div style="background: white; padding-top: 30px">

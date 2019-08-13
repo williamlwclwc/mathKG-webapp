@@ -79,12 +79,14 @@ th, td
     position: absolute;
     right: 10px;
 }
+
 .content-section {
     padding: 10px;
     border: 2px solid #dddddd;
     border-radius: 3px;  
     overflow: auto;
     background: #ffffff;
+    z-index: 0;
 }
 
 .bar {
