@@ -1,8 +1,6 @@
 from wtforms import (StringField, PasswordField, BooleanField, SubmitField, 
                     Form, TextField, TextAreaField, IntegerField, SelectField, validators)
 from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
-import sys
-sys.path.append('../utils/')
 from utils.login_util import query_user
 
 

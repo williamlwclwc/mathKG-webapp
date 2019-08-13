@@ -1,14 +1,12 @@
 from app import app, login_manager
-from app.user import User
+from .user import User
 from networkx.readwrite import gexf, json_graph
 import networkx as nx
 import json
 import logging
 from flask import Flask, flash, render_template, redirect, url_for, request
 from flask_login import login_user, logout_user, current_user, login_required, fresh_login_required
-from app.forms import node_form, edge_form, RegistrationForm
-import sys
-sys.path.append('../utils/')
+from .forms import node_form, edge_form, RegistrationForm
 from utils.login_util import query_user
 from utils.update_attr import update_attr
 from shutil import copyfile

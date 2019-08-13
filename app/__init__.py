@@ -1,10 +1,14 @@
 from flask import Flask
 from flask_login import LoginManager 
+from flask_pymongo import PyMongo
 # from app import views
 
 app = Flask(__name__)
 # app.config.from_object('config')
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+# 配置mongodb
+app.config['MONGO_URI'] = 'mongodb://localhost:27017/MiddleSchoolMathDB'
+mongo = PyMongo(app)
 
 #login
 login_manager = LoginManager(app)
@@ -17,3 +21,5 @@ login_manager.login_view = 'login'
 login_manager.login_message = 'Unauthorized User'
 # 设置闪现的错误消息的类别
 login_manager.login_message_category = "info"
+
+from app import views

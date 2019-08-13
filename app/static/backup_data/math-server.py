@@ -17,13 +17,13 @@ import os
 from shutil import copyfile
 
 #connect 2 mongodb
-from flask_pymongo import PyMongo
+# from flask_pymongo import PyMongo
 
 
 
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
-mongo = PyMongo(app)
+# mongo = PyMongo(app)
 
 #app.register_blueprint(login_test)
 #test login
@@ -388,5 +388,5 @@ def register():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='10.110.165.244', port=5000)
-    # app.run(debug=True)
+    # app.run(debug=True, host='10.110.165.244', port=5000)
+    app.run(debug=True)
