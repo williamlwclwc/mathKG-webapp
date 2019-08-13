@@ -1,7 +1,7 @@
 from wtforms import (StringField, PasswordField, BooleanField, SubmitField, 
                     Form, TextField, TextAreaField, IntegerField, SelectField, validators)
 from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
-from utils.login_util import query_user
+from app.utils.login_util import query_user
 
 
 class node_form(Form):

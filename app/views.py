@@ -7,8 +7,8 @@ import logging
 from flask import Flask, flash, render_template, redirect, url_for, request
 from flask_login import login_user, logout_user, current_user, login_required, fresh_login_required
 from .forms import node_form, edge_form, RegistrationForm
-from utils.login_util import query_user
-from utils.update_attr import update_attr
+from app.utils.login_util import query_user
+from app.utils.update_attr import update_attr
 from shutil import copyfile
 
 
@@ -17,7 +17,7 @@ from shutil import copyfile
 def home():
     
     # provide a different graph for each user
-    graphname = "static/data/graph_login_test"
+    graphname = "app/static/data/graph_login_test"
     if current_user.get_id() != None:
         graphname += "_" + current_user.get_id() + ".json"
     else:
@@ -42,7 +42,7 @@ def home():
 def edit_graph():
 
     # provide a different graph for each user
-    graphname = "static/data/graph_login_test"
+    graphname = "app/static/data/graph_login_test"
     if current_user.get_id() != None:
         graphname += "_" + current_user.get_id() + ".json"
     else:
@@ -275,8 +275,8 @@ def register():
             user['password'] = form.password.data
             users.append(user)
             print(users)
-            source = "static/data/graph_login_test.json"
-            target = "static/data/graph_login_test_" + username + ".json"
+            source = "app/static/data/graph_login_test.json"
+            target = "app/static/data/graph_login_test_" + username + ".json"
             copyfile(source, target)
             flash('Congratulations, you are now a registered user!')
             return redirect(url_for('login'))
