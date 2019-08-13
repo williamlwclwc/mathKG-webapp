@@ -1,25 +1,52 @@
 # A Data Visualization Webapp Demo
+* Edit Page
+    * ![editgraph](static/img/screenshot-edit.png)
+* About
+    * ![aboutus](static/img/screenshot-about.png)
 
-## Server-end
+## Repo Url
+* [GitHub](https://github.com/williamlwclwc/mathKG-webapp)
+* [Official VMware GitLab](https://gitlab.eng.vmware.com/math-kg/math-kg)
 
-* flask
+## Tools
 
-## Front-end
+* Server-end
+    * flask
 
-* echarts
+* Front-end
+    * echarts
+    * bootstrap
+    * font awesome
 
-## Data Visualization Tool
+* Deployment
+    * gunicorn
 
-* gephi
+## Dependencies and Virtual Environment
 
-## How to run
+* First you need to install python(3.6 or above) and python virtual environment and create your own virtural environment (e.g. venv) under the project folder by typing "$ python -m venv venv".
+* Activate virtual environment by: Open the project folder in terminal, type"$ source ./venv/bin/activate". You may also do this via Python Ides(e.g. pycharm) by configging the interpreter as venv and the python inside the folder.
+* If you activated your virtual environment successfully, your will see "(venv)" in your command line
+* Dependencies in a virtual environment can be exported: $ pip freeze > requirements.txt
+* Dependencies can be installed into a virtual environment: $ pip install -r requirements.txt 
 
-1. First you need to install python(3.6 or above) and python virtual environment and create your own virtural environment (e.g. venv) under the project folder by typing "$ python -m venv venv".
+## How to run with dev server
 
-2. Activate virtual environment by: Open the project folder in terminal, type"$ source ./venv/bin/activate". You may also do this via Python Ides(e.g. pycharm) by configging the interpreter as venv and the python inside the folder.
+1. Make sure you have your virtual environment activated
 
-3. When you see "(venv)" in you command line, you can type"$ pip install -r requirements.txt" to install required libraries.
+2. Install dependencies into your virtual environment
 
-4. You can run server by typing:"$ python math-server.py" and open the link "http://127.0.0.1:5000/" in your browser
+3. You can run server by typing:"$ python math-server.py" and open the link "http://127.0.0.1:5000/" in your browser
 
-5. Use "ctrl+c" to stop the server and use "$ deactivate" to quit virtual environment
+4. Use "ctrl+c" to stop the server and use "$ deactivate" to quit virtual environment
+
+## How to run with production server
+
+1. Make sure you have your virtual environment activated
+
+2. Install dependencies into your virtual environment
+
+3. Run server in background: $ gunicorn math-server:app -p math-server.pid -b "your ip":"your port" -D
+
+4. See the pid of your server: $ cat math-server.pid
+
+5. Shutdown your server: $ kill "pid of your server"

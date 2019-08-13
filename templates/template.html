@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui-1.10.3.custom.min.css')}}">
     <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
     <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='favicon.png')}}">
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel=stylesheet>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- 引入 echarts.js -->
@@ -48,10 +50,48 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
     </script>
 
+    <!-- import bootstrap js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        function editNodes() {
+            var x = document.getElementById("edit-nodes")
+            var y = document.getElementById("edit-edges")
+            var btn_nodes = document.getElementById("btn-edit-node")
+            var btn_edges = document.getElementById("btn-edit-edge")
+            if(x.style.display == "none"){
+                x.style.display = "block";
+                y.style.display = "none";
+                btn_nodes.className = "btn btn-primary"
+                btn_edges.className = "btn btn-outline-primary"
+            } else {
+                x.style.display ="none" ;
+                btn_nodes.className = "btn btn-outline-primary"
+            }
+        }
+        
+        function editEdges() {
+            var x = document.getElementById("edit-edges")
+            var y = document.getElementById("edit-nodes")
+            var btn_nodes = document.getElementById("btn-edit-node")
+            var btn_edges = document.getElementById("btn-edit-edge")
+            if (x.style.display == "none") {
+                x.style.display = "block";
+                y.style.display = "none";
+                btn_nodes.className = "btn btn-outline-primary"
+                btn_edges.className = "btn btn-primary"
+            } else {
+                x.style.display = "none";
+                btn_edges.className = "btn btn-outline-primary"
+            }
+        }
+
+    </script>
+
 </head>
 <body>
     <!-- bloc-content-->
-    {% block content %}{% endblock content%}
+    
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #92edf0f1;" id="titlebar">
         <a class="navbar-brand" href="/">
             <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
@@ -61,25 +101,137 @@
         </a>
         <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/home">
+                    <i class="fas fa-home"></i>
+                    Home <span class="sr-only">(current)</span>
+                </a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="/editGraph">Edit Graph</a>
+                <a class="nav-link" href="/editGraph">
+                    <i class="fas fa-edit"></i>
+                    Edit Graph
+                </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/static/data/graph_from_mongodb.json" download="rawdata.json">Download Rawdata</a>
+                <a class="nav-link" href="/static/data/graph_from_mongodb.json" download="rawdata.json">
+                    <i class="fas fa-download"></i>
+                    Download Rawdata
+                </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="/about">About</a>
+                <a class="nav-link" href="/about">
+                    <i class="fas fa-users"></i>
+                    About Us
+                </a>
             </li>
         </ul>
         <form id="recherche">
             <input id="searchinput" class="form-control mr-sm-2 grey" type="search" placeholder="Search Node (top 20 matches)" aria-label="Search" autocomplete="off" />
             <input id="searchsubmit" type="submit" />
         </form>
+        <div class="profile">
+            {% if current_user.is_authenticated %}
+            <span id="user profile" style="font-size: 15px; margin-right: 10px">{{current_user.get_id()}}</span>
+            <a href="/logout" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Logout</a>
+            {% else %}
+            <a href="/login" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Login</a>
+            {% endif %}
+        </div>
     </nav>
     <!-- bloc-content-->
     {% block search %}{% endblock search%}
+    {% block content %}{% endblock content%}
     
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4" style="background-color: #92edf0f1">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+    
+        <!-- Grid row -->
+        <div class="row">
+    
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+    
+            <!-- Content -->
+            <h5 class="text-uppercase">Developers</h5>
+            <a class="btn btn-info" href="/about">
+                <i class="fas fa-envelope"></i>
+                <span>Contact Us</span>
+            </a>
+            <br><br>
+            <p>@Litong Xiao</p>
+            <p>@Wenchang Liu</p>
+            <p>@Tianyi Hu</p>
+    
+            </div>
+            <!-- Grid column -->
+    
+            <hr class="clearfix w-100 d-md-none pb-3">
+    
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+    
+            <!-- Links -->
+            <h5 class="text-uppercase">Quick Access</h5>
+    
+            <ul class="list-unstyled">
+                <li>
+                <a href="/home">Home</a>
+                </li>
+                <li>
+                <a href="/editGraph">Edit Graph</a>
+                </li>
+                <li>
+                <a href="/register">Register</a>
+                </li>
+                <li>
+                <a href="/about">About Us</a>
+                </li>
+            </ul>
+    
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+    
+            <!-- Links -->
+            <h5 class="text-uppercase">Follow Us</h5>
+    
+            <ul class="list-unstyled">
+                <li>
+                        <a class="btn btn-info" href="https://github.com/williamlwclwc/mathKG-webapp">
+                            <i class="fab fa-github"></i>
+                            <span>Follow Us on GitHub @mathKG</span>
+                        </a>
+                </li>
+                <li>
+                        <a class="btn btn-info" href="https://gitlab.eng.vmware.com/math-kg/math-kg">
+                            <i class="fab fa-gitlab"></i>
+                            <span>VMware Official Repo @mathKG</span>
+                        </a>
+                </li>
+            </ul>
+    
+            </div>
+            <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row -->
+    
+        </div>
+        <!-- Footer Links -->
+    
+        <!-- Copyright -->
+        <!-- <div class="footer-copyright text-center py-3">© 2019/08 Copyright: -->
+        <div class="footer-copyright text-center py-3">© 2019/08 Copyright:
+        <a href="10.110.165.244/5000"> VMware Summer Intern Project - Math KG</a>
+        </div>
+        <!-- Copyright -->
+    
+    </footer>
+
 </body>
 </html>
