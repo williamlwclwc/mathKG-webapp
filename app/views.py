@@ -1,125 +1,18 @@
-# -*- coding: utf-8 -*-
-from flask import Flask, flash
-from flask import render_template, redirect, url_for, request
+from app import app, login_manager
+from app.user import User
+from networkx.readwrite import gexf, json_graph
 import networkx as nx
-from networkx.readwrite import gexf
-from networkx.readwrite import json_graph
 import json
 import logging
-from wtforms import Form, TextField, TextAreaField, IntegerField, SubmitField, SelectField, validators 
-
-#test-login
-from flask_login import (LoginManager, UserMixin, login_user, logout_user,
-                            current_user, login_required, fresh_login_required)
-from wtforms import StringField, PasswordField, BooleanField, SubmitField
-from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
-import os
+from flask import Flask, flash, render_template, redirect, url_for, request
+from flask_login import login_user, logout_user, current_user, login_required, fresh_login_required
+from app.forms import node_form, edge_form, RegistrationForm
+import sys
+sys.path.append('../utils/')
+from utils.login_util import query_user
+from utils.update_attr import update_attr
 from shutil import copyfile
 
-#connect 2 mongodb
-from flask_pymongo import PyMongo
-
-
-
-app = Flask(__name__)
-app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
-mongo = PyMongo(app)
-
-#app.register_blueprint(login_test)
-#test login
-login_manager = LoginManager(app)
-# 设置登录视图的名称，如果一个未登录用户请求一个只有登录用户才能访问的视图
-# 则闪现一条错误消息，并重定向到这里设置的登录视图
-# 如果未设置登录视图，则直接返回401错误
-login_manager.login_view = 'login'
-# 设置当未登录用户请求一个只有登录用户才能访问的视图时，闪现的错误消息的内容，
-# 默认的错误消息是：Please log in to access this page.。
-login_manager.login_message = 'Unauthorized User'
-# 设置闪现的错误消息的类别
-login_manager.login_message_category = "info"
-
-users = [
-    {'username': 'Tom', 'password': '111111'},
-    {'username': 'Michael', 'password': '123456'},
-    {'username': 'xlitong', 'password':'111111'}
-]
-
-class User(UserMixin):
-    pass
-
-
-# 通过用户名，获取用户记录，如果不存在，则返回None
-def query_user(username):
-    for user in users:
-        if user['username'] == username:
-            return user
-
-class node_form(Form):
-    node_name = TextField("node_name", [validators.InputRequired()])
-    category = SelectField(
-        "category", validators=[validators.Optional()],
-        choices=[("", ""), ("0", "0"), ("1", "1")])
-    url = TextField("url", [validators.Optional()])
-    content = TextAreaField("content", [validators.Optional()])
-    notes = TextAreaField("notes", [validators.Optional()])
-    add_node = SubmitField("Add Node")
-    edit_node = SubmitField("Edit Node")
-    delete_node = SubmitField("Delete Node")
-
-class edge_form(Form):
-    key_num = TextField("key_num", [validators.Optional()])
-    source_name = TextField("source_name", [validators.InputRequired()])
-    target_name = TextField("target_name", [validators.InputRequired()])
-    relationship = SelectField(
-        "relationship", validators=[validators.Optional()],
-        choices=[("", ""), ("contain", "contain"), ("arithmetic operation", "arithmetic operation"),
-        ("property", "property"), ("algorithm", "algorithm"), ("application", "application"), 
-        ("example", "example"), ("expression", "expression"), ("theorem", "theorem"), 
-        ("conjecture", "conjecture"), ("proof", "proof"), ("proof methods", "proof methods"),
-        ("corollary", "corollary"), ("formula", "formula")])
-    content = TextAreaField("content", [validators.Optional()])
-    notes = TextAreaField("notes", [validators.Optional()])
-    add_edge = SubmitField("Add Edge")
-    edit_edge = SubmitField("Edit Edge")
-    delete_edge = SubmitField("Delete Edge")
-
-class RegistrationForm(Form):
-    username = StringField('Username', validators=[DataRequired()])
-    # email = StringField('Email', validators=[DataRequired(), Email()])
-    password = PasswordField('Password', validators=[DataRequired()])
-    password2 = PasswordField(
-        'Repeat Password', validators=[DataRequired(), EqualTo('password')])
-    submit = SubmitField('Register')
-
-    def validate_username(self, username):
-        user = query_user(username)
-        if user is not None:
-            raise ValidationError('Please use a different username.')
-
-    # def validate_email(self, email):
-    #     user = User.query.filter_by(email=email.data).first()
-    #     if user is not None:
-    #         raise ValidationError('Please use a different email address.')
-
-# set degree and size
-def update_attr(G, form2):
-    # calculate new degree and size, max_size = 30, min_size = 10
-    list_degree = [d for n, d in G.degree()]
-    degree_max = max(list_degree)
-    degree_min = min(list_degree)
-    degree_source = G.degree(nbunch=form2.source_name.data)
-    degree_target = G.degree(nbunch=form2.target_name.data)
-    if degree_source >= degree_max:
-        size_source = 30
-    else:
-        size_source = (degree_source - degree_min) * (30-10) / (degree_max-degree_min) + 10
-    if degree_target >= degree_max:
-        size_target = 30
-    else:
-        size_target = (degree_target - degree_min) * (30-10) / (degree_max-degree_min) + 10
-    attrs = {form2.source_name.data: {'degree': degree_source, 'viz': {'size': size_source}}, 
-            form2.target_name.data: {'degree': degree_target, 'viz': {'size': size_target}}}
-    nx.set_node_attributes(G, attrs)
 
 @app.route('/')
 @app.route('/home')
@@ -357,6 +250,12 @@ def logout():
     logout_user()
     return 'Logged out successfully!'
 
+users = [
+    {'username': 'Tom', 'password': '111111'},
+    {'username': 'Michael', 'password': '123456'},
+    {'username': 'xlitong', 'password':'111111'}
+]
+
 #register new user
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -385,8 +284,3 @@ def register():
             return redirect(url_for('login'))
     # GET 请求
     return render_template('register.html', form_newuser=form)
-
-
-if __name__ == '__main__':
-    app.run(debug=True, host='10.110.165.244', port=5000)
-    # app.run(debug=True)
