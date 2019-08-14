@@ -1,14 +1,15 @@
 from flask import Flask
 from flask_login import LoginManager 
-# from flask_pymongo import PyMongo
+from flask_pymongo import PyMongo
 # from app import views
 
 app = Flask(__name__)
 # app.config.from_object('config')
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 # 配置mongodb
-# app.config['MONGO_URI'] = 'mongodb://localhost:27017/MiddleSchoolMathDB'
-# mongo = PyMongo(app)
+app.config['MONGO_URI'] = r'mongodb://127.0.0.1:27017/MiddleSchoolMathDB'
+app.config['MONGO_DBNAME'] = 'MiddleSchoolMathDB'
+mongo = PyMongo(app)
 
 #login
 login_manager = LoginManager(app)

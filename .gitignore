@@ -1,4 +1,7 @@
 /venv
 /.vscode/*
 /.vs
-
+/__pycache__
+/run_server.pid
+/app/__pycache__
+/app/utils/__pycache__

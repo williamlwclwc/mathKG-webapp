@@ -1,15 +1,15 @@
-from app import app, login_manager
+from app import app, login_manager, mongo
 from .user import User
 from networkx.readwrite import gexf, json_graph
 import networkx as nx
 import json
-import logging
 from flask import Flask, flash, render_template, redirect, url_for, request
 from flask_login import login_user, logout_user, current_user, login_required, fresh_login_required
 from .forms import node_form, edge_form, RegistrationForm
 from app.utils.login_util import query_user
 from app.utils.update_attr import update_attr
 from shutil import copyfile
+import logging
 
 
 @app.route('/')
@@ -220,25 +220,34 @@ def index():
 def home_test():
     return 'Logged in as: %s' % current_user.get_id()
 
+from app import mongo
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         username = request.form.get('username')
         user = query_user(username)
         # 验证表单中提交的用户名和密码
-        if user is not None and request.form['password'] == user['password']:
-            curr_user = User()
-            curr_user.id = username
+        if user is not None :
+            user_auths = mongo.db.user_auths.find_one({'user_id':user['id']},{'_id':0})
+            logging.info(user_auths)
+            if request.form['password'] is None:
+                flash('Password cannot be empty!')
+            elif request.form['password'] == user_auths["credential"]:
+                curr_user = User()
+                curr_user.id = username
 
-            # 通过Flask-Login的login_user方法登录用户
-            login_user(curr_user, remember=True)
+                # 通过Flask-Login的login_user方法登录用户
+                login_user(curr_user, remember=True)
 
-            # 如果请求中有next参数，则重定向到其指定的地址，
-            # 没有next参数，则重定向到"index"视图
-            next = request.args.get('next')
-            return redirect(next or url_for('edit_graph'))
-
-        flash('Wrong username or password!')
+                # 如果请求中有next参数，则重定向到其指定的地址，
+                # 没有next参数，则重定向到"index"视图
+                next = request.args.get('next')
+                return redirect(next or url_for('edit_graph'))
+            else:
+                flash('Wrong password!')
+        else:
+            flash('Invalid user name!')
     # GET 请求
     return render_template('login.html')
 
@@ -246,13 +255,7 @@ def login():
 @login_required
 def logout():
     logout_user()
-    return 'Logged out successfully!'
-
-users = [
-    {'username': 'Tom', 'password': '111111'},
-    {'username': 'Michael', 'password': '123456'},
-    {'username': 'xlitong', 'password':'111111'}
-]
+    return 'Logged out successfully!' # 这里要加一个跳转
 
 #register new user
 @app.route('/register', methods=['GET', 'POST'])
@@ -271,13 +274,22 @@ def register():
             return redirect(url_for('login'))
         if user is None:
             user = {}
-            user['username'] = username
-            user['password'] = form.password.data
-            users.append(user)
-            print(users)
+            user['name'] = username
+            user['id'] = mongo.db.users.find().count()
+            user['email'] = ''
+            user_auth = {}
+            user_auth['id'] = mongo.db.user_auths.find().count()
+            user_auth['user_id'] = user['id']
+            user_auth['identifier'] = user['name']
+            user_auth["identity_type"] = 'name'
+            user_auth["credential"] = form.password.data
+            mongo.db.users.insert_one(user)
+            mongo.db.user_auths.insert_one(user_auth)
+            # print(users)
             source = "app/static/data/graph_login_test.json"
             target = "app/static/data/graph_login_test_" + username + ".json"
             copyfile(source, target)
+            logging.error(mongo.db.users.find({'name':username}))
             flash('Congratulations, you are now a registered user!')
             return redirect(url_for('login'))
     # GET 请求

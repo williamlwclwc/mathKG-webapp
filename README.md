@@ -1,8 +1,8 @@
 # A Data Visualization Webapp Demo
 * Edit Page
-    * ![editgraph](static/img/screenshot-edit.png)
+    * ![editgraph](app/static/img/screenshot-edit.png)
 * About
-    * ![aboutus](static/img/screenshot-about.png)
+    * ![aboutus](app/static/img/screenshot-about.png)
 
 ## Repo Url
 * [GitHub](https://github.com/williamlwclwc/mathKG-webapp)
