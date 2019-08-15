@@ -1,0 +1,35 @@
+{% extends "template.html" %}
+
+{% block head %}
+<!-- 3D layout package -->
+<script src="//unpkg.com/3d-force-graph"></script>
+{% endblock %}
+
+{% block content %}
+<!-- don't show search bar in about page -->
+<script type="text/javascript"> 
+search_bar = document.getElementById("recherche").setAttribute(
+                    "style",'display : none' );
+</script>
+
+<div class="main" id="3d-graph" style="top: 60px; left: 200px;"></div>
+
+<script src="{{ url_for('static', filename='js/middle-school-3D-json.js')}}"></script> 
+
+<div class="right bar" id="details" style="pointer-events:auto;">
+    
+    <br>
+    <div id="ItemInfo">
+        <h2 id = "Info Title" style = "text-transform: capitalize"></h2>
+        <table class="table" id="node info">
+            <thead>
+                <tr id = 'Info Head'></tr>
+            </thead>
+            <tbody id="node info tbody">
+                <!-- display node info here -->
+            </tbody>
+        </table>
+    </div>							
+</div>
+
+{% endblock %}
