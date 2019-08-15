@@ -6,7 +6,7 @@ import json
 from flask import Flask, flash, render_template, redirect, url_for, request
 from flask_login import login_user, logout_user, current_user, login_required, fresh_login_required
 from .forms import node_form, edge_form, RegistrationForm
-from app.utils.login_util import query_user
+from app.utils.login_util import query_user, basic_graph_update
 from app.utils.update_attr import update_attr
 from shutil import copyfile
 import logging
@@ -43,8 +43,12 @@ def edit_graph():
 
     # provide a different graph for each user
     graphname = "app/static/data/graph_login_test"
-    if current_user.get_id() != None:
-        graphname += "_" + current_user.get_id() + ".json"
+
+    authorized = 0 # 未登录不能修改
+    user_name = current_user.get_id()
+    if user_name != None:
+        authorized = 1
+        graphname += "_" + user_name + ".json"
     else:
         graphname += ".json"
 
@@ -52,36 +56,88 @@ def edit_graph():
     form2 = edge_form(request.form)
 
     # open graph json file: load into graph G
-    with open(graphname, "r") as read_file:
-            data = json.load(read_file)
-    G = json_graph.node_link_graph(data)
+    with open(graphname, "r") as user_file:
+            user_graph = json.load(user_file)
+    G = json_graph.node_link_graph(user_graph) # check here
+    # graph_info = []
+    # num_nodes = "Number of Nodes: " + str(G.number_of_nodes())
+    # num_edges = "Number of Edges: " + str(G.number_of_edges())
+    # density = "Density of Graph: " + str(round(nx.density(G), 5))
+    # graph_info.append(num_nodes)
+    # graph_info.append(num_edges)
+    # graph_info.append(density)
 
     graph_info = []
-    num_nodes = "Number of Nodes: " + str(G.number_of_nodes())
-    num_edges = "Number of Edges: " + str(G.number_of_edges())
-    density = "Density of Graph: " + str(round(nx.density(G), 5))
-    graph_info.append(num_nodes)
-    graph_info.append(num_edges)
-    graph_info.append(density)
+    num_nodes = mongo.db.nodes.count()
+    num_edges = mongo.db.edges.count()
+    num_nodes_info = "Number of Nodes: " + str(num_nodes)
+    num_edges_info = "Number of Edges: " + str(num_edges)
+    density_info = "Density of Graph: " + str(round(float(num_edges)/num_nodes/(num_nodes -1) , 5))
+    graph_info.append(num_nodes_info)
+    graph_info.append(num_edges_info)
+    graph_info.append(density_info) 
+
 
     if request.method == 'POST':
 
         # add node
+        # if form1.add_node.data and form1.validate():
+
+        #     if G.has_node(form1.node_name.data):
+        #         print("add failed: such node already exist")
+        #         flash(u"Add Failed: such node already exist", "danger")
+        #     else:
+        #         G.add_node(form1.node_name.data, 
+        #                     category=form1.category.data, 
+        #                     degree=0, viz={'size': 10}, 
+        #                     # label=form1.node_name.data,
+        #                     url=form1.url.data,
+        #                     content=form1.content.data,
+        #                     notes=form1.notes.data)
+        #         print("added a node")
+        #         flash(u"Added Node: " + "'" + form1.node_name.data + "'", 'success')
+
+        # add node
         if form1.add_node.data and form1.validate():
 
-            if G.has_node(form1.node_name.data):
-                print("add failed: such node already exist")
+            if mongo.db.nodes.find_one({'id':form1.node_name.data}) is not None:
                 flash(u"Add Failed: such node already exist", "danger")
             else:
-                G.add_node(form1.node_name.data, 
-                            category=form1.category.data, 
-                            degree=0, viz={'size': 10}, 
-                            # label=form1.node_name.data,
-                            url=form1.url.data,
-                            content=form1.content.data,
-                            notes=form1.notes.data)
-                print("added a node")
+                # record new node change in mongodb
+                new_node = {}
+                new_node['category'] = form1.category.data
+                new_node['wiki_url'] = form1.wiki_url.data
+                new_node['content'] = form1.content.data
+                new_node['note'] = form1.note.data
+                new_node['id'] = form1.node_name.data
+                new_change = {}
+                new_change['type'] = 'node'
+                new_change['content'] = new_node
+                if "user_changes" in mongo.db.list_collection_names():
+                    new_change['id'] = mongo.db.user_changes.count()
+                else:
+                    new_change['id'] = 0
+                mongo.db.user_changes.insert_one(new_change)
+                logging.error(new_change)
+                
+                user_profile = mongo.db.users.find_one({'name' : user_name }, {'_id': 0})
+                if user_profile.__contains__('changes'):
+                    user_profile['changes'].append(new_node['id'])
+                    mongo.db.users.update({'name': user_name},{'$set' :{'changes' : user_profile['changes']}})
+                else:
+                    logging.error('begining to update')
+                    mongo.db.users.update({'name': user_name},{'$set':{'changes':[new_change['id']]}})
+
+                # additional changes not recorded in mongodb
+                new_node['degree'] = 0
+                new_node['viz'] = {'size': 10}
+
+                # additional change record to json file
+                user_graph['nodes'].append(new_node)
+
                 flash(u"Added Node: " + "'" + form1.node_name.data + "'", 'success')
+
+
         # else:
         #     print(form1.validate())
         
@@ -172,11 +228,16 @@ def edit_graph():
 
         # save edited graph G into json file
         data = json_graph.node_link_data(G)
-        with open(graphname, "w") as write_file:
-            json.dump(data, write_file)
+        with open(graphname, "w") as user_file:
+            json.dump(user_graph, user_file)
+
         return redirect(url_for('edit_graph'))
     return render_template('edit-graph.html', form_node=form1, form_edge=form2, 
-                            graph_info=graph_info, title="Edit Graph")
+                            graph_info=graph_info, authorized = authorized,  title="Edit Graph")
+
+@app.route('/3dlayout')
+def threeD():
+    return render_template('3D_layout.html', title="3D")
 
 @app.route('/about')
 def authors():
@@ -232,7 +293,7 @@ def login():
             user_auths = mongo.db.user_auths.find_one({'user_id':user['id']},{'_id':0})
             logging.info(user_auths)
             if request.form['password'] is None:
-                flash('Password cannot be empty!')
+                flash(u'Password cannot be empty!', 'danger')
             elif request.form['password'] == user_auths["credential"]:
                 curr_user = User()
                 curr_user.id = username
@@ -240,14 +301,17 @@ def login():
                 # 通过Flask-Login的login_user方法登录用户
                 login_user(curr_user, remember=True)
 
+                # 后台更新数据
+                basic_graph_update()
+
                 # 如果请求中有next参数，则重定向到其指定的地址，
                 # 没有next参数，则重定向到"index"视图
                 next = request.args.get('next')
                 return redirect(next or url_for('edit_graph'))
             else:
-                flash('Wrong password!')
+                flash(u'Wrong password!', 'danger')
         else:
-            flash('Invalid user name!')
+            flash(u'Invalid user name!', 'danger')
     # GET 请求
     return render_template('login.html')
 
@@ -255,7 +319,7 @@ def login():
 @login_required
 def logout():
     logout_user()
-    return 'Logged out successfully!' # 这里要加一个跳转
+    return render_template('logout.html')
 
 #register new user
 @app.route('/register', methods=['GET', 'POST'])
@@ -275,10 +339,10 @@ def register():
         if user is None:
             user = {}
             user['name'] = username
-            user['id'] = mongo.db.users.find().count()
+            user['id'] = mongo.db.users.count()
             user['email'] = ''
             user_auth = {}
-            user_auth['id'] = mongo.db.user_auths.find().count()
+            user_auth['id'] = mongo.db.user_auths.count()
             user_auth['user_id'] = user['id']
             user_auth['identifier'] = user['name']
             user_auth["identity_type"] = 'name'

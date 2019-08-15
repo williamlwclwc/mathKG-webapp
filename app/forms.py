@@ -9,9 +9,9 @@ class node_form(Form):
     category = SelectField(
         "category", validators=[validators.Optional()],
         choices=[("", ""), ("0", "0"), ("1", "1")])
-    url = TextField("url", [validators.Optional()])
+    wiki_url = TextField("url", [validators.Optional()])
     content = TextAreaField("content", [validators.Optional()])
-    notes = TextAreaField("notes", [validators.Optional()])
+    note = TextAreaField("note", [validators.Optional()])
     add_node = SubmitField("Add Node")
     edit_node = SubmitField("Edit Node")
     delete_node = SubmitField("Delete Node")

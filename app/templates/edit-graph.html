@@ -33,7 +33,12 @@
         </div>							
     </div>
 
+    <!-- display edit form only for authorized users -->
+    {% if authorized %}
     <div class="left bar" id="edit_graph_div" style="pointer-events: auto;">
+    {% else %}
+    <div class="left bar" id="edit_graph_div" style="pointer-events: auto; display : none">
+    {% endif %}
         <!-- get flask flash messages-->
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
@@ -65,8 +70,8 @@
                     {{form_node.category(class="form-control")}}
                 </div>
                 <div class="form-group">
-                    <label> Url: </label>
-                    {{form_node.url(class="form-control")}}
+                    <label> Wiki_Url: </label>
+                    {{form_node.wiki_url(class="form-control")}}
                 </div>
                 <div class="form-group">
                     <label> Content: </label> 
@@ -74,7 +79,7 @@
                 </div>
                 <div class="form-group">
                     <label> Notes: </label>
-                    {{form_node.notes(class="form-control", cols="20", rows="5")}}
+                    {{form_node.note(class="form-control", cols="20", rows="5")}}
                 </div>
                 <div class="btn-group" role="group">
                     {{form_node.add_node(class="btn btn-success btn-sm")}}

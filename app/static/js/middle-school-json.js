@@ -9,8 +9,6 @@ if(username!=null) {
     filename += 'graph_login_test.json';
 }
 console.log(filename);
-console.log(recent_url);
-
 
 var GexfJS = {
     params: {
