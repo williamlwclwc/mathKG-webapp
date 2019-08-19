@@ -11,7 +11,7 @@ class node_form(Form):
         choices=[("", ""), ("0", "0"), ("1", "1")])
     wiki_url = TextField("url", [validators.Optional()])
     content = TextAreaField("content", [validators.Optional()])
-    note = TextAreaField("note", [validators.Optional()])
+    notes = TextAreaField("notes", [validators.Optional()])
     add_node = SubmitField("Add Node")
     edit_node = SubmitField("Edit Node")
     delete_node = SubmitField("Delete Node")

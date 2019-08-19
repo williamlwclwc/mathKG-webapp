@@ -10,6 +10,11 @@
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
     <div id="main" style="width: 89%; height: 90%; top: 60px; left: 200px; position:absolute"></div>
     <!-- <script src="simple-demo.js"></script> -->
+    <!-- 定义全局变量这样可以向js文件传递数据 -->
+    <script type="text/javascript">
+        var graphname4js = '{{ graphname4js}}';
+    </script>
+
     <script src="{{ url_for('static', filename='js/middle-school-json.js')}}"></script>
     
     <div class="right bar" id="details" style="pointer-events:auto;">
@@ -79,7 +84,7 @@
                 </div>
                 <div class="form-group">
                     <label> Notes: </label>
-                    {{form_node.note(class="form-control", cols="20", rows="5")}}
+                    {{form_node.notes(class="form-control", cols="20", rows="5")}}
                 </div>
                 <div class="btn-group" role="group">
                     {{form_node.add_node(class="btn btn-success btn-sm")}}

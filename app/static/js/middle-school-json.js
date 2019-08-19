@@ -4,7 +4,9 @@ var recent_url =  window.location.href
 var filename = 'static/data/';
 var username = document.getElementById("user profile");
 if(username!=null) {
-    filename += 'graph_login_test' + '_' + username.innerHTML + '.json';
+    // filename += 'graph_login_test' + '_' + username.innerHTML + '_2019-08-20' + '.json';
+    filename = graphname4js;
+
 } else {
     filename += 'graph_login_test.json';
 }
@@ -80,7 +82,7 @@ $.getJSON(filename +'?timestamp='+ new Date().getTime(), function (json) {
                 degree: node.degree,
                 viz: node.viz,
                 content: node.content,
-                notes: node.notes 
+                notes: node.note
             };
         }),
         edges: json.links.map(function (link) {
@@ -97,7 +99,7 @@ $.getJSON(filename +'?timestamp='+ new Date().getTime(), function (json) {
                 target: link.target,
                 relationship: link.relationship,
                 content: link.content,
-                notes: link.notes,
+                notes: link.note,
             }
         }),
     };

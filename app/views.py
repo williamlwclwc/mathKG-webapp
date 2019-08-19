@@ -6,173 +6,93 @@ import json
 from flask import Flask, flash, render_template, redirect, url_for, request
 from flask_login import login_user, logout_user, current_user, login_required, fresh_login_required
 from .forms import node_form, edge_form, RegistrationForm
-from app.utils.login_util import query_user, basic_graph_update
-from app.utils.update_attr import update_attr
+from app.utils.login_util import *
+from app.utils.update_utils import *
+from app.utils.show_graph_info import show_graph_info
 from shutil import copyfile
 import logging
+import datetime
 
 
 @app.route('/')
 @app.route('/home')
 def home():
-    
     # provide a different graph for each user
     graphname = "app/static/data/graph_login_test"
-    if current_user.get_id() != None:
-        graphname += "_" + current_user.get_id() + ".json"
+    user_name = current_user.get_id()
+    if user_name != None:
+        graphname += "_" + user_name + ".json"
+        # graph_info = show_graph_info(user_name)
+        graph_info = show_graph_info() # check here
     else:
         graphname += ".json"
-
-    # open graph json file: load into graph G
-    with open(graphname, "r") as read_file:
-            data = json.load(read_file)
-    G = json_graph.node_link_graph(data)
-
-    graph_info = []
-    num_nodes = "Number of Nodes: " + str(G.number_of_nodes())
-    num_edges = "Number of Edges: " + str(G.number_of_edges())
-    density = "Density of Graph: " + str(round(nx.density(G), 5))
-    graph_info.append(num_nodes)
-    graph_info.append(num_edges)
-    graph_info.append(density)
+        graph_info = show_graph_info()
 
     return render_template('home.html', graph_info=graph_info, title="Home")
 
 @app.route('/editGraph', methods=['get', 'post'])
 def edit_graph():
 
+    # check here 时间可以简化
+    time_structured = datetime.date.today() + datetime.timedelta(days=1)
+    time_str = time_structured.strftime("%Y-%m-%d")
+
     # provide a different graph for each user
     graphname = "app/static/data/graph_login_test"
-
+    
     authorized = 0 # 未登录不能修改
     user_name = current_user.get_id()
     if user_name != None:
         authorized = 1
-        graphname += "_" + user_name + ".json"
+        graphname += '_' + user_name + '_' + time_str + '.json'
     else:
         graphname += ".json"
 
     form1 = node_form(request.form)
     form2 = edge_form(request.form)
 
+    logging.error(graphname)
     # open graph json file: load into graph G
     with open(graphname, "r") as user_file:
             user_graph = json.load(user_file)
     G = json_graph.node_link_graph(user_graph) # check here
-    # graph_info = []
-    # num_nodes = "Number of Nodes: " + str(G.number_of_nodes())
-    # num_edges = "Number of Edges: " + str(G.number_of_edges())
-    # density = "Density of Graph: " + str(round(nx.density(G), 5))
-    # graph_info.append(num_nodes)
-    # graph_info.append(num_edges)
-    # graph_info.append(density)
 
-    graph_info = []
-    num_nodes = mongo.db.nodes.count()
-    num_edges = mongo.db.edges.count()
-    num_nodes_info = "Number of Nodes: " + str(num_nodes)
-    num_edges_info = "Number of Edges: " + str(num_edges)
-    density_info = "Density of Graph: " + str(round(float(num_edges)/num_nodes/(num_nodes -1) , 5))
-    graph_info.append(num_nodes_info)
-    graph_info.append(num_edges_info)
-    graph_info.append(density_info) 
-
+    # check here
+    graph_info = show_graph_info()
 
     if request.method == 'POST':
+        # record timestamp
+        now_structured = datetime.datetime.now()
+        now_str = now_structured.strftime("%Y-%m-%d %H:%M:%S")
+        # now_structured = time.localtime()
+        # now_str = time.strftime("%Y-%m-%d %H:%M:%S", now_structured)
 
-        # add node
-        # if form1.add_node.data and form1.validate():
-
-        #     if G.has_node(form1.node_name.data):
-        #         print("add failed: such node already exist")
-        #         flash(u"Add Failed: such node already exist", "danger")
-        #     else:
-        #         G.add_node(form1.node_name.data, 
-        #                     category=form1.category.data, 
-        #                     degree=0, viz={'size': 10}, 
-        #                     # label=form1.node_name.data,
-        #                     url=form1.url.data,
-        #                     content=form1.content.data,
-        #                     notes=form1.notes.data)
-        #         print("added a node")
-        #         flash(u"Added Node: " + "'" + form1.node_name.data + "'", 'success')
-
-        # add node
         if form1.add_node.data and form1.validate():
 
-            if mongo.db.nodes.find_one({'id':form1.node_name.data}) is not None:
+            if G.has_node(form1.node_name.data):
                 flash(u"Add Failed: such node already exist", "danger")
             else:
-                # record new node change in mongodb
-                new_node = {}
-                new_node['category'] = form1.category.data
-                new_node['wiki_url'] = form1.wiki_url.data
-                new_node['content'] = form1.content.data
-                new_node['note'] = form1.note.data
-                new_node['id'] = form1.node_name.data
-                new_change = {}
-                new_change['type'] = 'node'
-                new_change['content'] = new_node
-                if "user_changes" in mongo.db.list_collection_names():
-                    new_change['id'] = mongo.db.user_changes.count()
-                else:
-                    new_change['id'] = 0
-                mongo.db.user_changes.insert_one(new_change)
-                logging.error(new_change)
-                
-                user_profile = mongo.db.users.find_one({'name' : user_name }, {'_id': 0})
-                if user_profile.__contains__('changes'):
-                    user_profile['changes'].append(new_node['id'])
-                    mongo.db.users.update({'name': user_name},{'$set' :{'changes' : user_profile['changes']}})
-                else:
-                    logging.error('begining to update')
-                    mongo.db.users.update({'name': user_name},{'$set':{'changes':[new_change['id']]}})
-
-                # additional changes not recorded in mongodb
-                new_node['degree'] = 0
-                new_node['viz'] = {'size': 10}
-
-                # additional change record to json file
-                user_graph['nodes'].append(new_node)
-
+                update_node(G, form1, user_name, 'add', now_str)
                 flash(u"Added Node: " + "'" + form1.node_name.data + "'", 'success')
-
-
-        # else:
-        #     print(form1.validate())
         
         # edit node
         if form1.edit_node.data and form1.validate():
+
             if G.has_node(form1.node_name.data):
-                attrs = {}
-                if form1.category.data != "":
-                    attrs.update({"category": form1.category.data})
-                if form1.url.data != "":
-                    attrs.update({"url": form1.url.data})
-                if form1.content.data != "":
-                    attrs.update({"content": form1.content.data})
-                if form1.notes.data != "":
-                    attrs.update({"notes": form1.notes.data})
-                attr = {form1.node_name.data: attrs} 
-                nx.set_node_attributes(G, attr)
-                print("updated a node")
+                update_node(G, form1, user_name, 'edit', now_str)
                 flash(u"Updated Node: " + "'" + form1.node_name.data + "'", 'success')
             else:
-                print("edit failed: such node does not exist")
                 flash(u"Edit Failed: such node does not exist", "danger")
 
         # delete node
         if form1.delete_node.data and form1.validate():
 
             if G.has_node(form1.node_name.data):
-                G.remove_node(form1.node_name.data)
-                print("removed a node")
+                update_node(G, form1, user_name, 'delete', now_str)
                 flash(u"Removed Node: " + "'" + form1.node_name.data + "'", 'success')
             else:
-                print("remove failed: such node does not exist")
                 flash(u"Remove Failed: such node does not exist", "danger")
-        # else:
-        #     print(form1.validate())
+
 
         # add edge
         if form2.add_edge.data and form2.validate():
@@ -181,7 +101,7 @@ def edit_graph():
                 G.add_edge(form2.source_name.data, form2.target_name.data, 
                 relationship=form2.relationship.data, key=str(G.number_of_edges()),
                 content=form2.content.data, notes=form2.notes.data)
-                update_attr(G, form2)
+                update_degree_size(G, form2)
                 print("added an edge")
                 flash(u"Added Edge (key: " + str(G.number_of_edges()) + "): " + "'" + form2.source_name.data + "' -> " 
                         + "'" + form2.target_name.data + "'" + 'success')
@@ -218,7 +138,7 @@ def edit_graph():
                 flash(u"Edit Failed: you need to input the key of the edge", "danger")
             if G.has_edge(form2.source_name.data, form2.target_name.data, key=form2.key_num.data):
                 G.remove_edge(form2.source_name.data, form2.target_name.data, key=form2.key_num.data)
-                update_attr(G, form2)
+                update_degree_size(G, form2)
                 print("removed an edge")
                 flash(u"Eemoved Edge (key: " + str(G.number_of_edges()) + "): " + "'" + form2.source_name.data + "' -> " 
                       + "'" + form2.target_name.data + "'" + 'success')
@@ -227,13 +147,14 @@ def edit_graph():
                 flash(u"Edit Failed: such edge does not exist", "danger")
 
         # save edited graph G into json file
-        data = json_graph.node_link_data(G)
         with open(graphname, "w") as user_file:
-            json.dump(user_graph, user_file)
+            data = json_graph.node_link_data(G)
+            json.dump(data, user_file)
 
         return redirect(url_for('edit_graph'))
+    graphname4js = graphname.split('/', 1)[1] # javacript 读取json文件时路径没有app/
     return render_template('edit-graph.html', form_node=form1, form_edge=form2, 
-                            graph_info=graph_info, authorized = authorized,  title="Edit Graph")
+                            graph_info=graph_info, authorized = authorized, graphname4js = graphname4js, title="Edit Graph")
 
 @app.route('/3dlayout')
 def threeD():
@@ -302,7 +223,19 @@ def login():
                 login_user(curr_user, remember=True)
 
                 # 后台更新数据
-                basic_graph_update()
+                raw_graph_name = basic_graph_update()
+                user_change = get_user_changes(user)
+
+                # check here 时间可以简化
+                time_structured = datetime.date.today() + datetime.timedelta(days=1)
+                time_str = time_structured.strftime("%Y-%m-%d")
+
+                user_graph_name = "app/static/data/graph_login_test" + '_' + user['name'] + '_' + time_str + '.json'
+                if user_change is not None:
+                    merged_name = merge_user_changes(user, user_change[0], user_change[1], user_change[2])
+                    cal_degree_size(merged_name, user_graph_name)
+                else:
+                    cal_degree_size(raw_graph_name, user_graph_name)
 
                 # 如果请求中有next参数，则重定向到其指定的地址，
                 # 没有next参数，则重定向到"index"视图
@@ -350,10 +283,12 @@ def register():
             mongo.db.users.insert_one(user)
             mongo.db.user_auths.insert_one(user_auth)
             # print(users)
-            source = "app/static/data/graph_login_test.json"
-            target = "app/static/data/graph_login_test_" + username + ".json"
-            copyfile(source, target)
-            logging.error(mongo.db.users.find({'name':username}))
+
+            # 现在不需要复制文件了，登录的时候复制
+            # source = "app/static/data/graph_login_test.json"
+            # target = "app/static/data/graph_login_test_" + username + ".json"
+            # copyfile(source, target)
+            # logging.error(mongo.db.users.find({'name':username}))
             flash('Congratulations, you are now a registered user!')
             return redirect(url_for('login'))
     # GET 请求
