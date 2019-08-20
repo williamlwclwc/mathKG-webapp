@@ -7,7 +7,6 @@
 
 # 需要定义的常量：basic graph名称， data 路径， raw data 路径， 
 
-
 from app import mongo
 from flask import  flash
 from networkx.readwrite import json_graph

@@ -1,14 +1,15 @@
 from app import app, login_manager, mongo
 from .user import User
-from networkx.readwrite import gexf, json_graph
+from networkx.readwrite import json_graph
 import networkx as nx
 import json
 from flask import Flask, flash, render_template, redirect, url_for, request
 from flask_login import login_user, logout_user, current_user, login_required, fresh_login_required
 from .forms import node_form, edge_form, RegistrationForm
-from app.utils.login_util import *
-from app.utils.update_utils import *
+from app.utils.login_utils import query_user, basic_graph_update, cal_degree_size, get_user_changes, merge_user_changes
+from app.utils.update_utils import update_degree_size, update_node, update_edge
 from app.utils.show_graph_info import show_graph_info
+from app.utils.logout_utils import del_user_file
 from shutil import copyfile
 import logging
 import datetime
@@ -17,18 +18,19 @@ import datetime
 @app.route('/')
 @app.route('/home')
 def home():
-    # provide a different graph for each user
-    graphname = "app/static/data/graph_login_test"
-    user_name = current_user.get_id()
-    if user_name != None:
-        graphname += "_" + user_name + ".json"
-        # graph_info = show_graph_info(user_name)
-        graph_info = show_graph_info() # check here
-    else:
-        graphname += ".json"
-        graph_info = show_graph_info()
+    # # provide a different graph for each user
+    # graphname = "app/static/data/graph_login_test"
+    # user_name = current_user.get_id()
+    # if user_name != None:
+    #     graphname += "_" + user_name + ".json"
+    #     # graph_info = show_graph_info(user_name)
+    #     graph_info = show_graph_info() # check here
+    # else:
+    #     graphname += ".json"
+    #     graph_info = show_graph_info()
 
-    return render_template('home.html', graph_info=graph_info, title="Home")
+    # return render_template('home.html', graph_info=graph_info, title="Home")
+    return render_template('home.html', title="Home")
 
 @app.route('/editGraph', methods=['get', 'post'])
 def edit_graph():
@@ -56,9 +58,7 @@ def edit_graph():
     with open(graphname, "r") as user_file:
             user_graph = json.load(user_file)
     G = json_graph.node_link_graph(user_graph) # check here
-
-    # check here
-    graph_info = show_graph_info()
+    graph_info = show_graph_info(G)
 
     if request.method == 'POST':
         # record timestamp
@@ -67,6 +67,7 @@ def edit_graph():
         # now_structured = time.localtime()
         # now_str = time.strftime("%Y-%m-%d %H:%M:%S", now_structured)
 
+        # add node
         if form1.add_node.data and form1.validate():
 
             if G.has_node(form1.node_name.data):
@@ -93,57 +94,36 @@ def edit_graph():
             else:
                 flash(u"Remove Failed: such node does not exist", "danger")
 
-
         # add edge
         if form2.add_edge.data and form2.validate():
             
             if G.has_node(form2.source_name.data) and G.has_node(form2.target_name.data):
-                G.add_edge(form2.source_name.data, form2.target_name.data, 
-                relationship=form2.relationship.data, key=str(G.number_of_edges()),
-                content=form2.content.data, notes=form2.notes.data)
-                update_degree_size(G, form2)
-                print("added an edge")
-                flash(u"Added Edge (key: " + str(G.number_of_edges()) + "): " + "'" + form2.source_name.data + "' -> " 
+                edge_key = update_edge(G, form2, user_name, 'add', now_str)
+                flash(u"Added Edge (key: " + edge_key + "): " + "'" + form2.source_name.data + "' -> " 
                         + "'" + form2.target_name.data + "'" + 'success')
             else:
-                print("add failed: source/target node does not exist")
                 flash(u"Add Failed: source/target node does not exist", "danger")
         
         # edit edge
         if form2.edit_edge.data and form2.validate():
             if form2.key_num.data == "":
-                print("you need to input the key of the edge")
                 flash(u"Edit Failed: you need to input the key of the edge", "danger")
             elif G.has_edge(form2.source_name.data, form2.target_name.data, key=form2.key_num.data):
-                attrs = {}
-                if form2.relationship.data != "":
-                    attrs.update({"relationship": form2.relationship.data})
-                if form2.content.data != "":
-                    attrs.update({"content": form2.content.data})
-                if form2.notes.data != "":
-                    attrs.update({"notes": form2.notes.data})
-                attr = {(form2.source_name.data, form2.target_name.data, form2.key_num.data): attrs} 
-                nx.set_edge_attributes(G, attr)
-                print("updated an edge")
-                flash(u"Updated Edge (key: " + str(G.number_of_edges()) + "): " + "'" + form2.source_name.data + "' -> " 
+                edge_key = update_edge(G, form2, user_name, 'edit', now_str)
+                flash(u"Updated Edge (key: " + edge_key + "): " + "'" + form2.source_name.data + "' -> " 
                       + "'" + form2.target_name.data + "'" + 'success')
             else:
-                print("edit failed: such edge does not exist")
                 flash(u"Edit Failed: such edge does not exist", "danger")
 
         # delete edge
         if form2.delete_edge.data and form2.validate():
             if form2.key_num.data == "":
-                print("you need to input the key of the edge")
                 flash(u"Edit Failed: you need to input the key of the edge", "danger")
             if G.has_edge(form2.source_name.data, form2.target_name.data, key=form2.key_num.data):
-                G.remove_edge(form2.source_name.data, form2.target_name.data, key=form2.key_num.data)
-                update_degree_size(G, form2)
-                print("removed an edge")
-                flash(u"Eemoved Edge (key: " + str(G.number_of_edges()) + "): " + "'" + form2.source_name.data + "' -> " 
+                edge_key = update_edge(G, form2, user_name, 'delete', now_str)
+                flash(u"Eemoved Edge (key: " + edge_key + "): " + "'" + form2.source_name.data + "' -> " 
                       + "'" + form2.target_name.data + "'" + 'success')
             else:
-                print("remove failed: such edge does not exist")
                 flash(u"Edit Failed: such edge does not exist", "danger")
 
         # save edited graph G into json file
@@ -251,7 +231,11 @@ def login():
 @app.route('/logout')
 @login_required
 def logout():
+    user_name = current_user.get_id()
+    if user_name != None:
+        del_user_file(user_name)
     logout_user()
+
     return render_template('logout.html')
 
 #register new user

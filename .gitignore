@@ -5,3 +5,10 @@
 /run_server.pid
 /app/__pycache__
 /app/utils/__pycache__
+
+ ##user file##
+/app/static/rawdata/*_change.json
+/app/static/rawdata/*_merged.json
+/app/static/data/graph_login_test_*.json
+
+

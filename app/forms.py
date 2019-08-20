@@ -1,7 +1,7 @@
-from wtforms import (StringField, PasswordField, BooleanField, SubmitField, 
+from wtforms import (StringField, PasswordField, BooleanField, SubmitField, widgets,
                     Form, TextField, TextAreaField, IntegerField, SelectField, validators)
 from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
-from app.utils.login_util import query_user
+from app.utils.login_utils import query_user
 
 
 class node_form(Form):
@@ -18,7 +18,8 @@ class node_form(Form):
 
 
 class edge_form(Form):
-    key_num = TextField("key_num", [validators.Optional()])
+    key_num = TextField("key_num", [validators.Optional()],
+                        render_kw={"placeholder": "Not effective when adding!"})
     source_name = TextField("source_name", [validators.InputRequired()])
     target_name = TextField("target_name", [validators.InputRequired()])
     relationship = SelectField(
@@ -38,9 +39,13 @@ class edge_form(Form):
 class RegistrationForm(Form):
     username = StringField('Username', validators=[DataRequired()])
     # email = StringField('Email', validators=[DataRequired(), Email()])
-    password = PasswordField('Password', validators=[DataRequired()])
+    password = PasswordField('Password', 
+                            validators=[DataRequired()],
+                            widget=widgets.PasswordInput())
     password2 = PasswordField(
-        'Repeat Password', validators=[DataRequired(), EqualTo('password')])
+        'Repeat Password', 
+        validators=[DataRequired(), EqualTo('password')],
+        widget=widgets.PasswordInput())
     submit = SubmitField('Register')
 
     def validate_username(self, username):
