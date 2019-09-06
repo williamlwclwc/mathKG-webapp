@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/gexfjs.css')}}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui-1.10.3.custom.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slider.css')}}" />
     <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
     <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='favicon.png')}}">
     <!-- font awesome -->
@@ -88,6 +89,9 @@
 
     </script>
 
+    <!-- bloc-head-->
+    {% block head %}{% endblock head %}
+
 </head>
 <body>
     <!-- bloc-content-->
@@ -110,6 +114,12 @@
                 <a class="nav-link" href="/editGraph">
                     <i class="fas fa-edit"></i>
                     Edit Graph
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/3dlayout">
+                    <i class="fas fa-cubes"></i>
+                    3D Layout
                 </a>
             </li>
             <li class="nav-item active">

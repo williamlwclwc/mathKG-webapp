@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 from flask import Flask, flash
 from flask import render_template, redirect, url_for, request
 import networkx as nx
@@ -9,7 +8,6 @@ import json
 import logging
 from wtforms import Form, TextField, TextAreaField, IntegerField, SubmitField, SelectField, validators 
 
-
 #test-login
 from flask_login import (LoginManager, UserMixin, login_user, logout_user,
                             current_user, login_required, fresh_login_required)
@@ -18,12 +16,16 @@ from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
 import os
 from shutil import copyfile
 
+#connect 2 mongodb
+# from flask_pymongo import PyMongo
+
+
 
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+# mongo = PyMongo(app)
 
 #app.register_blueprint(login_test)
-
 #test login
 login_manager = LoginManager(app)
 # 设置登录视图的名称，如果一个未登录用户请求一个只有登录用户才能访问的视图
@@ -64,7 +66,6 @@ class node_form(Form):
     edit_node = SubmitField("Edit Node")
     delete_node = SubmitField("Delete Node")
 
-
 class edge_form(Form):
     key_num = TextField("key_num", [validators.Optional()])
     source_name = TextField("source_name", [validators.InputRequired()])
@@ -81,7 +82,6 @@ class edge_form(Form):
     add_edge = SubmitField("Add Edge")
     edit_edge = SubmitField("Edit Edge")
     delete_edge = SubmitField("Delete Edge")
-
 
 class RegistrationForm(Form):
     username = StringField('Username', validators=[DataRequired()])
@@ -101,7 +101,7 @@ class RegistrationForm(Form):
     #     if user is not None:
     #         raise ValidationError('Please use a different email address.')
 
-
+# set degree and size
 def update_attr(G, form2):
     # calculate new degree and size, max_size = 30, min_size = 10
     list_degree = [d for n, d in G.degree()]
@@ -121,11 +121,10 @@ def update_attr(G, form2):
             form2.target_name.data: {'degree': degree_target, 'viz': {'size': size_target}}}
     nx.set_node_attributes(G, attrs)
 
-
 @app.route('/')
 @app.route('/home')
 def home():
-
+    
     # provide a different graph for each user
     graphname = "static/data/graph_login_test"
     if current_user.get_id() != None:
@@ -389,5 +388,5 @@ def register():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='10.110.165.244', port=5000)
-    # app.run(debug=True)
+    # app.run(debug=True, host='10.110.165.244', port=5000)
+    app.run(debug=True)
