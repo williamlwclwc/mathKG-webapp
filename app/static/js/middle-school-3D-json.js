@@ -1,10 +1,13 @@
 var filename = 'static/data/';
 var username = document.getElementById("user profile");
 if(username!=null) {
-    filename += 'graph_login_test' + '_' + username.innerHTML + '.json';
+    // filename += 'graph_login_test' + '_' + username.innerHTML + '_2019-08-20' + '.json';
+    filename = graphname4js;
+
 } else {
     filename += 'graph_login_test.json';
 }
+
 console.log(filename);
 
 // a dictionary define color of the nodes

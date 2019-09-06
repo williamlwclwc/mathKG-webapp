@@ -11,7 +11,9 @@
 search_bar = document.getElementById("recherche").setAttribute(
                     "style",'display : none' );
 </script>
-
+<script type="text/javascript">
+    var graphname4js = '{{ graphname4js}}';
+</script>
 <div class="main" id="3d-graph" style="top: 60px; left: 200px;"></div>
 
 <script src="{{ url_for('static', filename='js/middle-school-3D-json.js')}}"></script> 

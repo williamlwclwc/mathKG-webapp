@@ -94,17 +94,23 @@ th, td
     top: 60px;
     display: block;
     max-height: 100%;
-    max-width: 275px;
 }
 .left {
     margin-left: 5px;
+    max-width: 275px;
 }
 
 .right {
     right: 5px;
+    max-width: 275px;
 }
 
 .btn-group{
     border-bottom-right-radius: 15px;
     background-color: #fafafa;
+}
+
+#timeline{
+    right: 300px;
+    max-width: 350px;
 }

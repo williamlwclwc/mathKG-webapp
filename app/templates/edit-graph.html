@@ -1,5 +1,12 @@
 {% extends "template.html" %}
 
+<!-- draggable
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script>
+    $(function() {
+      $( "#timeline" ).draggable();
+    });
+</script> -->
 {% block search %}
     <ul id="autocomplete">
     </ul>
@@ -129,5 +136,22 @@
         </div>
         <br>
     </div>
+    
+
+    <link rel="stylesheet" href="../static/css/slider.css" />
+    <div class="bar content-section" id="timeline" style="pointer-events:auto;">
+        <label for=".slider">Time line not implemented</label>
+        <!-- <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/> -->
+        <input type="text" class="slider" data-slider-value="5"><br />
+        <button id="goto_version" class="btn btn-primary btn-sm active" aria-pressed="true">Go To</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="../static/js/slider.js"></script>
+    <script>
+        $(function () {
+            $('.slider').slider();
+        });
+    </script>
 </div>
 {% endblock %}

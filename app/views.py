@@ -138,7 +138,21 @@ def edit_graph():
 
 @app.route('/3dlayout')
 def threeD():
-    return render_template('3D_layout.html', title="3D")
+    # check here 时间可以简化
+    time_structured = datetime.date.today() + datetime.timedelta(days=1)
+    time_str = time_structured.strftime("%Y-%m-%d")
+
+    # provide a different graph for each user
+    graphname = "app/static/data/graph_login_test"
+
+    user_name = current_user.get_id()
+    if user_name != None:
+        graphname += '_' + user_name + '_' + time_str + '.json'
+    else:
+        graphname += ".json"
+    graphname4js = graphname.split('/', 1)[1] # javacript 读取json文件时路径没有app/
+
+    return render_template('3D_layout.html', graphname4js = graphname4js, title="3D")
 
 @app.route('/about')
 def authors():
@@ -277,3 +291,7 @@ def register():
             return redirect(url_for('login'))
     # GET 请求
     return render_template('register.html', form_newuser=form)
+
+@app.route('/slider')
+def slider_test():
+    return render_template('slider.html')
