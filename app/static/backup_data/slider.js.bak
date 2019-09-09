@@ -19,14 +19,8 @@
  
 // https://github.com/jschr/bootstrap-slider/blob/master/js/slider.js
 
-// function addScript(url){
-// 	document.write("<script src='../static/js/format_date.js'></script>");
-// }
-// import '../static/js/format_date.js'
-// document.write("<script src='../static/js/format_date.js'></script>");
-
-
 !function( $ ) {
+
 	var Slider = function(element, options) {
 		this.element = $(element);
 		this.picker = $('<div class="slider">'+
@@ -60,7 +54,7 @@
 		this.tooltipInner = this.tooltip.find('div.tooltip-inner');
 
 		var spanClass = this.element.attr('class').match(/(span[0-9][0-9]*)(\s|$)/);
-		// console.log(spanClass)
+		console.log(spanClass)
 		spanClass = spanClass ? spanClass[1] : '';
 
 		this.orientation = this.element.data('slider-orientation')||options.orientation;
@@ -90,7 +84,6 @@
 		this.max = this.element.data('slider-max')||options.max;
 		this.step = this.element.data('slider-step')||options.step;
 		this.value = this.element.data('slider-value')||options.value;
-
 		if (this.value[1]) {
 			this.range = true;
 		}
@@ -184,11 +177,9 @@
 				this.tooltip[0].style[this.stylePos] = (this.percentage[0] + (this.percentage[1] - this.percentage[0])/2) + '%';
 				// this.tooltip[0].style[this.stylePos] = this.size * (this.percentage[0] + (this.percentage[1] - this.percentage[0])/2)/100 - (this.orientation === 'vertical' ? this.tooltip.outerHeight()/2 : this.tooltip.outerWidth()/2) +'px';
 			} else {
-				// show date here
 				this.tooltipInner.text(
-					this.formater(this.getValue(this.value[0] - this.max))
+					this.formater(this.value[0])
 				);
-				
 				this.tooltip[0].style[this.stylePos] = this.percentage[0] + '%';
 			}
 			if (this.orientation === 'vertical') {
@@ -310,17 +301,11 @@
 			return Math.max(0, Math.min(100, percentage));
 		},
 
-		getValue: function(date_change) {
+		getValue: function() {
 			if (this.range) {
 				return this.value;
 			}
-			console.log(date_change)
-			var date = new Date();
-			if (date_change == 0){
-				return format_Date(date.getTime(),"yyyy-MM-dd",0)
-			} else {
-				return format_Date(date.getTime(),"yyyy-MM-dd",date_change)
-			}
+			return this.value[0];
 		},
 
 		setValue: function(val) {
@@ -370,7 +355,7 @@
 
 	$.fn.slider.defaults = {
 		min: 0,
-		max: 5,
+		max: 10,
 		step: 1,
 		orientation: 'horizontal',
 		value: 5,

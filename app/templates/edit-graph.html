@@ -137,7 +137,7 @@
         <br>
     </div>
     
-
+    <!-- time line  -->
     <link rel="stylesheet" href="../static/css/slider.css" />
     <div class="bar content-section" id="timeline" style="pointer-events:auto;">
         <label for=".slider">Time line not implemented</label>
@@ -146,11 +146,15 @@
         <button id="goto_version" class="btn btn-primary btn-sm active" aria-pressed="true">Go To</button>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    <script src="../static/js/format_date.js"></script>
     <script src="../static/js/slider.js"></script>
+    
     <script>
+
+        var slider_options = {}
+        slider_options.max = 5;
         $(function () {
-            $('.slider').slider();
+            $('.slider').slider(slider_options);
         });
     </script>
 </div>
