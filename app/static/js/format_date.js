@@ -28,10 +28,10 @@ function format_Date (date, dateStr, move_d) {
                 timeArr.push(date.getFullYear());           
                 break;
             case "MM":
-                timeArr.push(date.getMonth()+1);            
+                timeArr.push(("0" + (date.getMonth() + 1)).slice(-2));
                 break;
             case "dd":
-                timeArr.push(date.getDate());           
+                timeArr.push(("0" + (date.getDate() + 1)).slice(-2));           
                 break;
             case "hh":
                 timeArr.push(date.getHours());          

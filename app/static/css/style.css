@@ -111,6 +111,9 @@ th, td
 }
 
 #timeline{
-    right: 300px;
-    max-width: 350px;
+    position: absolute;
+    top: 60px;
+    display:block;
+    max-height: 100%;
+    left: 300px;
 }

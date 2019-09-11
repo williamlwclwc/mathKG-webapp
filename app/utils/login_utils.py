@@ -195,3 +195,22 @@ def merge_user_changes(user, time_str, imported_nodes, imported_edges):
         json.dump(data, write_file)
     return merged_name
 
+def get_edition_by_date(user, time_str = None):
+    
+    raw_graph_name = basic_graph_update()
+
+    # 默认得到所有的更改，即显示明天以前的所有修改
+    if time_str == None:
+        time_structured = datetime.date.today() + datetime.timedelta(days=1)
+        time_str = time_structured.strftime("%Y-%m-%d")
+
+
+    user_change = get_user_changes(user, time_str)
+
+
+    user_graph_name = "app/static/data/graph_login_test" + '_' + user['name'] + '_' + time_str + '.json'
+    if user_change is not None:
+        merged_name = merge_user_changes(user, user_change[0], user_change[1], user_change[2])
+        cal_degree_size(merged_name, user_graph_name)
+    else:
+        cal_degree_size(raw_graph_name, user_graph_name)

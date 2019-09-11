@@ -30,6 +30,7 @@
             <p>{{graph_info[0]}}</p>
             <p>{{graph_info[1]}}</p>
             <p>{{graph_info[2]}}</p>
+            <p>{{graph_info[3]}}</p>
         </div>
         <br>
         <div id="ItemInfo">
@@ -46,7 +47,7 @@
     </div>
 
     <!-- display edit form only for authorized users -->
-    {% if authorized %}
+    {% if authorized and (slider_num == '5') %}
     <div class="left bar" id="edit_graph_div" style="pointer-events: auto;">
     {% else %}
     <div class="left bar" id="edit_graph_div" style="pointer-events: auto; display : none">
@@ -139,20 +140,29 @@
     
     <!-- time line  -->
     <link rel="stylesheet" href="../static/css/slider.css" />
-    <div class="bar content-section" id="timeline" style="pointer-events:auto;">
-        <label for=".slider">Time line not implemented</label>
-        <!-- <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/> -->
-        <input type="text" class="slider" data-slider-value="5"><br />
-        <button id="goto_version" class="btn btn-primary btn-sm active" aria-pressed="true">Go To</button>
+    <div id="timeline" style="pointer-events:auto;">
+        <form method="post" id="timeline_form" style = "display:inline;">
+            <!-- <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/> -->
+            <input type="text" class="slider" data-slider-value= '{{slider_num}}' name = "timeline_slider">
+            <!-- <button id="goto_version" class="btn btn-primary btn-sm active" aria-pressed="true" >Go To</button> -->
+            <input class="btn btn-primary btn-sm active" style = "margin-left:10px;" type="submit" name="timeline_submit" value="Go To">
+        </form>
+        <!-- <form>    
+            First name: <input type="text" name="FirstName" value="Bill" /><br />    
+            Last name: <input type="text" name="LastName" value="Gates" /><br />    
+        </form>     -->
+        <!-- <button id="btn">get_date</button>    -->
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../static/js/format_date.js"></script>
     <script src="../static/js/slider.js"></script>
     
     <script>
-
+        // var form = $('#linear_form');
         var slider_options = {}
         slider_options.max = 5;
+        slider_options.min = 0;
+        slider_options.value = '{{slider_num}}';
         $(function () {
             $('.slider').slider(slider_options);
         });

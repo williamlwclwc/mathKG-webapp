@@ -40,7 +40,12 @@
 								'<div class="slider-handle">' +
 									'<div class="slider-knob"></div>' +
 								'</div>'+
-								'<div class="tooltip fade"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'+
+								'<div class="tooltip fade" name = "slider_tooltip">' + 
+									'<div class="tooltip-arrow"></div>' + 
+									'<div class="tooltip-inner"></div>' + 
+									'<input type="text" name = "timeline_date" class = "hide" value = "0">' +
+									// '<input class="tooltip-inner" name = "timeline_date">' + 
+								'</div>'+
 							'</div>'+
 						'</div>')
 							.insertBefore(this.element)
@@ -58,6 +63,8 @@
 
 		this.tooltip = this.picker.find('.tooltip');
 		this.tooltipInner = this.tooltip.find('div.tooltip-inner');
+		this.timeline_date = this.tooltip.find('.hide');
+
 
 		var spanClass = this.element.attr('class').match(/(span[0-9][0-9]*)(\s|$)/);
 		// console.log(spanClass)
@@ -134,11 +141,15 @@
 
 		this.layout();
 
+		this.timeline_date.attr("value", this.tooltipInner.text());
+		console.log(this.timeline_date.attr("value"))
+
 		this.picker.on(this.touchCapable ? 'touchstart' : 'mousedown', $.proxy(this.mousedown, this));
 	
 		if (tooltip === 'show') {
 			this.picker.on(this.touchCapable ? 'touchstart' : 'mousedown', $.proxy(this.showTooltip, this));
 		}
+
 	};
 
 	Slider.prototype = {
@@ -188,7 +199,7 @@
 				this.tooltipInner.text(
 					this.formater(this.getValue(this.value[0] - this.max))
 				);
-				
+				this.timeline_date.attr("value", this.tooltipInner.text());
 				this.tooltip[0].style[this.stylePos] = this.percentage[0] + '%';
 			}
 			if (this.orientation === 'vertical') {
@@ -196,6 +207,7 @@
 			} else {
 				this.tooltip[0].style.marginLeft = -(this.tooltip.outerWidth() / 2) + 'px';
 			}
+			// this.value = this.formater(this.getValue(this.value[0] - this.max));
 		},
 
 		mousedown: function(ev) {
@@ -314,7 +326,6 @@
 			if (this.range) {
 				return this.value;
 			}
-			console.log(date_change)
 			var date = new Date();
 			if (date_change == 0){
 				return format_Date(date.getTime(),"yyyy-MM-dd",0)
@@ -384,3 +395,10 @@
 	$.fn.slider.Constructor = Slider;
 
 }( window.jQuery );
+
+// $("#btn").click(function(){  
+// 	var x=$("form").serializeArray();    
+// 	console.log(x); //执行结果：[{name: "FirstName", value: "Bill" },{name: "LastName",  value: "Gates" }]  
+// 	var y=$("form").serialize();  
+// 	console.log(y); //执行结果：FirstName=Bill&LastName=Gates   
+// 	}); 

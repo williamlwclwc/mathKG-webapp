@@ -6,7 +6,7 @@ import json
 from flask import Flask, flash, render_template, redirect, url_for, request
 from flask_login import login_user, logout_user, current_user, login_required, fresh_login_required
 from .forms import node_form, edge_form, RegistrationForm
-from app.utils.login_utils import query_user, basic_graph_update, cal_degree_size, get_user_changes, merge_user_changes
+from app.utils.login_utils import query_user, basic_graph_update, cal_degree_size, get_user_changes, merge_user_changes, get_edition_by_date
 from app.utils.update_utils import update_degree_size, update_node, update_edge
 from app.utils.show_graph_info import show_graph_info
 from app.utils.logout_utils import del_user_file
@@ -35,30 +35,38 @@ def home():
 @app.route('/editGraph', methods=['get', 'post'])
 def edit_graph():
 
+    slider_num = request.args.get('slider_num')
+    timeline_date = request.args.get('timeline_date')
+    if slider_num == None:
+        slider_num = '5'
     # check here 时间可以简化
     time_structured = datetime.date.today() + datetime.timedelta(days=1)
     time_str = time_structured.strftime("%Y-%m-%d")
+    
+    if timeline_date == None:
+
+        timeline_date = time_str
 
     # provide a different graph for each user
     graphname = "app/static/data/graph_login_test"
     
     authorized = 0 # 未登录不能修改
     user_name = current_user.get_id()
+    user = query_user(user_name)
     if user_name != None:
         authorized = 1
-        graphname += '_' + user_name + '_' + time_str + '.json'
+        graphname += '_' + user_name + '_' + timeline_date + '.json'
     else:
         graphname += ".json"
 
     form1 = node_form(request.form)
     form2 = edge_form(request.form)
 
-    logging.error(graphname)
     # open graph json file: load into graph G
     with open(graphname, "r") as user_file:
             user_graph = json.load(user_file)
     G = json_graph.node_link_graph(user_graph) # check here
-    graph_info = show_graph_info(G)
+    graph_info = show_graph_info(G, timeline_date)
 
     if request.method == 'POST':
         # record timestamp
@@ -131,10 +139,33 @@ def edit_graph():
             data = json_graph.node_link_data(G)
             json.dump(data, user_file)
 
-        return redirect(url_for('edit_graph'))
+        # timeline
+        if request.form.__contains__('timeline_submit') and request.form['timeline_submit'] == 'Go To':
+            
+            print((request.form))
+            timeline_date = request.form['timeline_date']
+            slider_num = request.form['timeline_slider']
+
+            get_edition_by_date(user, timeline_date)
+
+
+        return redirect(url_for('edit_graph', slider_num = slider_num, timeline_date =  timeline_date))
+        # return redirect(url_for('index', slider_num = slider_num ))
+
     graphname4js = graphname.split('/', 1)[1] # javacript 读取json文件时路径没有app/
+    print(slider_num)
     return render_template('edit-graph.html', form_node=form1, form_edge=form2, 
-                            graph_info=graph_info, authorized = authorized, graphname4js = graphname4js, title="Edit Graph")
+                            graph_info=graph_info, authorized = authorized, graphname4js = graphname4js, slider_num = slider_num, title="Edit Graph")
+
+@app.route('/index', methods=['post','get'])  #这里指定了接收的username的类型,如果不符合会报错,
+def index():                     #可以将string改成path, 这样username就会被当成路径来接收,也就是说username可以是任意可键入路由的值了
+    slider_num = request.args.get('slider_num')
+    if slider_num == None:
+        slider_num = 5
+    return str(slider_num)
+
+
+
 
 @app.route('/3dlayout')
 def threeD():
@@ -183,13 +214,13 @@ def load_user(username):
 def unauthorized_handler():
     return 'Unauthorized'
 
-@app.route('/hello-test')
-@login_required
-def index():
-    username = current_user.get_id()
-    user = query_user(username)
-    datapath = user['datapath']
-    return render_template('hello-test.html',datapath=datapath)
+# @app.route('/hello-test')
+# @login_required
+# def index():
+#     username = current_user.get_id()
+#     user = query_user(username)
+#     datapath = user['datapath']
+#     return render_template('hello-test.html',datapath=datapath)
 
 @app.route('/home-test')
 @fresh_login_required
@@ -217,19 +248,20 @@ def login():
                 login_user(curr_user, remember=True)
 
                 # 后台更新数据
-                raw_graph_name = basic_graph_update()
-                user_change = get_user_changes(user)
+                get_edition_by_date(user)
+                # raw_graph_name = basic_graph_update()
+                # user_change = get_user_changes(user)
 
-                # check here 时间可以简化
-                time_structured = datetime.date.today() + datetime.timedelta(days=1)
-                time_str = time_structured.strftime("%Y-%m-%d")
+                # # check here 时间可以简化
+                # time_structured = datetime.date.today() + datetime.timedelta(days=1)
+                # time_str = time_structured.strftime("%Y-%m-%d")
 
-                user_graph_name = "app/static/data/graph_login_test" + '_' + user['name'] + '_' + time_str + '.json'
-                if user_change is not None:
-                    merged_name = merge_user_changes(user, user_change[0], user_change[1], user_change[2])
-                    cal_degree_size(merged_name, user_graph_name)
-                else:
-                    cal_degree_size(raw_graph_name, user_graph_name)
+                # user_graph_name = "app/static/data/graph_login_test" + '_' + user['name'] + '_' + time_str + '.json'
+                # if user_change is not None:
+                #     merged_name = merge_user_changes(user, user_change[0], user_change[1], user_change[2])
+                #     cal_degree_size(merged_name, user_graph_name)
+                # else:
+                #     cal_degree_size(raw_graph_name, user_graph_name)
 
                 # 如果请求中有next参数，则重定向到其指定的地址，
                 # 没有next参数，则重定向到"index"视图
